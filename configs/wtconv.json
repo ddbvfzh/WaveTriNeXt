@@ -1,0 +1,83 @@
+{
+  "version": 1,
+  "model": "convnext_tiny_wtconv_s12",
+  "epochs": 50,
+  "micro_batch_size": 8,
+  "effective_batch_size": 32,
+  "dtype": "float32",
+  "device": "cuda",
+  "weights_enum": "ConvNeXt_Tiny_Weights.IMAGENET1K_V1",
+  "optimizer": "AdamW",
+  "backbone_lr": 0.0001,
+  "head_lr": 0.001,
+  "betas": [
+    0.9,
+    0.999
+  ],
+  "eps": 1e-08,
+  "weight_decay": 0.05,
+  "no_decay": "bias, normalization, LayerScale, WT Scale",
+  "warmup_epochs": 5,
+  "scheduler": "update-wise linear warmup + cosine",
+  "minimum_lr_ratio": 0.01,
+  "label_smoothing": 0.1,
+  "clip_grad_norm": 1.0,
+  "drop_path": 0.1,
+  "input_size": 224,
+  "eval_resize": 236,
+  "augmentation": {
+    "random_resized_crop_scale": [
+      0.8,
+      1.0
+    ],
+    "ratio": [
+      0.75,
+      1.3333333333333333
+    ],
+    "horizontal_flip": 0.5
+  },
+  "selection": "max validation macro_f1; ties min ordinary cross_entropy; ties earliest epoch",
+  "determinism": "seeded all RNGs; deterministic_algorithms warn_only; no bitwise cross-device guarantee",
+  "technical_check_policy": {
+    "mode": "skipped_by_user",
+    "user_requested_skip": true,
+    "reason": "\u7528\u6237\u572850\u9879\u6d4b\u8bd5\u5df2\u5b8c\u6210\u540e\u8981\u6c42\u4e0d\u7528\u6d4b\u8bd5\u4e86"
+  },
+  "wt_added_parameters": 346464,
+  "wt_positions": [
+    1,
+    3
+  ],
+  "wt_type": "db1",
+  "wt_levels": 2,
+  "wt_kernel_size": 7,
+  "wt_base_scale_init": 1.0,
+  "wt_wavelet_scale_init": 0.1,
+  "wt_lr": 0.001,
+  "wt_source_commit": "4a84da2218924b3973de2235d641f2ecf969c346",
+  "wt_filters": "persistent buffers, fixed Haar",
+  "wt_initialization": "copy pretrained DW7 weight/bias; default wavelet Conv2d; isolated CPU RNG",
+  "num_workers": 0,
+  "drop_last": false,
+  "optimizer_foreach": false,
+  "amp": false,
+  "matmul_tf32": false,
+  "cudnn_tf32": false,
+  "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+  "export_curves": false,
+  "export_confusion": false,
+  "alias": "wtconv",
+  "datasets": [
+    "trashnet",
+    "realwaste"
+  ],
+  "seeds": [
+    14,
+    42,
+    70
+  ],
+  "parameter_counts": {
+    "trashnet": 28171206,
+    "realwaste": 28173513
+  }
+}

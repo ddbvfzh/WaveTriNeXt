@@ -1,0 +1,386 @@
+{
+  "status": "completed",
+  "dataset": "realwaste",
+  "seed": 70,
+  "epochs_completed": 50,
+  "requested_epochs": 50,
+  "best_epoch": 33,
+  "best_validation_metrics": {
+    "classes": [
+      "cardboard",
+      "food organics",
+      "glass",
+      "metal",
+      "miscellaneous trash",
+      "paper",
+      "plastic",
+      "textile trash",
+      "vegetation"
+    ],
+    "n_samples": 713,
+    "accuracy": 0.9537166900420757,
+    "macro_f1": 0.9534868524816353,
+    "macro_precision": 0.9560917189513246,
+    "macro_recall": 0.9521225962905692,
+    "per_class": [
+      {
+        "class_name": "cardboard",
+        "precision": 0.9558823529411765,
+        "recall": 0.9420289855072463,
+        "f1": 0.9489051094890512,
+        "support": 69
+      },
+      {
+        "class_name": "food organics",
+        "precision": 0.9523809523809523,
+        "recall": 0.967741935483871,
+        "f1": 0.96,
+        "support": 62
+      },
+      {
+        "class_name": "glass",
+        "precision": 0.9827586206896551,
+        "recall": 0.9047619047619048,
+        "f1": 0.9421487603305785,
+        "support": 63
+      },
+      {
+        "class_name": "metal",
+        "precision": 0.9831932773109243,
+        "recall": 0.9831932773109243,
+        "f1": 0.9831932773109243,
+        "support": 119
+      },
+      {
+        "class_name": "miscellaneous trash",
+        "precision": 0.9420289855072463,
+        "recall": 0.8783783783783784,
+        "f1": 0.9090909090909092,
+        "support": 74
+      },
+      {
+        "class_name": "paper",
+        "precision": 1.0,
+        "recall": 0.96,
+        "f1": 0.9795918367346939,
+        "support": 75
+      },
+      {
+        "class_name": "plastic",
+        "precision": 0.910958904109589,
+        "recall": 0.9637681159420289,
+        "f1": 0.9366197183098591,
+        "support": 138
+      },
+      {
+        "class_name": "textile trash",
+        "precision": 0.9230769230769231,
+        "recall": 1.0,
+        "f1": 0.9600000000000001,
+        "support": 48
+      },
+      {
+        "class_name": "vegetation",
+        "precision": 0.9545454545454546,
+        "recall": 0.9692307692307692,
+        "f1": 0.9618320610687022,
+        "support": 65
+      }
+    ],
+    "confusion_matrix": [
+      [
+        65,
+        0,
+        0,
+        0,
+        1,
+        0,
+        3,
+        0,
+        0
+      ],
+      [
+        0,
+        60,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        57,
+        0,
+        0,
+        0,
+        6,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        117,
+        0,
+        0,
+        2,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        65,
+        0,
+        2,
+        4,
+        2
+      ],
+      [
+        3,
+        0,
+        0,
+        0,
+        0,
+        72,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        2,
+        1,
+        0,
+        133,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        48,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        63
+      ]
+    ],
+    "confusion_matrix_normalized": [
+      [
+        0.9420289855072463,
+        0.0,
+        0.0,
+        0.0,
+        0.014492753623188406,
+        0.0,
+        0.043478260869565216,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.967741935483871,
+        0.0,
+        0.0,
+        0.016129032258064516,
+        0.0,
+        0.0,
+        0.0,
+        0.016129032258064516
+      ],
+      [
+        0.0,
+        0.0,
+        0.9047619047619048,
+        0.0,
+        0.0,
+        0.0,
+        0.09523809523809523,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.9831932773109243,
+        0.0,
+        0.0,
+        0.01680672268907563,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.013513513513513514,
+        0.0,
+        0.0,
+        0.8783783783783784,
+        0.0,
+        0.02702702702702703,
+        0.05405405405405406,
+        0.02702702702702703
+      ],
+      [
+        0.04,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.96,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.007246376811594203,
+        0.007246376811594203,
+        0.014492753623188406,
+        0.007246376811594203,
+        0.0,
+        0.9637681159420289,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.015384615384615385,
+        0.0,
+        0.0,
+        0.015384615384615385,
+        0.0,
+        0.0,
+        0.0,
+        0.9692307692307692
+      ]
+    ],
+    "loss": 0.2741434165546971
+  },
+  "total_training_seconds": 1487.533579878509,
+  "classes": [
+    "cardboard",
+    "food organics",
+    "glass",
+    "metal",
+    "miscellaneous trash",
+    "paper",
+    "plastic",
+    "textile trash",
+    "vegetation"
+  ],
+  "config": {
+    "version": 1,
+    "model": "convnext_tiny",
+    "dataset": "realwaste",
+    "seed": 70,
+    "classes": [
+      "cardboard",
+      "food organics",
+      "glass",
+      "metal",
+      "miscellaneous trash",
+      "paper",
+      "plastic",
+      "textile trash",
+      "vegetation"
+    ],
+    "epochs": 50,
+    "micro_batch_size": 8,
+    "effective_batch_size": 32,
+    "dtype": "float32",
+    "device": "cuda",
+    "manifest_sha256": "f0b289a9517e7bf7eb9485e8635ab097de8b8ecbdcb49d8ef4b79938514c68d0",
+    "weights_sha256": "983f1562536e84ff750a1576fb08e54de751dbf2e17c0d8a4a13704341fdcd3d",
+    "weights_enum": "ConvNeXt_Tiny_Weights.IMAGENET1K_V1",
+    "code_sha256": {
+      "closed_set_baseline.py": "189c8998b382964630ef69652e129ad934c140ad32dbcd96eb0f51eec2556847",
+      "closed_set_data.py": "729889c835960139fb46def97b1defc2de94fed379bce75c5440e3181e559d01",
+      "closed_set_metrics.py": "787c2536fcf2696623c2a4abf56fffafaf61bc8b75fb4cff8e69b807829be4fc",
+      "data.py": "8c38f6790552361441c7ba8ef1b67293c109caa00a1cd1d36c8d2d442ded02fc"
+    },
+    "torch": "2.8.0+cu128",
+    "torchvision": "0.23.0+cu128",
+    "packages": {
+      "numpy": "2.2.6",
+      "pandas": "2.3.3",
+      "Pillow": "12.1.0",
+      "scipy": "1.15.3"
+    },
+    "optimizer": "AdamW",
+    "backbone_lr": 0.0001,
+    "head_lr": 0.001,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "weight_decay": 0.05,
+    "no_decay": "bias, normalization, LayerScale",
+    "warmup_epochs": 5,
+    "scheduler": "update-wise linear warmup + cosine",
+    "minimum_lr_ratio": 0.01,
+    "label_smoothing": 0.1,
+    "clip_grad_norm": 1.0,
+    "drop_path": 0.1,
+    "input_size": 224,
+    "eval_resize": 236,
+    "augmentation": {
+      "random_resized_crop_scale": [
+        0.8,
+        1.0
+      ],
+      "ratio": [
+        0.75,
+        1.3333333333333333
+      ],
+      "horizontal_flip": 0.5
+    },
+    "selection": "max validation macro_f1; ties min ordinary cross_entropy; ties earliest epoch",
+    "determinism": "seeded all RNGs; deterministic_algorithms warn_only; no bitwise cross-device guarantee"
+  },
+  "training_samples": 3327,
+  "validation_samples": 713,
+  "test_samples": 712,
+  "artifacts_sha256": {
+    "best.pt": "b2bfdc924d7f1c24325fb862e1a9f7dd4b6a4de2dde17254c5badcfc8301ac23",
+    "history.csv": "433e36a5967e0a3d1189de5f2be16872e99a13fc863db524050e164f3807c872",
+    "test_predictions.csv": "f1f1b0824f05f1b64ac7201aa0c4168a489f1f42012a0b4a44d3429b0849e49c",
+    "test_metrics.json": "edbe385891eeaaed0153a0e1c738c81eb513412a9392c68666e1bb17a1cdac14"
+  },
+  "test_metrics_sha256": "edbe385891eeaaed0153a0e1c738c81eb513412a9392c68666e1bb17a1cdac14"
+}

@@ -1,0 +1,254 @@
+{
+  "status": "completed",
+  "dataset": "trashnet",
+  "seed": 42,
+  "epochs_completed": 50,
+  "requested_epochs": 50,
+  "best_epoch": 31,
+  "best_validation_metrics": {
+    "classes": [
+      "cardboard",
+      "glass",
+      "metal",
+      "paper",
+      "plastic",
+      "trash"
+    ],
+    "n_samples": 379,
+    "accuracy": 0.9736147757255936,
+    "macro_f1": 0.9728777883276757,
+    "macro_precision": 0.9760949552408226,
+    "macro_recall": 0.9702125270811953,
+    "per_class": [
+      {
+        "class_name": "cardboard",
+        "precision": 0.9661016949152542,
+        "recall": 0.9344262295081968,
+        "f1": 0.95,
+        "support": 61
+      },
+      {
+        "class_name": "glass",
+        "precision": 1.0,
+        "recall": 0.9733333333333334,
+        "f1": 0.9864864864864865,
+        "support": 75
+      },
+      {
+        "class_name": "metal",
+        "precision": 0.9375,
+        "recall": 0.9836065573770492,
+        "f1": 0.96,
+        "support": 61
+      },
+      {
+        "class_name": "paper",
+        "precision": 0.9666666666666667,
+        "recall": 0.9775280898876404,
+        "f1": 0.9720670391061451,
+        "support": 89
+      },
+      {
+        "class_name": "plastic",
+        "precision": 0.9863013698630136,
+        "recall": 1.0,
+        "f1": 0.993103448275862,
+        "support": 72
+      },
+      {
+        "class_name": "trash",
+        "precision": 1.0,
+        "recall": 0.9523809523809523,
+        "f1": 0.975609756097561,
+        "support": 21
+      }
+    ],
+    "confusion_matrix": [
+      [
+        57,
+        0,
+        1,
+        3,
+        0,
+        0
+      ],
+      [
+        0,
+        73,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        60,
+        0,
+        1,
+        0
+      ],
+      [
+        2,
+        0,
+        0,
+        87,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        72,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        20
+      ]
+    ],
+    "confusion_matrix_normalized": [
+      [
+        0.9344262295081968,
+        0.0,
+        0.01639344262295082,
+        0.04918032786885246,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.9733333333333334,
+        0.02666666666666667,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.9836065573770492,
+        0.0,
+        0.01639344262295082,
+        0.0
+      ],
+      [
+        0.02247191011235955,
+        0.0,
+        0.0,
+        0.9775280898876404,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.047619047619047616,
+        0.0,
+        0.0,
+        0.9523809523809523
+      ]
+    ],
+    "loss": 0.17369660176828228
+  },
+  "total_training_seconds": 708.2957943193614,
+  "classes": [
+    "cardboard",
+    "glass",
+    "metal",
+    "paper",
+    "plastic",
+    "trash"
+  ],
+  "config": {
+    "version": 1,
+    "model": "convnext_tiny",
+    "dataset": "trashnet",
+    "seed": 42,
+    "classes": [
+      "cardboard",
+      "glass",
+      "metal",
+      "paper",
+      "plastic",
+      "trash"
+    ],
+    "epochs": 50,
+    "micro_batch_size": 8,
+    "effective_batch_size": 32,
+    "dtype": "float32",
+    "device": "cuda",
+    "manifest_sha256": "9d32697c1727100b8ea6fda61261ff2ab2fe71d078c196f5dd1b5cda05cf804e",
+    "weights_sha256": "983f1562536e84ff750a1576fb08e54de751dbf2e17c0d8a4a13704341fdcd3d",
+    "weights_enum": "ConvNeXt_Tiny_Weights.IMAGENET1K_V1",
+    "code_sha256": {
+      "closed_set_baseline.py": "189c8998b382964630ef69652e129ad934c140ad32dbcd96eb0f51eec2556847",
+      "closed_set_data.py": "729889c835960139fb46def97b1defc2de94fed379bce75c5440e3181e559d01",
+      "closed_set_metrics.py": "787c2536fcf2696623c2a4abf56fffafaf61bc8b75fb4cff8e69b807829be4fc",
+      "data.py": "8c38f6790552361441c7ba8ef1b67293c109caa00a1cd1d36c8d2d442ded02fc"
+    },
+    "torch": "2.8.0+cu128",
+    "torchvision": "0.23.0+cu128",
+    "packages": {
+      "numpy": "2.2.6",
+      "pandas": "2.3.3",
+      "Pillow": "12.1.0",
+      "scipy": "1.15.3"
+    },
+    "optimizer": "AdamW",
+    "backbone_lr": 0.0001,
+    "head_lr": 0.001,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "weight_decay": 0.05,
+    "no_decay": "bias, normalization, LayerScale",
+    "warmup_epochs": 5,
+    "scheduler": "update-wise linear warmup + cosine",
+    "minimum_lr_ratio": 0.01,
+    "label_smoothing": 0.1,
+    "clip_grad_norm": 1.0,
+    "drop_path": 0.1,
+    "input_size": 224,
+    "eval_resize": 236,
+    "augmentation": {
+      "random_resized_crop_scale": [
+        0.8,
+        1.0
+      ],
+      "ratio": [
+        0.75,
+        1.3333333333333333
+      ],
+      "horizontal_flip": 0.5
+    },
+    "selection": "max validation macro_f1; ties min ordinary cross_entropy; ties earliest epoch",
+    "determinism": "seeded all RNGs; deterministic_algorithms warn_only; no bitwise cross-device guarantee"
+  },
+  "training_samples": 1765,
+  "validation_samples": 379,
+  "test_samples": 377,
+  "artifacts_sha256": {
+    "best.pt": "74ac6c13e657347dd676f178d88fb0d32550e9740c864272e36ba48b22bfb54f",
+    "history.csv": "c588e55395ba5a4de438807fc087ef9cd8314fd1c4e21e7557490877753eeeae",
+    "test_predictions.csv": "031dc7301775d9642d2bb5e8f1e87674da58e4c82bb44b4fdcd9658f7540152f",
+    "test_metrics.json": "12512be0a2d7abbea2b1bc51b9671a20fc359f1ea8a2b2b6d074b158a36b0f18"
+  },
+  "test_metrics_sha256": "12512be0a2d7abbea2b1bc51b9671a20fc359f1ea8a2b2b6d074b158a36b0f18"
+}

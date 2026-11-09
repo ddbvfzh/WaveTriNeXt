@@ -1,0 +1,13 @@
+{
+  "python": "3.12.3",
+  "platform": "Linux-5.15.0-94-generic-x86_64-with-glibc2.35",
+  "torch": "2.8.0+cu128",
+  "torchvision": "0.23.0+cu128",
+  "device": "cuda",
+  "device_name": "NVIDIA vGPU-48GB",
+  "cuda_runtime": "12.8",
+  "precision": "float32",
+  "amp": false,
+  "matmul_tf32": false,
+  "cudnn_tf32": false
+}

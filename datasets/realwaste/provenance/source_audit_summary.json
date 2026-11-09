@@ -1,0 +1,277 @@
+{
+  "input_fingerprint": "ac43df6c9625f64c3bf794ddd55fd4e81dbabcb8b9c2b093a7a5da6be694fbd8",
+  "input_images": 4752,
+  "archive_metadata_count": 0,
+  "retained_images": 4752,
+  "excluded_count": 0,
+  "excluded_by_reason": {},
+  "conflicting_pixel_groups": 0,
+  "group_count": 4739,
+  "duplicate_pairs": 14,
+  "counts": [
+    {
+      "dataset": "realwaste",
+      "class_name": "cardboard",
+      "label": 0,
+      "split": "train",
+      "count": 323,
+      "group_count": 323
+    },
+    {
+      "dataset": "realwaste",
+      "class_name": "cardboard",
+      "label": 0,
+      "split": "val",
+      "count": 69,
+      "group_count": 69
+    },
+    {
+      "dataset": "realwaste",
+      "class_name": "cardboard",
+      "label": 0,
+      "split": "test",
+      "count": 69,
+      "group_count": 69
+    },
+    {
+      "dataset": "realwaste",
+      "class_name": "food organics",
+      "label": 1,
+      "split": "train",
+      "count": 287,
+      "group_count": 285
+    },
+    {
+      "dataset": "realwaste",
+      "class_name": "food organics",
+      "label": 1,
+      "split": "val",
+      "count": 62,
+      "group_count": 62
+    },
+    {
+      "dataset": "realwaste",
+      "class_name": "food organics",
+      "label": 1,
+      "split": "test",
+      "count": 62,
+      "group_count": 62
+    },
+    {
+      "dataset": "realwaste",
+      "class_name": "glass",
+      "label": 2,
+      "split": "train",
+      "count": 294,
+      "group_count": 294
+    },
+    {
+      "dataset": "realwaste",
+      "class_name": "glass",
+      "label": 2,
+      "split": "val",
+      "count": 63,
+      "group_count": 63
+    },
+    {
+      "dataset": "realwaste",
+      "class_name": "glass",
+      "label": 2,
+      "split": "test",
+      "count": 63,
+      "group_count": 63
+    },
+    {
+      "dataset": "realwaste",
+      "class_name": "metal",
+      "label": 3,
+      "split": "train",
+      "count": 553,
+      "group_count": 553
+    },
+    {
+      "dataset": "realwaste",
+      "class_name": "metal",
+      "label": 3,
+      "split": "val",
+      "count": 119,
+      "group_count": 118
+    },
+    {
+      "dataset": "realwaste",
+      "class_name": "metal",
+      "label": 3,
+      "split": "test",
+      "count": 118,
+      "group_count": 118
+    },
+    {
+      "dataset": "realwaste",
+      "class_name": "miscellaneous trash",
+      "label": 4,
+      "split": "train",
+      "count": 347,
+      "group_count": 346
+    },
+    {
+      "dataset": "realwaste",
+      "class_name": "miscellaneous trash",
+      "label": 4,
+      "split": "val",
+      "count": 74,
+      "group_count": 74
+    },
+    {
+      "dataset": "realwaste",
+      "class_name": "miscellaneous trash",
+      "label": 4,
+      "split": "test",
+      "count": 74,
+      "group_count": 74
+    },
+    {
+      "dataset": "realwaste",
+      "class_name": "paper",
+      "label": 5,
+      "split": "train",
+      "count": 350,
+      "group_count": 350
+    },
+    {
+      "dataset": "realwaste",
+      "class_name": "paper",
+      "label": 5,
+      "split": "val",
+      "count": 75,
+      "group_count": 75
+    },
+    {
+      "dataset": "realwaste",
+      "class_name": "paper",
+      "label": 5,
+      "split": "test",
+      "count": 75,
+      "group_count": 75
+    },
+    {
+      "dataset": "realwaste",
+      "class_name": "plastic",
+      "label": 6,
+      "split": "train",
+      "count": 645,
+      "group_count": 642
+    },
+    {
+      "dataset": "realwaste",
+      "class_name": "plastic",
+      "label": 6,
+      "split": "val",
+      "count": 138,
+      "group_count": 137
+    },
+    {
+      "dataset": "realwaste",
+      "class_name": "plastic",
+      "label": 6,
+      "split": "test",
+      "count": 138,
+      "group_count": 138
+    },
+    {
+      "dataset": "realwaste",
+      "class_name": "textile trash",
+      "label": 7,
+      "split": "train",
+      "count": 222,
+      "group_count": 222
+    },
+    {
+      "dataset": "realwaste",
+      "class_name": "textile trash",
+      "label": 7,
+      "split": "val",
+      "count": 48,
+      "group_count": 48
+    },
+    {
+      "dataset": "realwaste",
+      "class_name": "textile trash",
+      "label": 7,
+      "split": "test",
+      "count": 48,
+      "group_count": 48
+    },
+    {
+      "dataset": "realwaste",
+      "class_name": "vegetation",
+      "label": 8,
+      "split": "train",
+      "count": 306,
+      "group_count": 306
+    },
+    {
+      "dataset": "realwaste",
+      "class_name": "vegetation",
+      "label": 8,
+      "split": "val",
+      "count": 65,
+      "group_count": 65
+    },
+    {
+      "dataset": "realwaste",
+      "class_name": "vegetation",
+      "label": 8,
+      "split": "test",
+      "count": 65,
+      "group_count": 65
+    }
+  ],
+  "actual_split_counts": {
+    "train": 3327,
+    "val": 713,
+    "test": 712
+  },
+  "output_sha256": {
+    "manifest.csv": "f0b289a9517e7bf7eb9485e8635ab097de8b8ecbdcb49d8ef4b79938514c68d0",
+    "duplicates.csv": "fc3e48b30c4deab49a90634447f02ad5dd71cf96fd68a30538b7e5f2ad186829",
+    "excluded.csv": "e05a5b09b76fe3498a79e200f0525506f492b1737a4fd2a0e529ecd4a9411bcf",
+    "class_counts.csv": "2b4effb415ac55a6ad1f2f9f057c3ff6a34209e40f263651c0fba63980971a2f"
+  },
+  "source_code_sha256": "729889c835960139fb46def97b1defc2de94fed379bce75c5440e3181e559d01",
+  "notes": [
+    "Ratios are approximate because duplicate groups cannot be split.",
+    "Perceptual matches retain their labels; all copies of exact pixel label conflicts are excluded.",
+    "Source files are never modified; archive metadata is excluded before image decoding.",
+    "Duplicate checks do not prove absence of same-object or pretraining overlap."
+  ],
+  "config": {
+    "version": 1,
+    "dataset": "realwaste",
+    "classes": [
+      "cardboard",
+      "food organics",
+      "glass",
+      "metal",
+      "miscellaneous trash",
+      "paper",
+      "plastic",
+      "textile trash",
+      "vegetation"
+    ],
+    "split_seed": 42,
+    "near_distance": 4,
+    "split_names": [
+      "train",
+      "val",
+      "test"
+    ],
+    "split_ratios": [
+      0.7,
+      0.15,
+      0.15
+    ],
+    "exact_conflict_policy": "exclude_all_copies"
+  },
+  "note": "Historical source audit summary; raw_root removed. Historical source output hashes do not validate the portable CSV copies.",
+  "source_audit_file_sha256": "69443e7ef3dc1c3c661994d85206a96a145bb9053d6337e83e488d30cb4f47c2"
+}

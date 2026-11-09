@@ -1,0 +1,75 @@
+{
+  "version": 1,
+  "model": "convnext_tiny_improved_pmam_parallel_s34",
+  "epochs": 50,
+  "micro_batch_size": 8,
+  "effective_batch_size": 32,
+  "dtype": "float32",
+  "device": "cuda",
+  "weights_enum": "ConvNeXt_Tiny_Weights.IMAGENET1K_V1",
+  "optimizer": "AdamW",
+  "backbone_lr": 0.0001,
+  "head_lr": 0.001,
+  "betas": [
+    0.9,
+    0.999
+  ],
+  "eps": 1e-08,
+  "weight_decay": 0.05,
+  "no_decay": "bias, normalization, LayerScale",
+  "warmup_epochs": 5,
+  "scheduler": "update-wise linear warmup + cosine",
+  "minimum_lr_ratio": 0.01,
+  "label_smoothing": 0.1,
+  "clip_grad_norm": 1.0,
+  "drop_path": 0.1,
+  "input_size": 224,
+  "eval_resize": 236,
+  "augmentation": {
+    "random_resized_crop_scale": [
+      0.8,
+      1.0
+    ],
+    "ratio": [
+      0.75,
+      1.3333333333333333
+    ],
+    "horizontal_flip": 0.5
+  },
+  "selection": "max validation macro_f1; ties min ordinary cross_entropy; ties earliest epoch",
+  "determinism": "seeded all RNGs; deterministic_algorithms warn_only; no bitwise cross-device guarantee",
+  "attention_mode": "parallel",
+  "attention_fusion": "multiply",
+  "attention_positions": [
+    5,
+    7
+  ],
+  "attention_channels": [
+    384,
+    768
+  ],
+  "attention_lr": 0.001,
+  "attention_initialization": "PyTorch Conv2d default; BN gamma=1 beta=0; isolated CPU RNG",
+  "attention_bn_eps": 1e-05,
+  "attention_bn_momentum": 0.1,
+  "amp": false,
+  "matmul_tf32": false,
+  "cudnn_tf32": false,
+  "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+  "export_curves": false,
+  "export_confusion": false,
+  "alias": "pmam",
+  "datasets": [
+    "trashnet",
+    "realwaste"
+  ],
+  "seeds": [
+    14,
+    42,
+    70
+  ],
+  "parameter_counts": {
+    "trashnet": 30038922,
+    "realwaste": 30041229
+  }
+}

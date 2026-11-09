@@ -1,0 +1,518 @@
+{
+  "date": "2026-11-09",
+  "status": "passed",
+  "scope": "Standalone evaluation entry point; fresh CPU inference, without training",
+  "inference_environment": {
+    "python": "3.10.19",
+    "platform": "Windows",
+    "torch": "2.8.0+xpu",
+    "torchvision": "0.23.0+xpu",
+    "numpy": "2.2.6",
+    "pandas": "2.3.3",
+    "Pillow": "12.1.0",
+    "device": "cpu",
+    "threads": 2,
+    "batch_size": 8,
+    "dtype": "float32",
+    "amp": false,
+    "tf32": false
+  },
+  "full_test_validation": {
+    "reproduction_command": "python scripts/evaluate.py --models baseline pmam wtconv wtconv_pmam wavetrinext --datasets trashnet realwaste --seeds 14 --device cpu --threads 2 --output outputs/evaluation_full_check",
+    "completed_runs": 10,
+    "models": 5,
+    "datasets": 2,
+    "seeds": [
+      14
+    ],
+    "prediction_rows": 5445,
+    "all_predictions_match_archive": true,
+    "all_accuracy_macro_f1_deltas_zero": true,
+    "max_abs_logit_difference": 2.9474542236229695e-05,
+    "runs": [
+      {
+        "model": "baseline",
+        "dataset": "trashnet",
+        "seed": 14,
+        "full_test": true,
+        "test_samples": 377,
+        "accuracy": 0.9628647214854111,
+        "macro_f1": 0.9538934690699321,
+        "checkpoint_epoch": 48,
+        "checkpoint_sha256": "290ed83d3d94bfedc7068101c70c76469a4d26901be35713f50fc9b0b826e6b6",
+        "elapsed_seconds": 19.875,
+        "comparison": {
+          "full_test": true,
+          "compared_samples": 377,
+          "comparison_scope": "full_test",
+          "prediction_agreement": 1.0,
+          "changed_predictions": 0,
+          "changed_sample_ids": [],
+          "max_abs_logit_difference": 1.096557312008084e-05,
+          "metric_deltas": {
+            "accuracy": 0.0,
+            "macro_f1": 0.0,
+            "macro_precision": 0.0,
+            "macro_recall": 0.0
+          },
+          "reference_metrics": {
+            "n_samples": 377,
+            "accuracy": 0.9628647214854111,
+            "macro_f1": 0.9538934690699321,
+            "macro_precision": 0.950405580347721,
+            "macro_recall": 0.9579515189346651
+          }
+        },
+        "output_sha256": {
+          "class_report.csv": "e3fbea4a3e404f4d730f8a322e531ec249243a5f579748123d9dc609e8154a80",
+          "confusion_matrix.csv": "81b6b249f6a32825e50f7b9eb5292a94d5cae6d5130cc8e66abd8b4db6b0d0bf",
+          "confusion_matrix_normalized.csv": "fe8770e3fa1a9052b22f05e15f43bad22b21af32b197cc012ecdb95ed93dd395",
+          "test_metrics.json": "418849f8431f5935a7c54b91e67cd4c8113a587f577e9b30c548d99130ec71fb",
+          "test_predictions.csv": "7264024bab6f9db1aa458892906c5d4a7058d1c620e85a99fc707a24b87d1cb8"
+        }
+      },
+      {
+        "model": "baseline",
+        "dataset": "realwaste",
+        "seed": 14,
+        "full_test": true,
+        "test_samples": 712,
+        "accuracy": 0.9480337078651685,
+        "macro_f1": 0.9476975479968363,
+        "checkpoint_epoch": 35,
+        "checkpoint_sha256": "961e726103f889310fa107ba342286c7ec28b177289f2eedeb66665294876a32",
+        "elapsed_seconds": 65.15599999995902,
+        "comparison": {
+          "full_test": true,
+          "compared_samples": 712,
+          "comparison_scope": "full_test",
+          "prediction_agreement": 1.0,
+          "changed_predictions": 0,
+          "changed_sample_ids": [],
+          "max_abs_logit_difference": 2.9474542236229695e-05,
+          "metric_deltas": {
+            "accuracy": 0.0,
+            "macro_f1": 0.0,
+            "macro_precision": 0.0,
+            "macro_recall": 0.0
+          },
+          "reference_metrics": {
+            "n_samples": 712,
+            "accuracy": 0.9480337078651685,
+            "macro_f1": 0.9476975479968363,
+            "macro_precision": 0.9483814118175933,
+            "macro_recall": 0.9485359258130076
+          }
+        },
+        "output_sha256": {
+          "class_report.csv": "5ee6b2e501b0f0b04ab7fad3624448306326515a2174194ece2cbbc4b308944f",
+          "confusion_matrix.csv": "0dfd6406b228d929498d97214889ac07b088606c249301c2edc6f9c203206953",
+          "confusion_matrix_normalized.csv": "91a1d1e53ee9448689ca31fe812a231c7f819e24b0044a31509359a94deae7ea",
+          "test_metrics.json": "abfe4a20024ca6ccbeaf9caa241a9a97c1a058fd50f929842c82f30164de2f74",
+          "test_predictions.csv": "bbae31d4955742a5982b54918a48fc0cad28384b2f29c631c000264833134ff4"
+        }
+      },
+      {
+        "model": "pmam",
+        "dataset": "trashnet",
+        "seed": 14,
+        "full_test": true,
+        "test_samples": 377,
+        "accuracy": 0.9655172413793104,
+        "macro_f1": 0.9641332195895745,
+        "checkpoint_epoch": 30,
+        "checkpoint_sha256": "74599b4b3302c51d3afebb94bb1fdcdee1afc75ff94718b818ba3f02bbb71ef7",
+        "elapsed_seconds": 44.64000000001397,
+        "comparison": {
+          "full_test": true,
+          "compared_samples": 377,
+          "comparison_scope": "full_test",
+          "prediction_agreement": 1.0,
+          "changed_predictions": 0,
+          "changed_sample_ids": [],
+          "max_abs_logit_difference": 9.395520019550574e-06,
+          "metric_deltas": {
+            "accuracy": 0.0,
+            "macro_f1": 0.0,
+            "macro_precision": 0.0,
+            "macro_recall": 0.0
+          },
+          "reference_metrics": {
+            "n_samples": 377,
+            "accuracy": 0.9655172413793104,
+            "macro_f1": 0.9641332195895745,
+            "macro_precision": 0.9628892213451038,
+            "macro_recall": 0.9662848522679984
+          }
+        },
+        "output_sha256": {
+          "class_report.csv": "b2e28a3fced96cb0ff3dac4b1098f63b0e6a3dd921723bba3427873823b12d8b",
+          "confusion_matrix.csv": "36831b88b28cec4731f995e2585ce07ecd1727aaee42733d9a9223195931190c",
+          "confusion_matrix_normalized.csv": "d381ea8f427c07e90db462d1ba5d731c8f2c0e29b96860e95eef27e54b9bdf18",
+          "test_metrics.json": "d4231490b0b81da0fe9de7b48ac0c827b80cf34034c9a1f953b9fe4772d75809",
+          "test_predictions.csv": "4d64a509970915c60cab46f3689b5bc4362a19048567a730b8a74d87e0e99f51"
+        }
+      },
+      {
+        "model": "pmam",
+        "dataset": "realwaste",
+        "seed": 14,
+        "full_test": true,
+        "test_samples": 712,
+        "accuracy": 0.9410112359550562,
+        "macro_f1": 0.9406344915576693,
+        "checkpoint_epoch": 15,
+        "checkpoint_sha256": "dd70e044e61010639d32a9c79a03b66a7accecac0d3642579a5172b6c3bcf673",
+        "elapsed_seconds": 39.51600000006147,
+        "comparison": {
+          "full_test": true,
+          "compared_samples": 712,
+          "comparison_scope": "full_test",
+          "prediction_agreement": 1.0,
+          "changed_predictions": 0,
+          "changed_sample_ids": [],
+          "max_abs_logit_difference": 8.156018066252102e-06,
+          "metric_deltas": {
+            "accuracy": 0.0,
+            "macro_f1": 0.0,
+            "macro_precision": 0.0,
+            "macro_recall": 0.0
+          },
+          "reference_metrics": {
+            "n_samples": 712,
+            "accuracy": 0.9410112359550562,
+            "macro_f1": 0.9406344915576693,
+            "macro_precision": 0.9431085594940433,
+            "macro_recall": 0.9394813225555058
+          }
+        },
+        "output_sha256": {
+          "class_report.csv": "5e7d19a9c0d131af537080175dde50611e9a0cf90e661ce35ac0644320c33374",
+          "confusion_matrix.csv": "acf4fe8136a2a34830bb8a171ab64b479edba077fb629e81cb5096dd3a273512",
+          "confusion_matrix_normalized.csv": "fe8ecd8a675576843542afd1b8dca472286622e7d8f38c5a407a18d546b431ca",
+          "test_metrics.json": "f19a4e5e9e6754c537ce24fcbc0650f6ee0febb9d228602193a3b1ab59491526",
+          "test_predictions.csv": "c44b0c5545c051c6cb1a249cfed9a7e0688e6b9f5ca70b7b6f533c95f3e54251"
+        }
+      },
+      {
+        "model": "wtconv",
+        "dataset": "trashnet",
+        "seed": 14,
+        "full_test": true,
+        "test_samples": 377,
+        "accuracy": 0.9628647214854111,
+        "macro_f1": 0.9600249842037964,
+        "checkpoint_epoch": 41,
+        "checkpoint_sha256": "f5de1ebc00c3af4f45e791fbd7c9b799a9bdb9d13a2ea5731f3a2f5692741f41",
+        "elapsed_seconds": 23.030999999959022,
+        "comparison": {
+          "full_test": true,
+          "compared_samples": 377,
+          "comparison_scope": "full_test",
+          "prediction_agreement": 1.0,
+          "changed_predictions": 0,
+          "changed_sample_ids": [],
+          "max_abs_logit_difference": 9.345793151871451e-06,
+          "metric_deltas": {
+            "accuracy": 0.0,
+            "macro_f1": 0.0,
+            "macro_precision": 0.0,
+            "macro_recall": 0.0
+          },
+          "reference_metrics": {
+            "n_samples": 377,
+            "accuracy": 0.9628647214854111,
+            "macro_f1": 0.9600249842037964,
+            "macro_precision": 0.956399783434454,
+            "macro_recall": 0.9640626300457762
+          }
+        },
+        "output_sha256": {
+          "class_report.csv": "9b30d614c206d2b940c789c0eb4f6a68dc0b8306fcc8cd79cb8361234babb44a",
+          "confusion_matrix.csv": "a8671111ffd0b8bcd31d616da0cfd4431e74ef67eedc73b5b8a82e22b69503ef",
+          "confusion_matrix_normalized.csv": "1066195b96f35cf0d5467b9714ca78a10b7de2478e961d0c0e34fbecb470cd68",
+          "test_metrics.json": "71160c638044271019e00404528c0c99ca2572b2a1ae07225b581098551f2d6a",
+          "test_predictions.csv": "74412022d5fa351a69aa8eb6b0a2eb06d1f4ec187f2a09dbbfd84ea839fbd770"
+        }
+      },
+      {
+        "model": "wtconv",
+        "dataset": "realwaste",
+        "seed": 14,
+        "full_test": true,
+        "test_samples": 712,
+        "accuracy": 0.9466292134831461,
+        "macro_f1": 0.9457845226543229,
+        "checkpoint_epoch": 38,
+        "checkpoint_sha256": "31e239d8566ef4f0afec60138add24672f96bb58fb82480740f867ccea4a934b",
+        "elapsed_seconds": 43.39000000001397,
+        "comparison": {
+          "full_test": true,
+          "compared_samples": 712,
+          "comparison_scope": "full_test",
+          "prediction_agreement": 1.0,
+          "changed_predictions": 0,
+          "changed_sample_ids": [],
+          "max_abs_logit_difference": 1.637174530033647e-05,
+          "metric_deltas": {
+            "accuracy": 0.0,
+            "macro_f1": 0.0,
+            "macro_precision": 0.0,
+            "macro_recall": 0.0
+          },
+          "reference_metrics": {
+            "n_samples": 712,
+            "accuracy": 0.9466292134831461,
+            "macro_f1": 0.9457845226543229,
+            "macro_precision": 0.9501532400845344,
+            "macro_recall": 0.942275372875586
+          }
+        },
+        "output_sha256": {
+          "class_report.csv": "8a439d669e7815e455e5fbad81cb54997f981c0fdb41ee3a18ff119b07146a0a",
+          "confusion_matrix.csv": "a5c7e121bea02c56d8e73073d85133fc622f054a358401f8612a51ce1241e780",
+          "confusion_matrix_normalized.csv": "0f26b6785ec7c7400ac52b699c83b2ea35fbcf740c74d60607e32af8132f1577",
+          "test_metrics.json": "08a1083d7730e1961d8077c40b16f425ce3962248e38a2978cf6da7368d50d12",
+          "test_predictions.csv": "d939cbec530f056014dbc3eff222ac63ffc62f03e11497f7b33488d21db48e18"
+        }
+      },
+      {
+        "model": "wtconv_pmam",
+        "dataset": "trashnet",
+        "seed": 14,
+        "full_test": true,
+        "test_samples": 377,
+        "accuracy": 0.9575596816976127,
+        "macro_f1": 0.9523100290192955,
+        "checkpoint_epoch": 39,
+        "checkpoint_sha256": "14713e286eb1df736237b713ed4feb7e6c05ed8d01d1be468ffc22bb4061b9cb",
+        "elapsed_seconds": 40.5,
+        "comparison": {
+          "full_test": true,
+          "compared_samples": 377,
+          "comparison_scope": "full_test",
+          "prediction_agreement": 1.0,
+          "changed_predictions": 0,
+          "changed_sample_ids": [],
+          "max_abs_logit_difference": 6.6698822021038495e-06,
+          "metric_deltas": {
+            "accuracy": 0.0,
+            "macro_f1": 0.0,
+            "macro_precision": 0.0,
+            "macro_recall": 0.0
+          },
+          "reference_metrics": {
+            "n_samples": 377,
+            "accuracy": 0.9575596816976127,
+            "macro_f1": 0.9523100290192955,
+            "macro_precision": 0.9459541754875836,
+            "macro_recall": 0.9603173116937161
+          }
+        },
+        "output_sha256": {
+          "class_report.csv": "49af59368662b1a6cd9a2eb819ac9bf449283f6bfe1d7db47f2a3d48c9c4fde0",
+          "confusion_matrix.csv": "236bd213b776b9b85c80c3a6601758eec01937fdecdba81229cbf6c82acf675e",
+          "confusion_matrix_normalized.csv": "e50ae9f64d9daaa8ffc26523fcea2e68ffca11ad9bbb531c0fff69ed9fb07b99",
+          "test_metrics.json": "db5c7c4f27524545dcaa03b0b87d827b4cab085a1d0bef3148941285867ff338",
+          "test_predictions.csv": "f5e74ab5d32ba7db7dbea742a3a863e561064bb6f5ffeffa7d462e5409c62909"
+        }
+      },
+      {
+        "model": "wtconv_pmam",
+        "dataset": "realwaste",
+        "seed": 14,
+        "full_test": true,
+        "test_samples": 712,
+        "accuracy": 0.952247191011236,
+        "macro_f1": 0.953384861548463,
+        "checkpoint_epoch": 29,
+        "checkpoint_sha256": "7a3c3320f80e865bd8eca9368ac81130fe69f52d30e386065b200a57b18e3f6e",
+        "elapsed_seconds": 62.35900000005495,
+        "comparison": {
+          "full_test": true,
+          "compared_samples": 712,
+          "comparison_scope": "full_test",
+          "prediction_agreement": 1.0,
+          "changed_predictions": 0,
+          "changed_sample_ids": [],
+          "max_abs_logit_difference": 7.977182006735362e-06,
+          "metric_deltas": {
+            "accuracy": 0.0,
+            "macro_f1": 0.0,
+            "macro_precision": 0.0,
+            "macro_recall": 0.0
+          },
+          "reference_metrics": {
+            "n_samples": 712,
+            "accuracy": 0.952247191011236,
+            "macro_f1": 0.953384861548463,
+            "macro_precision": 0.9544424648054554,
+            "macro_recall": 0.9532366600742842
+          }
+        },
+        "output_sha256": {
+          "class_report.csv": "008e7cc1753c2ca48a07d8f8d3556dc586428cb0f119a60d78aa3789df559683",
+          "confusion_matrix.csv": "829db7b31edc0d05fd8ba9901ce32a4a78d1ccb23ea28725045e4113855a518f",
+          "confusion_matrix_normalized.csv": "9cd915aac87c226cf1aba9c910b5b64fe7795c868112fd6279c520fddc970221",
+          "test_metrics.json": "1a74c57934b854c0f0959a25fdc4150248dcbc6402b57a88020715d94d76ea54",
+          "test_predictions.csv": "bb56c083f8ba106c89ef90f04f4bb8e4db6b8bc7fb2fd1cdbd302162507eb511"
+        }
+      },
+      {
+        "model": "wavetrinext",
+        "dataset": "trashnet",
+        "seed": 14,
+        "full_test": true,
+        "test_samples": 377,
+        "accuracy": 0.9734748010610079,
+        "macro_f1": 0.9694359373122836,
+        "checkpoint_epoch": 22,
+        "checkpoint_sha256": "31b9a861510b0d8c112847cf1b42a376eeeb80b31c86468bceebd54cab19518a",
+        "elapsed_seconds": 29.578000000095926,
+        "comparison": {
+          "full_test": true,
+          "compared_samples": 377,
+          "comparison_scope": "full_test",
+          "prediction_agreement": 1.0,
+          "changed_predictions": 0,
+          "changed_sample_ids": [],
+          "max_abs_logit_difference": 5.565960693454386e-06,
+          "metric_deltas": {
+            "accuracy": 0.0,
+            "macro_f1": 0.0,
+            "macro_precision": 0.0,
+            "macro_recall": 0.0
+          },
+          "reference_metrics": {
+            "n_samples": 377,
+            "accuracy": 0.9734748010610079,
+            "macro_f1": 0.9694359373122836,
+            "macro_precision": 0.9623554640419156,
+            "macro_recall": 0.9787130669995839
+          }
+        },
+        "output_sha256": {
+          "class_report.csv": "2536d166a6fb709db02cbb7f0da9c837910f86f9d865b509eb57affa53ba8035",
+          "confusion_matrix.csv": "4e9bfd11d543f75ddf86289928afa71de781cd29095d09330a055cbd0ca422e1",
+          "confusion_matrix_normalized.csv": "c48c318a7947814d49656ada7b4e28277043ae0a0abd91a7ba31fd20c462488c",
+          "test_metrics.json": "8bad6258a344553c9759c1fb5c1c9ee69e0c6dc978596331f08147c8a4ff101b",
+          "test_predictions.csv": "aa6112c2d1df82665bb4f969a6d199b201824822f2e73d9c8d9f9a17a2b19925"
+        }
+      },
+      {
+        "model": "wavetrinext",
+        "dataset": "realwaste",
+        "seed": 14,
+        "full_test": true,
+        "test_samples": 712,
+        "accuracy": 0.949438202247191,
+        "macro_f1": 0.9485664438348211,
+        "checkpoint_epoch": 30,
+        "checkpoint_sha256": "2a26e5e41e1205a451a67c547807b4930023a7dd9385b49042a10c8b775c3955",
+        "elapsed_seconds": 49.98499999998603,
+        "comparison": {
+          "full_test": true,
+          "compared_samples": 712,
+          "comparison_scope": "full_test",
+          "prediction_agreement": 1.0,
+          "changed_predictions": 0,
+          "changed_sample_ids": [],
+          "max_abs_logit_difference": 1.0894119262694346e-05,
+          "metric_deltas": {
+            "accuracy": 0.0,
+            "macro_f1": 0.0,
+            "macro_precision": 0.0,
+            "macro_recall": 0.0
+          },
+          "reference_metrics": {
+            "n_samples": 712,
+            "accuracy": 0.949438202247191,
+            "macro_f1": 0.9485664438348211,
+            "macro_precision": 0.9536244586666682,
+            "macro_recall": 0.9455442642915008
+          }
+        },
+        "output_sha256": {
+          "class_report.csv": "78f88351862cbcf3f0e3d9eee9d89d9d4e3d9e54451d01847102c519cc91dd6a",
+          "confusion_matrix.csv": "3f5333a00049475e687bbeb595454d928da91ccf54a74ed249479f837da0e726",
+          "confusion_matrix_normalized.csv": "f326929497028546d4e21112ed36d45a8f6677c1a842ef4344f03c6f3ec15d05",
+          "test_metrics.json": "71e2d6ce6703e67e97434fa0fd07c24a16abedb8232960745a1409abac1b3dce",
+          "test_predictions.csv": "840ae242a287b5b58bbeaa2799b48ab6874d74a327cc1d4b1a622002cd738a44"
+        }
+      }
+    ]
+  },
+  "partial_test_validation": {
+    "reproduction_command": "python scripts/evaluate.py --model wavetrinext --datasets trashnet realwaste --seeds 14 42 70 --device cpu --limit 4 --output outputs/evaluation_partial_check",
+    "completed_runs": 6,
+    "evaluated_prediction_rows": 24,
+    "all_full_test_false": true,
+    "summary_groups": 2,
+    "seeds_per_group": [
+      "14,42,70",
+      "14,42,70"
+    ],
+    "all_predictions_match_archive": true,
+    "all_accuracy_macro_f1_deltas_zero": true,
+    "max_abs_logit_difference": 5.0102961730580375e-06,
+    "no_paper_table": true,
+    "partial_warning_in_readme": true,
+    "repeat_cli_exit_code": 1,
+    "repeat_cli_error": "Evaluation output must be a new or empty directory; existing files are never overwritten",
+    "all_40_output_hashes_unchanged_after_repeat": true
+  },
+  "unit_tests": {
+    "date": "2026-11-09",
+    "scope": "Independent evaluator integrity, comparison, and seed-level reporting; no model inference or training",
+    "test_file": "tests/test_evaluation.py",
+    "command": "python -m unittest discover -s tests -p test_evaluation.py -v",
+    "runner": "stdlib unittest",
+    "exit_code": 0,
+    "total": 20,
+    "passed": 19,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 1,
+    "duration_seconds": 1.193,
+    "skip_details": [
+      {
+        "test": "EvaluationIntegrityTests.test_symlink_to_archive_cannot_bypass_output_guard",
+        "reason": "Windows denied creation of a directory symlink (WinError 1314, required privilege not held). Actual symlink traversal was not executed. Direct protected-path, ancestor-path, and nonempty-output checks passed."
+      }
+    ],
+    "checks": [
+      "Checkpoint manifest identity, byte digest, expected digest, selected epoch, model/dataset/seed and class order",
+      "Dataset manifest class-name/label ordering even with a matching inventory digest",
+      "Protected archive/output paths and preservation of existing output content",
+      "Archived predictions aligned by sample_id rather than CSV row order",
+      "Changed predictions produce metric deltas; duplicate/missing IDs and inconsistent labels/logits rejected",
+      "Partial comparisons restricted to the same archived sample subset and cannot claim full_test",
+      "Three seeds summarized as seed-level mean and sample SD (ddof=1), without tripling test sample size",
+      "Single-seed SD remains undefined; partial/full summaries separated; repeated seeds rejected"
+    ],
+    "source_review": {
+      "finding": "No blocking reproducibility defects found in reviewed evaluator path",
+      "model_forward": "WaveTriNeXt default forward returns the same logits_cls used by its original evaluator; auxiliary heads are not fused into predictions",
+      "loss": "Standalone base.evaluate reports main cross entropy, matching original WaveTriNeXt loss=main_ce",
+      "data_path": "Reuses the original fixed class order, EXIF transpose/RGB conversion, ConvNeXt Tiny IMAGENET1K_V1 transform, and unshuffled test loader",
+      "limits": "Pure tests do not establish actual model inference equivalence; parent agent runs separate full test-set inference"
+    }
+  },
+  "integrity": {
+    "frozen_source_files_unchanged": 10,
+    "archived_result_files_unchanged": 240
+  },
+  "adapter_sha256": {
+    "scripts/evaluate.py": "5c0aa1ba06032ab62e1173b501f7f05dbfca5652bceb6eb5a1866f82ba2b2375",
+    "src/waste_reliability/evaluation.py": "8d502b9ac0dfa1bea8b9a0ca0dd39d57831a3cd85c4753695fbfe2b4fa485bc5",
+    "tests/test_evaluation.py": "3cfe67f38f36e801abfeb1dac88135f623c43a1cb1830829c4585facea8708d8"
+  },
+  "limits": [
+    "The recorded reproduction commands use portable example output locations; local validation outputs were stored outside the release folder.",
+    "Full test-set inference was checked for seed 14 across all five models and both datasets; the other 20 checkpoints were not all re-evaluated on full test sets in this check.",
+    "Six partial WaveTriNeXt runs check all three seeds and both datasets, using four test images per run. Partial scores are not paper scores.",
+    "The original experiments used CUDA. CPU logits differ slightly while all checked full-test predictions and classification metrics match.",
+    "This is checkpoint inference validation, not a new 30-run training reproduction.",
+    "One real directory-symlink test was skipped because Windows denied creation; other path and overwrite protection checks passed."
+  ]
+}

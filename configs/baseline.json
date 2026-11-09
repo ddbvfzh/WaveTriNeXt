@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "model": "convnext_tiny",
+  "epochs": 50,
+  "micro_batch_size": 8,
+  "effective_batch_size": 32,
+  "dtype": "float32",
+  "device": "cuda",
+  "weights_enum": "ConvNeXt_Tiny_Weights.IMAGENET1K_V1",
+  "optimizer": "AdamW",
+  "backbone_lr": 0.0001,
+  "head_lr": 0.001,
+  "betas": [
+    0.9,
+    0.999
+  ],
+  "eps": 1e-08,
+  "weight_decay": 0.05,
+  "no_decay": "bias, normalization, LayerScale",
+  "warmup_epochs": 5,
+  "scheduler": "update-wise linear warmup + cosine",
+  "minimum_lr_ratio": 0.01,
+  "label_smoothing": 0.1,
+  "clip_grad_norm": 1.0,
+  "drop_path": 0.1,
+  "input_size": 224,
+  "eval_resize": 236,
+  "augmentation": {
+    "random_resized_crop_scale": [
+      0.8,
+      1.0
+    ],
+    "ratio": [
+      0.75,
+      1.3333333333333333
+    ],
+    "horizontal_flip": 0.5
+  },
+  "selection": "max validation macro_f1; ties min ordinary cross_entropy; ties earliest epoch",
+  "determinism": "seeded all RNGs; deterministic_algorithms warn_only; no bitwise cross-device guarantee",
+  "alias": "baseline",
+  "datasets": [
+    "trashnet",
+    "realwaste"
+  ],
+  "seeds": [
+    14,
+    42,
+    70
+  ],
+  "parameter_counts": {
+    "trashnet": 27824742,
+    "realwaste": 27827049
+  }
+}

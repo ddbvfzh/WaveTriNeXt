@@ -1,0 +1,84 @@
+{
+  "classes": [
+    "cardboard",
+    "food organics",
+    "glass",
+    "metal",
+    "miscellaneous trash",
+    "paper",
+    "plastic",
+    "textile trash",
+    "vegetation"
+  ],
+  "n_samples": 712,
+  "accuracy": 0.949438202247191,
+  "macro_f1": 0.9485664438348211,
+  "macro_precision": 0.9536244586666682,
+  "macro_recall": 0.9455442642915008,
+  "per_class": [
+    {
+      "class_name": "cardboard",
+      "precision": 1.0,
+      "recall": 0.9565217391304348,
+      "f1": 0.9777777777777777,
+      "support": 69
+    },
+    {
+      "class_name": "food organics",
+      "precision": 0.96875,
+      "recall": 1.0,
+      "f1": 0.9841269841269841,
+      "support": 62
+    },
+    {
+      "class_name": "glass",
+      "precision": 0.9545454545454546,
+      "recall": 1.0,
+      "f1": 0.9767441860465117,
+      "support": 63
+    },
+    {
+      "class_name": "metal",
+      "precision": 0.8863636363636364,
+      "recall": 0.9915254237288136,
+      "f1": 0.936,
+      "support": 118
+    },
+    {
+      "class_name": "miscellaneous trash",
+      "precision": 0.9117647058823529,
+      "recall": 0.8378378378378378,
+      "f1": 0.8732394366197184,
+      "support": 74
+    },
+    {
+      "class_name": "paper",
+      "precision": 0.961038961038961,
+      "recall": 0.9866666666666667,
+      "f1": 0.9736842105263157,
+      "support": 75
+    },
+    {
+      "class_name": "plastic",
+      "precision": 0.9699248120300752,
+      "recall": 0.9347826086956522,
+      "f1": 0.952029520295203,
+      "support": 138
+    },
+    {
+      "class_name": "textile trash",
+      "precision": 0.9302325581395349,
+      "recall": 0.8333333333333334,
+      "f1": 0.8791208791208791,
+      "support": 48
+    },
+    {
+      "class_name": "vegetation",
+      "precision": 1.0,
+      "recall": 0.9692307692307692,
+      "f1": 0.9843749999999999,
+      "support": 65
+    }
+  ],
+  "loss": 0.27886733682040715
+}

@@ -1,0 +1,117 @@
+{
+  "date": "2026-11-08",
+  "status": "passed",
+  "device": "cpu",
+  "torch": "2.8.0+xpu",
+  "scope": "Engineering smoke audit only; no formal 50-epoch paper runs retrained",
+  "model_gradient_checks": [
+    {
+      "model": "baseline",
+      "status": "passed",
+      "synthetic_train_samples": 6,
+      "input_size": 224,
+      "micro_batch_size": 2,
+      "test_effective_batch": 4,
+      "optimizer_updates": 2,
+      "finite_loss": 1.9999798933664958,
+      "nonzero_finite_gradient_roles": [
+        "backbone",
+        "head"
+      ],
+      "backbone_updated": true,
+      "evaluation": "passed",
+      "archived_seed14_checkpoint_strict_load": "passed"
+    },
+    {
+      "model": "pmam",
+      "status": "passed",
+      "synthetic_train_samples": 6,
+      "input_size": 224,
+      "micro_batch_size": 2,
+      "test_effective_batch": 4,
+      "optimizer_updates": 2,
+      "finite_loss": 2.6111526489257812,
+      "nonzero_finite_gradient_roles": [
+        "attention",
+        "backbone",
+        "head"
+      ],
+      "backbone_updated": true,
+      "evaluation": "passed",
+      "archived_seed14_checkpoint_strict_load": "passed"
+    },
+    {
+      "model": "wtconv",
+      "status": "passed",
+      "synthetic_train_samples": 6,
+      "input_size": 224,
+      "micro_batch_size": 2,
+      "test_effective_batch": 4,
+      "optimizer_updates": 2,
+      "finite_loss": 2.0050636529922485,
+      "nonzero_finite_gradient_roles": [
+        "backbone",
+        "head",
+        "wavelet"
+      ],
+      "backbone_updated": true,
+      "evaluation": "passed",
+      "archived_seed14_checkpoint_strict_load": "passed"
+    },
+    {
+      "model": "wtconv_pmam",
+      "status": "passed",
+      "synthetic_train_samples": 6,
+      "input_size": 224,
+      "micro_batch_size": 2,
+      "test_effective_batch": 4,
+      "optimizer_updates": 2,
+      "finite_loss": 2.5459250609079995,
+      "nonzero_finite_gradient_roles": [
+        "attention",
+        "backbone",
+        "head",
+        "wavelet"
+      ],
+      "backbone_updated": true,
+      "evaluation": "passed",
+      "archived_seed14_checkpoint_strict_load": "passed"
+    },
+    {
+      "model": "wavetrinext",
+      "status": "passed",
+      "synthetic_train_samples": 6,
+      "input_size": 224,
+      "micro_batch_size": 2,
+      "test_effective_batch": 4,
+      "optimizer_updates": 2,
+      "finite_loss": 2.7698470751444497,
+      "nonzero_finite_gradient_roles": [
+        "attention",
+        "backbone",
+        "head",
+        "triregion",
+        "wavelet"
+      ],
+      "backbone_updated": true,
+      "evaluation": "passed",
+      "archived_seed14_checkpoint_strict_load": "passed"
+    }
+  ],
+  "portable_training_transaction": {
+    "model": "wavetrinext",
+    "status": "passed",
+    "epochs": 2,
+    "simulated_interruption_after_epoch": 1,
+    "resumed_from_last_pt": true,
+    "training_rows": 6,
+    "validation_rows": 6,
+    "test_rows": 6,
+    "source_rows": "Eighteen historical training-split images; artificial audit-only split, not paper metrics",
+    "best_and_last_checkpoint_writes": "passed",
+    "test_prediction_and_metric_export": "passed",
+    "completion_hashes": "passed"
+  },
+  "elapsed_seconds": 17.48499999998603,
+  "original_checkpoints_modified": false
+}

@@ -1,0 +1,207 @@
+{
+  "baseline": {
+    "original_experiment": "convnext_t_baseline_cuda_v1",
+    "runs": [
+      {
+        "dataset": "realwaste",
+        "seed": 14,
+        "original_run": "convnext_tiny__realwaste__seed14",
+        "packaged_run": "results/baseline/realwaste/seed_14"
+      },
+      {
+        "dataset": "realwaste",
+        "seed": 42,
+        "original_run": "convnext_tiny__realwaste__seed42",
+        "packaged_run": "results/baseline/realwaste/seed_42"
+      },
+      {
+        "dataset": "realwaste",
+        "seed": 70,
+        "original_run": "convnext_tiny__realwaste__seed70",
+        "packaged_run": "results/baseline/realwaste/seed_70"
+      },
+      {
+        "dataset": "trashnet",
+        "seed": 14,
+        "original_run": "convnext_tiny__trashnet__seed14",
+        "packaged_run": "results/baseline/trashnet/seed_14"
+      },
+      {
+        "dataset": "trashnet",
+        "seed": 42,
+        "original_run": "convnext_tiny__trashnet__seed42",
+        "packaged_run": "results/baseline/trashnet/seed_42"
+      },
+      {
+        "dataset": "trashnet",
+        "seed": 70,
+        "original_run": "convnext_tiny__trashnet__seed70",
+        "packaged_run": "results/baseline/trashnet/seed_70"
+      }
+    ]
+  },
+  "pmam": {
+    "original_experiment": "convnext_t_improved_pmam_parallel_s34_v1",
+    "runs": [
+      {
+        "dataset": "realwaste",
+        "seed": 14,
+        "original_run": "convnext_tiny_improved_pmam_parallel_s34__realwaste__seed14",
+        "packaged_run": "results/pmam/realwaste/seed_14"
+      },
+      {
+        "dataset": "realwaste",
+        "seed": 42,
+        "original_run": "convnext_tiny_improved_pmam_parallel_s34__realwaste__seed42",
+        "packaged_run": "results/pmam/realwaste/seed_42"
+      },
+      {
+        "dataset": "realwaste",
+        "seed": 70,
+        "original_run": "convnext_tiny_improved_pmam_parallel_s34__realwaste__seed70",
+        "packaged_run": "results/pmam/realwaste/seed_70"
+      },
+      {
+        "dataset": "trashnet",
+        "seed": 14,
+        "original_run": "convnext_tiny_improved_pmam_parallel_s34__trashnet__seed14",
+        "packaged_run": "results/pmam/trashnet/seed_14"
+      },
+      {
+        "dataset": "trashnet",
+        "seed": 42,
+        "original_run": "convnext_tiny_improved_pmam_parallel_s34__trashnet__seed42",
+        "packaged_run": "results/pmam/trashnet/seed_42"
+      },
+      {
+        "dataset": "trashnet",
+        "seed": 70,
+        "original_run": "convnext_tiny_improved_pmam_parallel_s34__trashnet__seed70",
+        "packaged_run": "results/pmam/trashnet/seed_70"
+      }
+    ]
+  },
+  "wtconv": {
+    "original_experiment": "convnext_t_wtconv_s12_v1",
+    "runs": [
+      {
+        "dataset": "realwaste",
+        "seed": 14,
+        "original_run": "convnext_tiny_wtconv_s12__realwaste__seed14",
+        "packaged_run": "results/wtconv/realwaste/seed_14"
+      },
+      {
+        "dataset": "realwaste",
+        "seed": 42,
+        "original_run": "convnext_tiny_wtconv_s12__realwaste__seed42",
+        "packaged_run": "results/wtconv/realwaste/seed_42"
+      },
+      {
+        "dataset": "realwaste",
+        "seed": 70,
+        "original_run": "convnext_tiny_wtconv_s12__realwaste__seed70",
+        "packaged_run": "results/wtconv/realwaste/seed_70"
+      },
+      {
+        "dataset": "trashnet",
+        "seed": 14,
+        "original_run": "convnext_tiny_wtconv_s12__trashnet__seed14",
+        "packaged_run": "results/wtconv/trashnet/seed_14"
+      },
+      {
+        "dataset": "trashnet",
+        "seed": 42,
+        "original_run": "convnext_tiny_wtconv_s12__trashnet__seed42",
+        "packaged_run": "results/wtconv/trashnet/seed_42"
+      },
+      {
+        "dataset": "trashnet",
+        "seed": 70,
+        "original_run": "convnext_tiny_wtconv_s12__trashnet__seed70",
+        "packaged_run": "results/wtconv/trashnet/seed_70"
+      }
+    ]
+  },
+  "wtconv_pmam": {
+    "original_experiment": "convnext_t_improved_pmam_parallel_s34_wtconv_s12_v1",
+    "runs": [
+      {
+        "dataset": "realwaste",
+        "seed": 14,
+        "original_run": "convnext_tiny_improved_pmam_parallel_s34_wtconv_s12__realwaste__seed14",
+        "packaged_run": "results/wtconv_pmam/realwaste/seed_14"
+      },
+      {
+        "dataset": "realwaste",
+        "seed": 42,
+        "original_run": "convnext_tiny_improved_pmam_parallel_s34_wtconv_s12__realwaste__seed42",
+        "packaged_run": "results/wtconv_pmam/realwaste/seed_42"
+      },
+      {
+        "dataset": "realwaste",
+        "seed": 70,
+        "original_run": "convnext_tiny_improved_pmam_parallel_s34_wtconv_s12__realwaste__seed70",
+        "packaged_run": "results/wtconv_pmam/realwaste/seed_70"
+      },
+      {
+        "dataset": "trashnet",
+        "seed": 14,
+        "original_run": "convnext_tiny_improved_pmam_parallel_s34_wtconv_s12__trashnet__seed14",
+        "packaged_run": "results/wtconv_pmam/trashnet/seed_14"
+      },
+      {
+        "dataset": "trashnet",
+        "seed": 42,
+        "original_run": "convnext_tiny_improved_pmam_parallel_s34_wtconv_s12__trashnet__seed42",
+        "packaged_run": "results/wtconv_pmam/trashnet/seed_42"
+      },
+      {
+        "dataset": "trashnet",
+        "seed": 70,
+        "original_run": "convnext_tiny_improved_pmam_parallel_s34_wtconv_s12__trashnet__seed70",
+        "packaged_run": "results/wtconv_pmam/trashnet/seed_70"
+      }
+    ]
+  },
+  "wavetrinext": {
+    "original_experiment": "convnext_t_pmam_wtconv_wavelet_guided_trihead_fg01_v1",
+    "runs": [
+      {
+        "dataset": "realwaste",
+        "seed": 14,
+        "original_run": "convnext_tiny_pmam_wtconv_wavelet_guided_trihead_fg01__realwaste__seed14",
+        "packaged_run": "results/wavetrinext/realwaste/seed_14"
+      },
+      {
+        "dataset": "realwaste",
+        "seed": 42,
+        "original_run": "convnext_tiny_pmam_wtconv_wavelet_guided_trihead_fg01__realwaste__seed42",
+        "packaged_run": "results/wavetrinext/realwaste/seed_42"
+      },
+      {
+        "dataset": "realwaste",
+        "seed": 70,
+        "original_run": "convnext_tiny_pmam_wtconv_wavelet_guided_trihead_fg01__realwaste__seed70",
+        "packaged_run": "results/wavetrinext/realwaste/seed_70"
+      },
+      {
+        "dataset": "trashnet",
+        "seed": 14,
+        "original_run": "convnext_tiny_pmam_wtconv_wavelet_guided_trihead_fg01__trashnet__seed14",
+        "packaged_run": "results/wavetrinext/trashnet/seed_14"
+      },
+      {
+        "dataset": "trashnet",
+        "seed": 42,
+        "original_run": "convnext_tiny_pmam_wtconv_wavelet_guided_trihead_fg01__trashnet__seed42",
+        "packaged_run": "results/wavetrinext/trashnet/seed_42"
+      },
+      {
+        "dataset": "trashnet",
+        "seed": 70,
+        "original_run": "convnext_tiny_pmam_wtconv_wavelet_guided_trihead_fg01__trashnet__seed70",
+        "packaged_run": "results/wavetrinext/trashnet/seed_70"
+      }
+    ]
+  }
+}

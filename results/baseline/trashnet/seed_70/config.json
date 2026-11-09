@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "model": "convnext_tiny",
+  "dataset": "trashnet",
+  "seed": 70,
+  "classes": [
+    "cardboard",
+    "glass",
+    "metal",
+    "paper",
+    "plastic",
+    "trash"
+  ],
+  "epochs": 50,
+  "micro_batch_size": 8,
+  "effective_batch_size": 32,
+  "dtype": "float32",
+  "device": "cuda",
+  "manifest_sha256": "9d32697c1727100b8ea6fda61261ff2ab2fe71d078c196f5dd1b5cda05cf804e",
+  "weights_sha256": "983f1562536e84ff750a1576fb08e54de751dbf2e17c0d8a4a13704341fdcd3d",
+  "weights_enum": "ConvNeXt_Tiny_Weights.IMAGENET1K_V1",
+  "code_sha256": {
+    "closed_set_baseline.py": "189c8998b382964630ef69652e129ad934c140ad32dbcd96eb0f51eec2556847",
+    "closed_set_data.py": "729889c835960139fb46def97b1defc2de94fed379bce75c5440e3181e559d01",
+    "closed_set_metrics.py": "787c2536fcf2696623c2a4abf56fffafaf61bc8b75fb4cff8e69b807829be4fc",
+    "data.py": "8c38f6790552361441c7ba8ef1b67293c109caa00a1cd1d36c8d2d442ded02fc"
+  },
+  "torch": "2.8.0+cu128",
+  "torchvision": "0.23.0+cu128",
+  "packages": {
+    "numpy": "2.2.6",
+    "pandas": "2.3.3",
+    "Pillow": "12.1.0",
+    "scipy": "1.15.3"
+  },
+  "optimizer": "AdamW",
+  "backbone_lr": 0.0001,
+  "head_lr": 0.001,
+  "betas": [
+    0.9,
+    0.999
+  ],
+  "eps": 1e-08,
+  "weight_decay": 0.05,
+  "no_decay": "bias, normalization, LayerScale",
+  "warmup_epochs": 5,
+  "scheduler": "update-wise linear warmup + cosine",
+  "minimum_lr_ratio": 0.01,
+  "label_smoothing": 0.1,
+  "clip_grad_norm": 1.0,
+  "drop_path": 0.1,
+  "input_size": 224,
+  "eval_resize": 236,
+  "augmentation": {
+    "random_resized_crop_scale": [
+      0.8,
+      1.0
+    ],
+    "ratio": [
+      0.75,
+      1.3333333333333333
+    ],
+    "horizontal_flip": 0.5
+  },
+  "selection": "max validation macro_f1; ties min ordinary cross_entropy; ties earliest epoch",
+  "determinism": "seeded all RNGs; deterministic_algorithms warn_only; no bitwise cross-device guarantee"
+}

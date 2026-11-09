@@ -1,0 +1,1442 @@
+[
+  {
+    "path": "results/baseline/realwaste/seed_14/config.json",
+    "sha256": "0f374d9f08e04769231ee8d0d0bb1dd3f7246dd9338f988abcf1689abd25a767",
+    "bytes": 1965,
+    "source_run": "convnext_tiny__realwaste__seed14"
+  },
+  {
+    "path": "results/baseline/realwaste/seed_14/complete.json",
+    "sha256": "754e0253354249f4b073e3c74c32b4e32f368b36235bc7191dd1aefbb46e0d56",
+    "bytes": 7928,
+    "source_run": "convnext_tiny__realwaste__seed14"
+  },
+  {
+    "path": "results/baseline/realwaste/seed_14/history.csv",
+    "sha256": "3f0d4b6311d2f93bfd2e7b604b568f8df195600ad330fbeaa18299d511470a4a",
+    "bytes": 8475,
+    "source_run": "convnext_tiny__realwaste__seed14"
+  },
+  {
+    "path": "results/baseline/realwaste/seed_14/test_metrics.json",
+    "sha256": "c877e2811d21d35b775aabcd43d077d7f28c0fb926cac10b7f3529dd5ea44b6b",
+    "bytes": 4090,
+    "source_run": "convnext_tiny__realwaste__seed14"
+  },
+  {
+    "path": "results/baseline/realwaste/seed_14/test_predictions.csv",
+    "sha256": "aac4358444ed28d268b27f97bc4f19cb903ec5ee724a9cbc78f625be082ddecc",
+    "bytes": 112060,
+    "source_run": "convnext_tiny__realwaste__seed14"
+  },
+  {
+    "path": "results/baseline/realwaste/seed_14/class_report.csv",
+    "sha256": "5ee6b2e501b0f0b04ab7fad3624448306326515a2174194ece2cbbc4b308944f",
+    "bytes": 606,
+    "source_run": "convnext_tiny__realwaste__seed14"
+  },
+  {
+    "path": "results/baseline/realwaste/seed_14/confusion_matrix.csv",
+    "sha256": "0dfd6406b228d929498d97214889ac07b088606c249301c2edc6f9c203206953",
+    "bytes": 384,
+    "source_run": "convnext_tiny__realwaste__seed14"
+  },
+  {
+    "path": "results/baseline/realwaste/seed_14/confusion_matrix_normalized.csv",
+    "sha256": "91a1d1e53ee9448689ca31fe812a231c7f819e24b0044a31509359a94deae7ea",
+    "bytes": 859,
+    "source_run": "convnext_tiny__realwaste__seed14"
+  },
+  {
+    "path": "results/baseline/realwaste/seed_14/confusion_matrix.png",
+    "sha256": "a91f90d32e2739e4bf2f8197eee92d56385b8603fe69e71f40b430250bbc5432",
+    "bytes": 121682,
+    "source_run": "convnext_tiny__realwaste__seed14"
+  },
+  {
+    "path": "results/baseline/realwaste/seed_14/confusion_matrix_normalized.png",
+    "sha256": "aebfc123550965c14e3e007921b483ae03a3d1d24072cff99081ac449bc3650c",
+    "bytes": 136360,
+    "source_run": "convnext_tiny__realwaste__seed14"
+  },
+  {
+    "path": "results/baseline/realwaste/seed_14/training_curves.png",
+    "sha256": "f2735b361ee2e62a087c55fc3c87bf971aae15eb348716e0c039ea9b80f3e056",
+    "bytes": 89576,
+    "source_run": "convnext_tiny__realwaste__seed14"
+  },
+  {
+    "path": "results/baseline/realwaste/seed_42/config.json",
+    "sha256": "b4e03ea06be63284c47bb56613be7ed37ee465aa79232edbdb83903d6d2416d3",
+    "bytes": 1965,
+    "source_run": "convnext_tiny__realwaste__seed42"
+  },
+  {
+    "path": "results/baseline/realwaste/seed_42/complete.json",
+    "sha256": "f6ff8a120d754bb1a870ecadf4ef7770b992706946349c36c865768fde553547",
+    "bytes": 7938,
+    "source_run": "convnext_tiny__realwaste__seed42"
+  },
+  {
+    "path": "results/baseline/realwaste/seed_42/history.csv",
+    "sha256": "c92773064659afad8b4b380a60d35b7170b7269698378b1f1b03eb222347cbda",
+    "bytes": 8514,
+    "source_run": "convnext_tiny__realwaste__seed42"
+  },
+  {
+    "path": "results/baseline/realwaste/seed_42/test_metrics.json",
+    "sha256": "78da7809e2d34aa62210530147bdba46d8f07cc831c47c36f6525c9a6fe2bb5b",
+    "bytes": 4207,
+    "source_run": "convnext_tiny__realwaste__seed42"
+  },
+  {
+    "path": "results/baseline/realwaste/seed_42/test_predictions.csv",
+    "sha256": "e640557e9d08a51577063f731d8481a7bc258d508cdd752cc0e1385e2d8430cf",
+    "bytes": 112292,
+    "source_run": "convnext_tiny__realwaste__seed42"
+  },
+  {
+    "path": "results/baseline/realwaste/seed_42/class_report.csv",
+    "sha256": "2e7c41fc6926fceb3cb6f4e9854f1b93455a05a3a6c3dafe95cd41bac04bd615",
+    "bytes": 612,
+    "source_run": "convnext_tiny__realwaste__seed42"
+  },
+  {
+    "path": "results/baseline/realwaste/seed_42/confusion_matrix.csv",
+    "sha256": "d3db6cbd67acce25b2aa54519632bbdff275267ed031f4675681a8fc7650e1a6",
+    "bytes": 384,
+    "source_run": "convnext_tiny__realwaste__seed42"
+  },
+  {
+    "path": "results/baseline/realwaste/seed_42/confusion_matrix_normalized.csv",
+    "sha256": "bcea5c960882fc442536b16e261cce2d4b2fe8d8bbf6eaf54c11fef868bfaa35",
+    "bytes": 970,
+    "source_run": "convnext_tiny__realwaste__seed42"
+  },
+  {
+    "path": "results/baseline/realwaste/seed_42/confusion_matrix.png",
+    "sha256": "c5b3a444b524280623a3ef376352a3db81f1ec374a8b6986f4cdf8335e499c35",
+    "bytes": 121977,
+    "source_run": "convnext_tiny__realwaste__seed42"
+  },
+  {
+    "path": "results/baseline/realwaste/seed_42/confusion_matrix_normalized.png",
+    "sha256": "064a8da652b6588bd26163633a16b179fd0b260f81c73a4c1e8a5be73d90b1da",
+    "bytes": 138731,
+    "source_run": "convnext_tiny__realwaste__seed42"
+  },
+  {
+    "path": "results/baseline/realwaste/seed_42/training_curves.png",
+    "sha256": "bfd6ab829a45c29605de246285c0e181c0509ca399e8786351042eb6bfb9211e",
+    "bytes": 90232,
+    "source_run": "convnext_tiny__realwaste__seed42"
+  },
+  {
+    "path": "results/baseline/realwaste/seed_70/config.json",
+    "sha256": "cd5aae89ec3a10ab3407156e8416396a4c1af64771144244c23935741edee518",
+    "bytes": 1965,
+    "source_run": "convnext_tiny__realwaste__seed70"
+  },
+  {
+    "path": "results/baseline/realwaste/seed_70/complete.json",
+    "sha256": "03ea9f80336f9d4efc37d7565250ff4ea8f145fc21d2516a7b3ab3ee7b454f55",
+    "bytes": 7829,
+    "source_run": "convnext_tiny__realwaste__seed70"
+  },
+  {
+    "path": "results/baseline/realwaste/seed_70/history.csv",
+    "sha256": "433e36a5967e0a3d1189de5f2be16872e99a13fc863db524050e164f3807c872",
+    "bytes": 8500,
+    "source_run": "convnext_tiny__realwaste__seed70"
+  },
+  {
+    "path": "results/baseline/realwaste/seed_70/test_metrics.json",
+    "sha256": "edbe385891eeaaed0153a0e1c738c81eb513412a9392c68666e1bb17a1cdac14",
+    "bytes": 4214,
+    "source_run": "convnext_tiny__realwaste__seed70"
+  },
+  {
+    "path": "results/baseline/realwaste/seed_70/test_predictions.csv",
+    "sha256": "f1f1b0824f05f1b64ac7201aa0c4168a489f1f42012a0b4a44d3429b0849e49c",
+    "bytes": 112050,
+    "source_run": "convnext_tiny__realwaste__seed70"
+  },
+  {
+    "path": "results/baseline/realwaste/seed_70/class_report.csv",
+    "sha256": "5e82d9067d784fbb8717ce205586bf547ba4946ee2e7b980fea49b740a311633",
+    "bytes": 638,
+    "source_run": "convnext_tiny__realwaste__seed70"
+  },
+  {
+    "path": "results/baseline/realwaste/seed_70/confusion_matrix.csv",
+    "sha256": "08c71fd69d89b519d60cad80fef97c69d081de1b605df990c648ebc3620f8bd1",
+    "bytes": 384,
+    "source_run": "convnext_tiny__realwaste__seed70"
+  },
+  {
+    "path": "results/baseline/realwaste/seed_70/confusion_matrix_normalized.csv",
+    "sha256": "bd0ecf11bb67b0ca1c4c4a66b16fe02ed7694c73748f738f6caf92ab19a6d89e",
+    "bytes": 952,
+    "source_run": "convnext_tiny__realwaste__seed70"
+  },
+  {
+    "path": "results/baseline/realwaste/seed_70/confusion_matrix.png",
+    "sha256": "6a46d0ac6c3495761f5ca4c2e069eab18b299fe6c36f2b897ecc95c922f7b53c",
+    "bytes": 121345,
+    "source_run": "convnext_tiny__realwaste__seed70"
+  },
+  {
+    "path": "results/baseline/realwaste/seed_70/confusion_matrix_normalized.png",
+    "sha256": "3cda97c59dc712e604890c3fc063f42b9ae379a2c9fe8e91e96b483a6b60a2f9",
+    "bytes": 138205,
+    "source_run": "convnext_tiny__realwaste__seed70"
+  },
+  {
+    "path": "results/baseline/realwaste/seed_70/training_curves.png",
+    "sha256": "dc2bf0611e98a37f8326f937e7ad932454147f7abe3f4933abf7e15653b4a96e",
+    "bytes": 90748,
+    "source_run": "convnext_tiny__realwaste__seed70"
+  },
+  {
+    "path": "results/baseline/trashnet/seed_14/config.json",
+    "sha256": "46660e802c0202ceba78f593c212e48a9920d3b2927be2903b3004d93b1a1133",
+    "bytes": 1890,
+    "source_run": "convnext_tiny__trashnet__seed14"
+  },
+  {
+    "path": "results/baseline/trashnet/seed_14/complete.json",
+    "sha256": "0a9f974b575cffef92ea76c0791ca5276030491aab67d3c2f3f5f780c3478991",
+    "bytes": 5720,
+    "source_run": "convnext_tiny__trashnet__seed14"
+  },
+  {
+    "path": "results/baseline/trashnet/seed_14/history.csv",
+    "sha256": "6e9c82403ff980e76463fea34c24263b7734a2a85c5da64a346e748f6f4b6fa6",
+    "bytes": 8151,
+    "source_run": "convnext_tiny__trashnet__seed14"
+  },
+  {
+    "path": "results/baseline/trashnet/seed_14/test_metrics.json",
+    "sha256": "8ecd04fee85bde8284dd7f4c50ffd712497a2b85163b4acc3e5017b3c67dbc54",
+    "bytes": 2368,
+    "source_run": "convnext_tiny__trashnet__seed14"
+  },
+  {
+    "path": "results/baseline/trashnet/seed_14/test_predictions.csv",
+    "sha256": "8460e0ee968f912ef95e0b67a1931bc432af101acf1d3f139dfdf92d6f775946",
+    "bytes": 45112,
+    "source_run": "convnext_tiny__trashnet__seed14"
+  },
+  {
+    "path": "results/baseline/trashnet/seed_14/class_report.csv",
+    "sha256": "e3fbea4a3e404f4d730f8a322e531ec249243a5f579748123d9dc609e8154a80",
+    "bytes": 401,
+    "source_run": "convnext_tiny__trashnet__seed14"
+  },
+  {
+    "path": "results/baseline/trashnet/seed_14/confusion_matrix.csv",
+    "sha256": "81b6b249f6a32825e50f7b9eb5292a94d5cae6d5130cc8e66abd8b4db6b0d0bf",
+    "bytes": 180,
+    "source_run": "convnext_tiny__trashnet__seed14"
+  },
+  {
+    "path": "results/baseline/trashnet/seed_14/confusion_matrix_normalized.csv",
+    "sha256": "fe8770e3fa1a9052b22f05e15f43bad22b21af32b197cc012ecdb95ed93dd395",
+    "bytes": 411,
+    "source_run": "convnext_tiny__trashnet__seed14"
+  },
+  {
+    "path": "results/baseline/trashnet/seed_14/confusion_matrix.png",
+    "sha256": "0f9eb43b12a9a45866eddd3bfe31ec30dbc4d566b761a5fbbf76c5da7760789c",
+    "bytes": 72418,
+    "source_run": "convnext_tiny__trashnet__seed14"
+  },
+  {
+    "path": "results/baseline/trashnet/seed_14/confusion_matrix_normalized.png",
+    "sha256": "57833a04cb574ce8dbc1d5a02ef018c3fc5abb1e17f674e5af3c2c1e0a1921a5",
+    "bytes": 81572,
+    "source_run": "convnext_tiny__trashnet__seed14"
+  },
+  {
+    "path": "results/baseline/trashnet/seed_14/training_curves.png",
+    "sha256": "1b32af6d8bd8d8800cf50e9029fb743289f0edf3688e314500010c66f6c254f2",
+    "bytes": 89071,
+    "source_run": "convnext_tiny__trashnet__seed14"
+  },
+  {
+    "path": "results/baseline/trashnet/seed_42/config.json",
+    "sha256": "ec41f7a656af03051b1b5ecf2978aa6a649b755362c6f59b7d86aa531b093304",
+    "bytes": 1890,
+    "source_run": "convnext_tiny__trashnet__seed42"
+  },
+  {
+    "path": "results/baseline/trashnet/seed_42/complete.json",
+    "sha256": "731e198d73a3457d52ec1d12c9c523731b970b873aafbd595bc2c5fcc20860cf",
+    "bytes": 5599,
+    "source_run": "convnext_tiny__trashnet__seed42"
+  },
+  {
+    "path": "results/baseline/trashnet/seed_42/history.csv",
+    "sha256": "c588e55395ba5a4de438807fc087ef9cd8314fd1c4e21e7557490877753eeeae",
+    "bytes": 8138,
+    "source_run": "convnext_tiny__trashnet__seed42"
+  },
+  {
+    "path": "results/baseline/trashnet/seed_42/test_metrics.json",
+    "sha256": "12512be0a2d7abbea2b1bc51b9671a20fc359f1ea8a2b2b6d074b158a36b0f18",
+    "bytes": 2359,
+    "source_run": "convnext_tiny__trashnet__seed42"
+  },
+  {
+    "path": "results/baseline/trashnet/seed_42/test_predictions.csv",
+    "sha256": "031dc7301775d9642d2bb5e8f1e87674da58e4c82bb44b4fdcd9658f7540152f",
+    "bytes": 45109,
+    "source_run": "convnext_tiny__trashnet__seed42"
+  },
+  {
+    "path": "results/baseline/trashnet/seed_42/class_report.csv",
+    "sha256": "0e1b2cb45e9bc3fa743e463e3f809571da85294b070a01d0e439f960fb993052",
+    "bytes": 389,
+    "source_run": "convnext_tiny__trashnet__seed42"
+  },
+  {
+    "path": "results/baseline/trashnet/seed_42/confusion_matrix.csv",
+    "sha256": "b0313dad2eac0989672b63bf0b7c0c9157fd0b7c7a4793a1f64b6966056d36aa",
+    "bytes": 180,
+    "source_run": "convnext_tiny__trashnet__seed42"
+  },
+  {
+    "path": "results/baseline/trashnet/seed_42/confusion_matrix_normalized.csv",
+    "sha256": "173886c82d07b037af42d724bbed7d46748741ee97a39c39d87f37b228a6fa9f",
+    "bytes": 413,
+    "source_run": "convnext_tiny__trashnet__seed42"
+  },
+  {
+    "path": "results/baseline/trashnet/seed_42/confusion_matrix.png",
+    "sha256": "14774835cacd64dd537389e61e37d06c15fef3d5b83f0ff8a2d16ef9c58e2678",
+    "bytes": 73111,
+    "source_run": "convnext_tiny__trashnet__seed42"
+  },
+  {
+    "path": "results/baseline/trashnet/seed_42/confusion_matrix_normalized.png",
+    "sha256": "997edb50aa8b8104d65099641af1c7c63d02c2e8484187f4dfcaca4cae575a59",
+    "bytes": 82252,
+    "source_run": "convnext_tiny__trashnet__seed42"
+  },
+  {
+    "path": "results/baseline/trashnet/seed_42/training_curves.png",
+    "sha256": "a21df40611e1e845a5d070755e843d9412a1219d53facc76e8aa908a2bedb9fa",
+    "bytes": 86010,
+    "source_run": "convnext_tiny__trashnet__seed42"
+  },
+  {
+    "path": "results/baseline/trashnet/seed_70/config.json",
+    "sha256": "1893e76eef32a2dc59d628d8a56f8c7894ded5609a3e20b4624c6e04d3b17f6d",
+    "bytes": 1890,
+    "source_run": "convnext_tiny__trashnet__seed70"
+  },
+  {
+    "path": "results/baseline/trashnet/seed_70/complete.json",
+    "sha256": "d7f44575c9ae128c20f06054358d46f96a644b4e92902e23b05c624aa1b730ff",
+    "bytes": 5720,
+    "source_run": "convnext_tiny__trashnet__seed70"
+  },
+  {
+    "path": "results/baseline/trashnet/seed_70/history.csv",
+    "sha256": "4a08240d591c08801f228194829b535659a62f7685da8d549d055d548e0575f5",
+    "bytes": 8206,
+    "source_run": "convnext_tiny__trashnet__seed70"
+  },
+  {
+    "path": "results/baseline/trashnet/seed_70/test_metrics.json",
+    "sha256": "2d68d303d6437741465a34b25b9d7cb008238b3a6f0e11edbe234769194c39b1",
+    "bytes": 2371,
+    "source_run": "convnext_tiny__trashnet__seed70"
+  },
+  {
+    "path": "results/baseline/trashnet/seed_70/test_predictions.csv",
+    "sha256": "652adf71657558e144d8fb51de961755a644952ab974c42c8407eb69358d95d4",
+    "bytes": 45136,
+    "source_run": "convnext_tiny__trashnet__seed70"
+  },
+  {
+    "path": "results/baseline/trashnet/seed_70/class_report.csv",
+    "sha256": "4cbdc391ec892178fb9e2ee03cb0f4815d01977a14e07158030f9377ec7bdd2a",
+    "bytes": 403,
+    "source_run": "convnext_tiny__trashnet__seed70"
+  },
+  {
+    "path": "results/baseline/trashnet/seed_70/confusion_matrix.csv",
+    "sha256": "92aa8e23bae4872b901747e888fa50e79ee684cc7b9a951b996a6536591d1a19",
+    "bytes": 180,
+    "source_run": "convnext_tiny__trashnet__seed70"
+  },
+  {
+    "path": "results/baseline/trashnet/seed_70/confusion_matrix_normalized.csv",
+    "sha256": "ee98c64bc85614ecb4165e668d5925881d421154ba6d1e329b5921c73bb75794",
+    "bytes": 412,
+    "source_run": "convnext_tiny__trashnet__seed70"
+  },
+  {
+    "path": "results/baseline/trashnet/seed_70/confusion_matrix.png",
+    "sha256": "328b715a42b881467a69a86bf7bff13b1f3284a20f8c0d389127740efd222238",
+    "bytes": 72841,
+    "source_run": "convnext_tiny__trashnet__seed70"
+  },
+  {
+    "path": "results/baseline/trashnet/seed_70/confusion_matrix_normalized.png",
+    "sha256": "0e571e12961f42d485af01e5ce288c2c25eba6c2f30e5194e4f6cbee0394bd36",
+    "bytes": 82422,
+    "source_run": "convnext_tiny__trashnet__seed70"
+  },
+  {
+    "path": "results/baseline/trashnet/seed_70/training_curves.png",
+    "sha256": "c6e732990370de05f99569026ca4c45d05e32ca821f67b99d499878daaaa78ee",
+    "bytes": 87483,
+    "source_run": "convnext_tiny__trashnet__seed70"
+  },
+  {
+    "path": "results/pmam/realwaste/seed_14/config.json",
+    "sha256": "d274f39c658faf68ea4cfe0d6f8a60d144176be4ca1ae223064ed742e20fa02a",
+    "bytes": 3021,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34__realwaste__seed14"
+  },
+  {
+    "path": "results/pmam/realwaste/seed_14/complete.json",
+    "sha256": "abf6182b52a8f94dc17b36489336ae153997d77017921fb0092a7cb56d189df6",
+    "bytes": 6578,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34__realwaste__seed14"
+  },
+  {
+    "path": "results/pmam/realwaste/seed_14/history.csv",
+    "sha256": "c1ac985639094ce6600f7b519af51bc768311e57772a5d802d80864278538d2b",
+    "bytes": 9744,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34__realwaste__seed14"
+  },
+  {
+    "path": "results/pmam/realwaste/seed_14/test_metrics.json",
+    "sha256": "01146b6d1c0428cc753ec6fc695865d311ad00afde9d3b19bea0343aeba90f8b",
+    "bytes": 1851,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34__realwaste__seed14"
+  },
+  {
+    "path": "results/pmam/realwaste/seed_14/test_predictions.csv",
+    "sha256": "ed24e2e04c4febf6eafc44811d5c93b6675b279ed9929d7ef1e55903f7652f0c",
+    "bytes": 112219,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34__realwaste__seed14"
+  },
+  {
+    "path": "results/pmam/realwaste/seed_14/class_report.csv",
+    "sha256": "5e7d19a9c0d131af537080175dde50611e9a0cf90e661ce35ac0644320c33374",
+    "bytes": 605,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34__realwaste__seed14"
+  },
+  {
+    "path": "results/pmam/realwaste/seed_14/initialization.json",
+    "sha256": "317a07cddbb1d29e86770a44f30b0f0aa3adb156819730710ee459617aa8b314",
+    "bytes": 300,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34__realwaste__seed14"
+  },
+  {
+    "path": "results/pmam/realwaste/seed_42/config.json",
+    "sha256": "bd2f773c5fa643645ee895e45b9b1fedc92d5ffed8ddeb521aae4d93a063f902",
+    "bytes": 3021,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34__realwaste__seed42"
+  },
+  {
+    "path": "results/pmam/realwaste/seed_42/complete.json",
+    "sha256": "3ae98bb8ad28827422b00852e39e14a40d2c74e26d34705059d554e6cd25da3b",
+    "bytes": 6576,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34__realwaste__seed42"
+  },
+  {
+    "path": "results/pmam/realwaste/seed_42/history.csv",
+    "sha256": "524f861346858b205d234ce2f966c53497e53a072aab99c809ee41e2eb2bea85",
+    "bytes": 9617,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34__realwaste__seed42"
+  },
+  {
+    "path": "results/pmam/realwaste/seed_42/test_metrics.json",
+    "sha256": "a12413a86e57cc98fbd71f3421c2c19a0c30ef39c487072dfdb9317a57b12869",
+    "bytes": 1836,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34__realwaste__seed42"
+  },
+  {
+    "path": "results/pmam/realwaste/seed_42/test_predictions.csv",
+    "sha256": "b6f7f43e26374d60db1bb61dbc373e5427c334b04334dbfa161da75aca749a2b",
+    "bytes": 112203,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34__realwaste__seed42"
+  },
+  {
+    "path": "results/pmam/realwaste/seed_42/class_report.csv",
+    "sha256": "8e1d96e65d6b12955627951d02b17535810cdc7a9c27695d62e09cf538019544",
+    "bytes": 590,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34__realwaste__seed42"
+  },
+  {
+    "path": "results/pmam/realwaste/seed_42/initialization.json",
+    "sha256": "093ef94719aa1b29398e76ff43cda8029c45e5c5108955b99545090489580a91",
+    "bytes": 300,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34__realwaste__seed42"
+  },
+  {
+    "path": "results/pmam/realwaste/seed_70/config.json",
+    "sha256": "928348bae048c91fddef666694d4fe55990701c2140a3b7cfe6617f58b8cb814",
+    "bytes": 3021,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34__realwaste__seed70"
+  },
+  {
+    "path": "results/pmam/realwaste/seed_70/complete.json",
+    "sha256": "445c91f707043ca85416bf13563d555b8fed576f2d2c1d6c8b298b2a006210c1",
+    "bytes": 6609,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34__realwaste__seed70"
+  },
+  {
+    "path": "results/pmam/realwaste/seed_70/history.csv",
+    "sha256": "ec65ab1dc0bfb06acf1d479a74b527cec461a25e36bbc25954fd61004804220e",
+    "bytes": 9748,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34__realwaste__seed70"
+  },
+  {
+    "path": "results/pmam/realwaste/seed_70/test_metrics.json",
+    "sha256": "05cdf2f4f4e39b6b77ddecf851da0563089de94b4056821d4b90e802a311671d",
+    "bytes": 1847,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34__realwaste__seed70"
+  },
+  {
+    "path": "results/pmam/realwaste/seed_70/test_predictions.csv",
+    "sha256": "f956ab460d388da34132d6fddfe46d4fd95b1d63bc24efc38005ec89e98de650",
+    "bytes": 112068,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34__realwaste__seed70"
+  },
+  {
+    "path": "results/pmam/realwaste/seed_70/class_report.csv",
+    "sha256": "8b5395900d3ac4845abad1d33b8c8b8cfd51e54c1b63507dc3f70e0c4fad752e",
+    "bytes": 601,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34__realwaste__seed70"
+  },
+  {
+    "path": "results/pmam/realwaste/seed_70/initialization.json",
+    "sha256": "e4d59f72f3770e65d54eed15d1708a8449365ade723b11ba6801c2fa6855e27b",
+    "bytes": 300,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34__realwaste__seed70"
+  },
+  {
+    "path": "results/pmam/trashnet/seed_14/config.json",
+    "sha256": "5a6bd40d410067b07d5982ce3bf5e3474c5e80b6c41810373d522a7784728a5b",
+    "bytes": 2946,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34__trashnet__seed14"
+  },
+  {
+    "path": "results/pmam/trashnet/seed_14/complete.json",
+    "sha256": "b20aead24a326882aaea4f4c582cfdd49ab5e29431ace59088ca01b8b2f3b265",
+    "bytes": 5759,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34__trashnet__seed14"
+  },
+  {
+    "path": "results/pmam/trashnet/seed_14/history.csv",
+    "sha256": "e952fc3461148402206c4684dd2648135b23c38079b593812490ef92c79257cc",
+    "bytes": 9354,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34__trashnet__seed14"
+  },
+  {
+    "path": "results/pmam/trashnet/seed_14/test_metrics.json",
+    "sha256": "f8e8098cebaf4563d9c3769b5da67449c705531083b5e0a2d58de9ebd11c9d7f",
+    "bytes": 1242,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34__trashnet__seed14"
+  },
+  {
+    "path": "results/pmam/trashnet/seed_14/test_predictions.csv",
+    "sha256": "08e6b15b06151cec48b2d5a7e26e19fd73026a6cd1e579b82fdf51c814bd8a29",
+    "bytes": 45212,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34__trashnet__seed14"
+  },
+  {
+    "path": "results/pmam/trashnet/seed_14/class_report.csv",
+    "sha256": "b2e28a3fced96cb0ff3dac4b1098f63b0e6a3dd921723bba3427873823b12d8b",
+    "bytes": 376,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34__trashnet__seed14"
+  },
+  {
+    "path": "results/pmam/trashnet/seed_14/initialization.json",
+    "sha256": "a4bb1e47cb57d5b0c10d7b74448a429ce84375407901284e9d95b8cc2030c97c",
+    "bytes": 300,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34__trashnet__seed14"
+  },
+  {
+    "path": "results/pmam/trashnet/seed_42/config.json",
+    "sha256": "9e6e542435f15d5019272722ca23460c3174a314ec09e2a600ed489362e9d786",
+    "bytes": 2946,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34__trashnet__seed42"
+  },
+  {
+    "path": "results/pmam/trashnet/seed_42/complete.json",
+    "sha256": "c17b90b0da14d3954c7c8354f0df90f137820754256f5ea318ecdf231d677039",
+    "bytes": 5785,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34__trashnet__seed42"
+  },
+  {
+    "path": "results/pmam/trashnet/seed_42/history.csv",
+    "sha256": "abbd977e4ec1fad637154d458a5653e06d99121fa3dfc97483cb768d27495e07",
+    "bytes": 9326,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34__trashnet__seed42"
+  },
+  {
+    "path": "results/pmam/trashnet/seed_42/test_metrics.json",
+    "sha256": "4e4b096c642534d71a7ae5837029c3af7e1632132143bc1e0c8ea9bc236414f4",
+    "bytes": 1214,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34__trashnet__seed42"
+  },
+  {
+    "path": "results/pmam/trashnet/seed_42/test_predictions.csv",
+    "sha256": "de9f9dc24506772d1570f93ee72a151d2067c39a8e2375f6586b8e3d25026894",
+    "bytes": 45189,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34__trashnet__seed42"
+  },
+  {
+    "path": "results/pmam/trashnet/seed_42/class_report.csv",
+    "sha256": "280de04f0426a23330b704d2158af19aec5b49bf1ff68f0102379ac67c5e2e51",
+    "bytes": 348,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34__trashnet__seed42"
+  },
+  {
+    "path": "results/pmam/trashnet/seed_42/initialization.json",
+    "sha256": "621a565ba4fbdfbb7d2a13d58eaa0f0fc9dc0132642f3bcbf26b54a963a0f5af",
+    "bytes": 300,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34__trashnet__seed42"
+  },
+  {
+    "path": "results/pmam/trashnet/seed_70/config.json",
+    "sha256": "2721d961a912e412b0be139b0537aca0fd2005c61773d25c42acc803fafd3141",
+    "bytes": 2946,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34__trashnet__seed70"
+  },
+  {
+    "path": "results/pmam/trashnet/seed_70/complete.json",
+    "sha256": "e5f89d3087279b9d65b588d49a2dd35b3e333f6cf5d89668a4329e4539c1678b",
+    "bytes": 5800,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34__trashnet__seed70"
+  },
+  {
+    "path": "results/pmam/trashnet/seed_70/history.csv",
+    "sha256": "9a9d325021b0abe7bbc678abc62b82d693f0b7ab5081c64bd59159f87d4ca2cd",
+    "bytes": 9510,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34__trashnet__seed70"
+  },
+  {
+    "path": "results/pmam/trashnet/seed_70/test_metrics.json",
+    "sha256": "54c62d498a1560e54421e07b398ba89c5a59525d1d6c3995b200afb1f2090e88",
+    "bytes": 1268,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34__trashnet__seed70"
+  },
+  {
+    "path": "results/pmam/trashnet/seed_70/test_predictions.csv",
+    "sha256": "67b6102c6a4b7c589d6181c81de13c9888008bbfa1784250334c782003c00aa7",
+    "bytes": 45032,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34__trashnet__seed70"
+  },
+  {
+    "path": "results/pmam/trashnet/seed_70/class_report.csv",
+    "sha256": "d304e966dcaa88c8de9a9090ecc40f5715e35a5dac1d045fafddd5e88d79a2ad",
+    "bytes": 402,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34__trashnet__seed70"
+  },
+  {
+    "path": "results/pmam/trashnet/seed_70/initialization.json",
+    "sha256": "c5cf0a1f37fda117ec61312f3b082658ca21da80d8ce48b80fd1ecd5cc25565f",
+    "bytes": 300,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34__trashnet__seed70"
+  },
+  {
+    "path": "results/wtconv/realwaste/seed_14/config.json",
+    "sha256": "d12d664ffb244902e43d55a1bad3d4b59ffc912944eb1bee695cc671a45222bd",
+    "bytes": 4717,
+    "source_run": "convnext_tiny_wtconv_s12__realwaste__seed14"
+  },
+  {
+    "path": "results/wtconv/realwaste/seed_14/complete.json",
+    "sha256": "526272dc5bfde26b514a2ce39daf563b438e75411203b8d8d1aaec38085226a1",
+    "bytes": 8462,
+    "source_run": "convnext_tiny_wtconv_s12__realwaste__seed14"
+  },
+  {
+    "path": "results/wtconv/realwaste/seed_14/history.csv",
+    "sha256": "5240dfcd95be98cfac453a41cf2fe9e462493c9b5d0bf08d0c838df50ba14870",
+    "bytes": 9735,
+    "source_run": "convnext_tiny_wtconv_s12__realwaste__seed14"
+  },
+  {
+    "path": "results/wtconv/realwaste/seed_14/test_metrics.json",
+    "sha256": "4eba960732e23646a0d519e6a2b8ace695a2d0cae78e6ff89e9a6f3ee88883ac",
+    "bytes": 1893,
+    "source_run": "convnext_tiny_wtconv_s12__realwaste__seed14"
+  },
+  {
+    "path": "results/wtconv/realwaste/seed_14/test_predictions.csv",
+    "sha256": "576aba28eadc56798a2795c30c28fcaa45228d757dde8790742aef9f8682235c",
+    "bytes": 112115,
+    "source_run": "convnext_tiny_wtconv_s12__realwaste__seed14"
+  },
+  {
+    "path": "results/wtconv/realwaste/seed_14/class_report.csv",
+    "sha256": "8a439d669e7815e455e5fbad81cb54997f981c0fdb41ee3a18ff119b07146a0a",
+    "bytes": 617,
+    "source_run": "convnext_tiny_wtconv_s12__realwaste__seed14"
+  },
+  {
+    "path": "results/wtconv/realwaste/seed_14/initialization.json",
+    "sha256": "3263bb9bfa30f8bc4371be9c45953c215e970ce2fe8707c98d0b1c1588b82376",
+    "bytes": 525,
+    "source_run": "convnext_tiny_wtconv_s12__realwaste__seed14"
+  },
+  {
+    "path": "results/wtconv/realwaste/seed_42/config.json",
+    "sha256": "2d55226776ba3d513bbfc0e5ae9321d0b3160490ceeb1fa4943be65030564a18",
+    "bytes": 4717,
+    "source_run": "convnext_tiny_wtconv_s12__realwaste__seed42"
+  },
+  {
+    "path": "results/wtconv/realwaste/seed_42/complete.json",
+    "sha256": "f2ad882c7691fb0ce4effaef6db94eb52b9ea97d382e99d1e790582361ea84e6",
+    "bytes": 8451,
+    "source_run": "convnext_tiny_wtconv_s12__realwaste__seed42"
+  },
+  {
+    "path": "results/wtconv/realwaste/seed_42/history.csv",
+    "sha256": "3cb2bd8990d512d04935fd13dc7a1fca6a709c2a158642c3bd1335cde16d09a0",
+    "bytes": 9744,
+    "source_run": "convnext_tiny_wtconv_s12__realwaste__seed42"
+  },
+  {
+    "path": "results/wtconv/realwaste/seed_42/test_metrics.json",
+    "sha256": "da5dfdc61182219b9f542f2c5431a95491c209e8150b6dad6a2c08c66784d655",
+    "bytes": 1915,
+    "source_run": "convnext_tiny_wtconv_s12__realwaste__seed42"
+  },
+  {
+    "path": "results/wtconv/realwaste/seed_42/test_predictions.csv",
+    "sha256": "ad992c84e7fd6aaec8e9f3d876a256e67c7ee36fa0e6511066517a0d534a0ed5",
+    "bytes": 112175,
+    "source_run": "convnext_tiny_wtconv_s12__realwaste__seed42"
+  },
+  {
+    "path": "results/wtconv/realwaste/seed_42/class_report.csv",
+    "sha256": "937e4a3e5a1336b82c34ff2aef6006730e30a9e58aa62d6ef0ddfa6a983cf5dc",
+    "bytes": 638,
+    "source_run": "convnext_tiny_wtconv_s12__realwaste__seed42"
+  },
+  {
+    "path": "results/wtconv/realwaste/seed_42/initialization.json",
+    "sha256": "22735f05ca9a332f1228f805af2d05dbda3420dba5a46d66e45a76b953918674",
+    "bytes": 525,
+    "source_run": "convnext_tiny_wtconv_s12__realwaste__seed42"
+  },
+  {
+    "path": "results/wtconv/realwaste/seed_70/config.json",
+    "sha256": "60c849112b7b18e524043b2c4a74a8519ab3a3c55ae613b7f8bd631ac83eba1b",
+    "bytes": 4717,
+    "source_run": "convnext_tiny_wtconv_s12__realwaste__seed70"
+  },
+  {
+    "path": "results/wtconv/realwaste/seed_70/complete.json",
+    "sha256": "054dcf9c8b68b409bc81011bc28526c5463be5d2a905431e0fd4f6d8a577baf5",
+    "bytes": 8425,
+    "source_run": "convnext_tiny_wtconv_s12__realwaste__seed70"
+  },
+  {
+    "path": "results/wtconv/realwaste/seed_70/history.csv",
+    "sha256": "6025c954a415da9a246bff78b940805612357963dc614fc75f4731cc20955122",
+    "bytes": 9710,
+    "source_run": "convnext_tiny_wtconv_s12__realwaste__seed70"
+  },
+  {
+    "path": "results/wtconv/realwaste/seed_70/test_metrics.json",
+    "sha256": "131f187d38cc80531c7afe8aebd20d9b7ae840d73a48b31104f819a69c0a5da8",
+    "bytes": 1841,
+    "source_run": "convnext_tiny_wtconv_s12__realwaste__seed70"
+  },
+  {
+    "path": "results/wtconv/realwaste/seed_70/test_predictions.csv",
+    "sha256": "3443c10bd1b6ab80066d1f217693350f906a2c2e0470f80d005a90f65c123d7b",
+    "bytes": 111974,
+    "source_run": "convnext_tiny_wtconv_s12__realwaste__seed70"
+  },
+  {
+    "path": "results/wtconv/realwaste/seed_70/class_report.csv",
+    "sha256": "69b0dba6abf40576b194e27fb3c3bf31ac3938c36831e3c19594f4a4a5b6fd11",
+    "bytes": 565,
+    "source_run": "convnext_tiny_wtconv_s12__realwaste__seed70"
+  },
+  {
+    "path": "results/wtconv/realwaste/seed_70/initialization.json",
+    "sha256": "67afeebfe1765428f72a0e79b5e3fd366e1c40f1bb77f3c1c240be2d98973fe1",
+    "bytes": 525,
+    "source_run": "convnext_tiny_wtconv_s12__realwaste__seed70"
+  },
+  {
+    "path": "results/wtconv/trashnet/seed_14/config.json",
+    "sha256": "51adf1329015ac678fd51312bbe07bb467602c9700f074315422df9f22a8f0f2",
+    "bytes": 4642,
+    "source_run": "convnext_tiny_wtconv_s12__trashnet__seed14"
+  },
+  {
+    "path": "results/wtconv/trashnet/seed_14/complete.json",
+    "sha256": "9fe92ca22143f0b832f5b18d9e13461186f0dfc959c97b955910efed343d7b28",
+    "bytes": 7606,
+    "source_run": "convnext_tiny_wtconv_s12__trashnet__seed14"
+  },
+  {
+    "path": "results/wtconv/trashnet/seed_14/history.csv",
+    "sha256": "bee5b5daa90904205c6268515c9eccf39c314a8e2a3bb82557b392c33260e367",
+    "bytes": 9300,
+    "source_run": "convnext_tiny_wtconv_s12__trashnet__seed14"
+  },
+  {
+    "path": "results/wtconv/trashnet/seed_14/test_metrics.json",
+    "sha256": "074ad6872c83fcfca54722491b4c20fbf37941989fbef465822f8cfce80c87cd",
+    "bytes": 1285,
+    "source_run": "convnext_tiny_wtconv_s12__trashnet__seed14"
+  },
+  {
+    "path": "results/wtconv/trashnet/seed_14/test_predictions.csv",
+    "sha256": "d6de945ee23038c21da808516b81b3829ed94c9a346e69f8e4b6d1c73579095f",
+    "bytes": 45123,
+    "source_run": "convnext_tiny_wtconv_s12__trashnet__seed14"
+  },
+  {
+    "path": "results/wtconv/trashnet/seed_14/class_report.csv",
+    "sha256": "9b30d614c206d2b940c789c0eb4f6a68dc0b8306fcc8cd79cb8361234babb44a",
+    "bytes": 389,
+    "source_run": "convnext_tiny_wtconv_s12__trashnet__seed14"
+  },
+  {
+    "path": "results/wtconv/trashnet/seed_14/initialization.json",
+    "sha256": "73d6a32e4b157609bd477eacd9c153d2f8b584acced1dac00d81b05883d28e5c",
+    "bytes": 525,
+    "source_run": "convnext_tiny_wtconv_s12__trashnet__seed14"
+  },
+  {
+    "path": "results/wtconv/trashnet/seed_42/config.json",
+    "sha256": "35fb7fe81222c775d3ebaf1b617c12c8c3b3fd76b6021dc29a011bc238efa875",
+    "bytes": 4642,
+    "source_run": "convnext_tiny_wtconv_s12__trashnet__seed42"
+  },
+  {
+    "path": "results/wtconv/trashnet/seed_42/complete.json",
+    "sha256": "8abfddf7556263407ed14a901be9c4e53319c522ea37b658251b512e71ea65fc",
+    "bytes": 7586,
+    "source_run": "convnext_tiny_wtconv_s12__trashnet__seed42"
+  },
+  {
+    "path": "results/wtconv/trashnet/seed_42/history.csv",
+    "sha256": "b444de7be0e9df0395a9d63680bd6a59c0b670c6ef3bc1506d2104cc7088ff92",
+    "bytes": 9308,
+    "source_run": "convnext_tiny_wtconv_s12__trashnet__seed42"
+  },
+  {
+    "path": "results/wtconv/trashnet/seed_42/test_metrics.json",
+    "sha256": "709c6dc20dbe5dfadbc67ad9a891271cee2d54da8254c26623b5826e231e906c",
+    "bytes": 1277,
+    "source_run": "convnext_tiny_wtconv_s12__trashnet__seed42"
+  },
+  {
+    "path": "results/wtconv/trashnet/seed_42/test_predictions.csv",
+    "sha256": "51bbe503b1684ad891e191317df3a16e7ff50dee81fa7ae9fe573e1c79f5f166",
+    "bytes": 45056,
+    "source_run": "convnext_tiny_wtconv_s12__trashnet__seed42"
+  },
+  {
+    "path": "results/wtconv/trashnet/seed_42/class_report.csv",
+    "sha256": "08693bfde00cd47b184e0a4391852542d0ba72b4acfd201d889117bcbd824ba6",
+    "bytes": 380,
+    "source_run": "convnext_tiny_wtconv_s12__trashnet__seed42"
+  },
+  {
+    "path": "results/wtconv/trashnet/seed_42/initialization.json",
+    "sha256": "56e6cb17b50c109bc06f1f0282a18d387cb40205294a4322dd4f0cc00d8172c7",
+    "bytes": 525,
+    "source_run": "convnext_tiny_wtconv_s12__trashnet__seed42"
+  },
+  {
+    "path": "results/wtconv/trashnet/seed_70/config.json",
+    "sha256": "2bd0be856af17acbd2708d203e708480ed4e838abdfa18f4f722b69558226d81",
+    "bytes": 4642,
+    "source_run": "convnext_tiny_wtconv_s12__trashnet__seed70"
+  },
+  {
+    "path": "results/wtconv/trashnet/seed_70/complete.json",
+    "sha256": "0a371aa27ba1de221f1ddc7e573620fb87b3e2ccd5a908bd2ea313b9d9c1b916",
+    "bytes": 7653,
+    "source_run": "convnext_tiny_wtconv_s12__trashnet__seed70"
+  },
+  {
+    "path": "results/wtconv/trashnet/seed_70/history.csv",
+    "sha256": "827cd5c959a59c3ef12f9b578af2405ad928168e91b5be8e2e22ebf01c022212",
+    "bytes": 9296,
+    "source_run": "convnext_tiny_wtconv_s12__trashnet__seed70"
+  },
+  {
+    "path": "results/wtconv/trashnet/seed_70/test_metrics.json",
+    "sha256": "aa179fc6fe4e6d2cec1d64af4a1d0690b5b854a4623a69f6e4866a7c15783d51",
+    "bytes": 1256,
+    "source_run": "convnext_tiny_wtconv_s12__trashnet__seed70"
+  },
+  {
+    "path": "results/wtconv/trashnet/seed_70/test_predictions.csv",
+    "sha256": "ac04cf7c217423ad718bb9355075204a65d06f4ef5cec54fe8a31f894e20fa11",
+    "bytes": 45115,
+    "source_run": "convnext_tiny_wtconv_s12__trashnet__seed70"
+  },
+  {
+    "path": "results/wtconv/trashnet/seed_70/class_report.csv",
+    "sha256": "55c165d04e12fd9f219d56d3b028eafb64d09e60fe901b29d3004cc3faf05a2a",
+    "bytes": 359,
+    "source_run": "convnext_tiny_wtconv_s12__trashnet__seed70"
+  },
+  {
+    "path": "results/wtconv/trashnet/seed_70/initialization.json",
+    "sha256": "4dd6e0e913190c96bfe920ac983a31540933b08cfe60fec59fa3cc8a8f41f6eb",
+    "bytes": 525,
+    "source_run": "convnext_tiny_wtconv_s12__trashnet__seed70"
+  },
+  {
+    "path": "results/wtconv_pmam/realwaste/seed_14/config.json",
+    "sha256": "2bc032a0bdf4a56acb564717b36292323459a92a6fc99cfe7876de00827e70a1",
+    "bytes": 3882,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34_wtconv_s12__realwaste__seed14"
+  },
+  {
+    "path": "results/wtconv_pmam/realwaste/seed_14/complete.json",
+    "sha256": "974d3f2b322b1a992400e64ed33202acc9e45b519fb41ee14067dc3836b546e8",
+    "bytes": 7529,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34_wtconv_s12__realwaste__seed14"
+  },
+  {
+    "path": "results/wtconv_pmam/realwaste/seed_14/history.csv",
+    "sha256": "4d43294a02c4379305e1162327b12d422d60ba2c9779488cabfb573a7e11b6e7",
+    "bytes": 10936,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34_wtconv_s12__realwaste__seed14"
+  },
+  {
+    "path": "results/wtconv_pmam/realwaste/seed_14/test_metrics.json",
+    "sha256": "54d1cb4c8e1596286accafee7a6a3745605f2d284868ced57ff96a953423ba69",
+    "bytes": 1876,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34_wtconv_s12__realwaste__seed14"
+  },
+  {
+    "path": "results/wtconv_pmam/realwaste/seed_14/test_predictions.csv",
+    "sha256": "1ec65c9f943378d196a57f76bf83046644b6f8d9ca206a47a2de7b411700272e",
+    "bytes": 112271,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34_wtconv_s12__realwaste__seed14"
+  },
+  {
+    "path": "results/wtconv_pmam/realwaste/seed_14/class_report.csv",
+    "sha256": "008e7cc1753c2ca48a07d8f8d3556dc586428cb0f119a60d78aa3789df559683",
+    "bytes": 632,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34_wtconv_s12__realwaste__seed14"
+  },
+  {
+    "path": "results/wtconv_pmam/realwaste/seed_14/initialization.json",
+    "sha256": "c197cb4c7feec876ecb34ce139a17e158502fcb712ccda1dea25616edcfa916d",
+    "bytes": 435,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34_wtconv_s12__realwaste__seed14"
+  },
+  {
+    "path": "results/wtconv_pmam/realwaste/seed_42/config.json",
+    "sha256": "c3d67d43f2f0df625729e230cbe20d619f684e9e2a34fe8b39236cbec0c4cd14",
+    "bytes": 3882,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34_wtconv_s12__realwaste__seed42"
+  },
+  {
+    "path": "results/wtconv_pmam/realwaste/seed_42/complete.json",
+    "sha256": "f6d5672e5a72ee20cc7c769b2ce7a2e6574f26be30944d509df3af7333f156eb",
+    "bytes": 7531,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34_wtconv_s12__realwaste__seed42"
+  },
+  {
+    "path": "results/wtconv_pmam/realwaste/seed_42/history.csv",
+    "sha256": "f6ff0cdee189f01ac1c3375c63fda494b65654e8e38331c72e51cb0f9b5f72d8",
+    "bytes": 10627,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34_wtconv_s12__realwaste__seed42"
+  },
+  {
+    "path": "results/wtconv_pmam/realwaste/seed_42/test_metrics.json",
+    "sha256": "2fb325cc7f59acfd34e554041d25fdafb0ab8e1f0bbe521c9226207fac484fef",
+    "bytes": 1857,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34_wtconv_s12__realwaste__seed42"
+  },
+  {
+    "path": "results/wtconv_pmam/realwaste/seed_42/test_predictions.csv",
+    "sha256": "5709b03741c5e7f8f222526c435a2232a048ec977290deacb4d30cf2a53e34d8",
+    "bytes": 112215,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34_wtconv_s12__realwaste__seed42"
+  },
+  {
+    "path": "results/wtconv_pmam/realwaste/seed_42/class_report.csv",
+    "sha256": "bbd4abba0171ea5a24b7523599e78b62ffc7a5297fab822eb737e26926f38b5b",
+    "bytes": 612,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34_wtconv_s12__realwaste__seed42"
+  },
+  {
+    "path": "results/wtconv_pmam/realwaste/seed_42/initialization.json",
+    "sha256": "2b4c5bb1071fbf6caef46bf1556a850666617fb40598ac39e17833534a0c112c",
+    "bytes": 435,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34_wtconv_s12__realwaste__seed42"
+  },
+  {
+    "path": "results/wtconv_pmam/realwaste/seed_70/config.json",
+    "sha256": "4216b5782a06df038215ff4e49d0f67573ef3b877f83217aee1e6d7666e4a398",
+    "bytes": 3882,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34_wtconv_s12__realwaste__seed70"
+  },
+  {
+    "path": "results/wtconv_pmam/realwaste/seed_70/complete.json",
+    "sha256": "5d2f0bfccb8f03a30e6480f4b2227d5c2ea600e9319df85871cee845c70f28c7",
+    "bytes": 7530,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34_wtconv_s12__realwaste__seed70"
+  },
+  {
+    "path": "results/wtconv_pmam/realwaste/seed_70/history.csv",
+    "sha256": "4b62359b18f6e22d52e6775d44fd7278a37684854a7c228f60b32e2516cc4c9a",
+    "bytes": 10813,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34_wtconv_s12__realwaste__seed70"
+  },
+  {
+    "path": "results/wtconv_pmam/realwaste/seed_70/test_metrics.json",
+    "sha256": "5570f499052561e0d23fdf96dd10770a154aff9f2aa7c0f2aff7132e01a27780",
+    "bytes": 1851,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34_wtconv_s12__realwaste__seed70"
+  },
+  {
+    "path": "results/wtconv_pmam/realwaste/seed_70/test_predictions.csv",
+    "sha256": "ebfb562d8156275b51a9ef4e90b6d59ddc79ceaa681adb1c2f8520664650e5da",
+    "bytes": 112258,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34_wtconv_s12__realwaste__seed70"
+  },
+  {
+    "path": "results/wtconv_pmam/realwaste/seed_70/class_report.csv",
+    "sha256": "256cd6e654daf82ddc5ad380ef6a2af81be5889764ac4d35f490123ad4129886",
+    "bytes": 606,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34_wtconv_s12__realwaste__seed70"
+  },
+  {
+    "path": "results/wtconv_pmam/realwaste/seed_70/initialization.json",
+    "sha256": "254640b6e21c22cc792a8c16f203c1903a32f441be7221b2d9f4ca604f7854fc",
+    "bytes": 435,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34_wtconv_s12__realwaste__seed70"
+  },
+  {
+    "path": "results/wtconv_pmam/trashnet/seed_14/config.json",
+    "sha256": "d7a1958c82863a67af6e9b02688591491c0e64e1f053926a9ae455472b1ca8dc",
+    "bytes": 3807,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34_wtconv_s12__trashnet__seed14"
+  },
+  {
+    "path": "results/wtconv_pmam/trashnet/seed_14/complete.json",
+    "sha256": "1a2a09f5e4356e8d4dec59353eafe2babe9c7395392f9243017713489330856e",
+    "bytes": 6706,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34_wtconv_s12__trashnet__seed14"
+  },
+  {
+    "path": "results/wtconv_pmam/trashnet/seed_14/history.csv",
+    "sha256": "94ef323f80ab1f444ca387e2b902c93076c52c0bc3164e97fe1fefe016b0e068",
+    "bytes": 10445,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34_wtconv_s12__trashnet__seed14"
+  },
+  {
+    "path": "results/wtconv_pmam/trashnet/seed_14/test_metrics.json",
+    "sha256": "1a1700b6ee379dd5d0f270a9a0ecccb8ec636ae2d88c1245771bb0ad7a37c66f",
+    "bytes": 1243,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34_wtconv_s12__trashnet__seed14"
+  },
+  {
+    "path": "results/wtconv_pmam/trashnet/seed_14/test_predictions.csv",
+    "sha256": "3eb0a9d49a96979b084d3647afe3f70c49348cfcaa7ed13e024a038f48606733",
+    "bytes": 45235,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34_wtconv_s12__trashnet__seed14"
+  },
+  {
+    "path": "results/wtconv_pmam/trashnet/seed_14/class_report.csv",
+    "sha256": "49af59368662b1a6cd9a2eb819ac9bf449283f6bfe1d7db47f2a3d48c9c4fde0",
+    "bytes": 377,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34_wtconv_s12__trashnet__seed14"
+  },
+  {
+    "path": "results/wtconv_pmam/trashnet/seed_14/initialization.json",
+    "sha256": "9c3271df5c8bede0832e1b11d1dfa6cce42cd8f4863fe45aa9d2a9e3348cd0df",
+    "bytes": 435,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34_wtconv_s12__trashnet__seed14"
+  },
+  {
+    "path": "results/wtconv_pmam/trashnet/seed_42/config.json",
+    "sha256": "385af673613881793135312e689ec7d31c328d580e4a609c685895a9ea7a216e",
+    "bytes": 3807,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34_wtconv_s12__trashnet__seed42"
+  },
+  {
+    "path": "results/wtconv_pmam/trashnet/seed_42/complete.json",
+    "sha256": "ddd3a932e933c8eb0bd1d2054e07d1a4718dfd0c962fd398d73b431962bdd039",
+    "bytes": 6732,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34_wtconv_s12__trashnet__seed42"
+  },
+  {
+    "path": "results/wtconv_pmam/trashnet/seed_42/history.csv",
+    "sha256": "65e1c28984678e0c1dce5bcbea716166f5b8fb9b00e28f41452524d3fb61b3d5",
+    "bytes": 10608,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34_wtconv_s12__trashnet__seed42"
+  },
+  {
+    "path": "results/wtconv_pmam/trashnet/seed_42/test_metrics.json",
+    "sha256": "fdce74f773731290c01f7a6dba6e3433a51ced45b73d6f5d30a81e09efda163e",
+    "bytes": 1267,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34_wtconv_s12__trashnet__seed42"
+  },
+  {
+    "path": "results/wtconv_pmam/trashnet/seed_42/test_predictions.csv",
+    "sha256": "4cf90fda4354e4efa679b1ee37b876aa6d52a2f4611168da4357632c86bf6c9e",
+    "bytes": 45142,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34_wtconv_s12__trashnet__seed42"
+  },
+  {
+    "path": "results/wtconv_pmam/trashnet/seed_42/class_report.csv",
+    "sha256": "0cad7892be6df5b26bdef9b0eacd990514e5cc502a10783bdf39cccf3a0a8452",
+    "bytes": 401,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34_wtconv_s12__trashnet__seed42"
+  },
+  {
+    "path": "results/wtconv_pmam/trashnet/seed_42/initialization.json",
+    "sha256": "379f2105569eef0159aa4c364856917507ea66a44e41d4b90727d0385d713b08",
+    "bytes": 435,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34_wtconv_s12__trashnet__seed42"
+  },
+  {
+    "path": "results/wtconv_pmam/trashnet/seed_70/config.json",
+    "sha256": "8e72800fdd17097c7b76d0a4c1a9fd786904dd18037542050c81d70f3625b466",
+    "bytes": 3807,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34_wtconv_s12__trashnet__seed70"
+  },
+  {
+    "path": "results/wtconv_pmam/trashnet/seed_70/complete.json",
+    "sha256": "760ab0660b298672b20a56fe744065ae168b65ebc23eb9db2f06d223f03b0b48",
+    "bytes": 6729,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34_wtconv_s12__trashnet__seed70"
+  },
+  {
+    "path": "results/wtconv_pmam/trashnet/seed_70/history.csv",
+    "sha256": "103a74a51962adbfeb95a3f7cb99aa8316b18a28ca16b558da158172a8988a73",
+    "bytes": 10478,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34_wtconv_s12__trashnet__seed70"
+  },
+  {
+    "path": "results/wtconv_pmam/trashnet/seed_70/test_metrics.json",
+    "sha256": "0df94e50df0251052c949e66753c609edb2a7657b27a42b04f43934c4dfc55dd",
+    "bytes": 1228,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34_wtconv_s12__trashnet__seed70"
+  },
+  {
+    "path": "results/wtconv_pmam/trashnet/seed_70/test_predictions.csv",
+    "sha256": "07464fa41db80eea9df7234b64caa75db760161b0944f4d769e66dba688ec519",
+    "bytes": 45103,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34_wtconv_s12__trashnet__seed70"
+  },
+  {
+    "path": "results/wtconv_pmam/trashnet/seed_70/class_report.csv",
+    "sha256": "8421d3bed18c6a4e93d6683cab1a25d3b85ed460e4ebe1fed699c94694be65d8",
+    "bytes": 363,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34_wtconv_s12__trashnet__seed70"
+  },
+  {
+    "path": "results/wtconv_pmam/trashnet/seed_70/initialization.json",
+    "sha256": "9bee955e8e499cf1c1de5f7e83a47ca01cc53c0dd95896da6d84281a16a84a86",
+    "bytes": 435,
+    "source_run": "convnext_tiny_improved_pmam_parallel_s34_wtconv_s12__trashnet__seed70"
+  },
+  {
+    "path": "results/wavetrinext/realwaste/seed_14/config.json",
+    "sha256": "5fc7bf384e206ae51d2ce77202f803cec60f25934858445e60bf8c3e6f18766e",
+    "bytes": 6473,
+    "source_run": "convnext_tiny_pmam_wtconv_wavelet_guided_trihead_fg01__realwaste__seed14"
+  },
+  {
+    "path": "results/wavetrinext/realwaste/seed_14/complete.json",
+    "sha256": "45ab963f294f43c201b06cab2c7cfba9060d4d2f79b53439c7339f14d4b48104",
+    "bytes": 10717,
+    "source_run": "convnext_tiny_pmam_wtconv_wavelet_guided_trihead_fg01__realwaste__seed14"
+  },
+  {
+    "path": "results/wavetrinext/realwaste/seed_14/history.csv",
+    "sha256": "dcbf6a855c120444fb810f6ea7dcbea4be804f565f666f28fea4b7332d2bd078",
+    "bytes": 40098,
+    "source_run": "convnext_tiny_pmam_wtconv_wavelet_guided_trihead_fg01__realwaste__seed14"
+  },
+  {
+    "path": "results/wavetrinext/realwaste/seed_14/test_metrics.json",
+    "sha256": "0f80360548cf86478428c8c21727e45c515c79ba36c6de885127f7effbb29d90",
+    "bytes": 1876,
+    "source_run": "convnext_tiny_pmam_wtconv_wavelet_guided_trihead_fg01__realwaste__seed14"
+  },
+  {
+    "path": "results/wavetrinext/realwaste/seed_14/test_predictions.csv",
+    "sha256": "e2602914eaffed103320d37369c33bc60cf4db4e0ce90604c4d89b074c2ad030",
+    "bytes": 324586,
+    "source_run": "convnext_tiny_pmam_wtconv_wavelet_guided_trihead_fg01__realwaste__seed14"
+  },
+  {
+    "path": "results/wavetrinext/realwaste/seed_14/class_report.csv",
+    "sha256": "78f88351862cbcf3f0e3d9eee9d89d9d4e3d9e54451d01847102c519cc91dd6a",
+    "bytes": 600,
+    "source_run": "convnext_tiny_pmam_wtconv_wavelet_guided_trihead_fg01__realwaste__seed14"
+  },
+  {
+    "path": "results/wavetrinext/realwaste/seed_14/initialization.json",
+    "sha256": "31d69f9eb46cfe842d9a2f32057cac56c3c9297926d73be450884891ca3654eb",
+    "bytes": 440,
+    "source_run": "convnext_tiny_pmam_wtconv_wavelet_guided_trihead_fg01__realwaste__seed14"
+  },
+  {
+    "path": "results/wavetrinext/realwaste/seed_42/config.json",
+    "sha256": "b915f50e5a861f3d2c0ff1fd9eb5157c3e506f28a79eba87fba67185d9cb422c",
+    "bytes": 6473,
+    "source_run": "convnext_tiny_pmam_wtconv_wavelet_guided_trihead_fg01__realwaste__seed42"
+  },
+  {
+    "path": "results/wavetrinext/realwaste/seed_42/complete.json",
+    "sha256": "4da962d55a43762bf5e6eaa802e8175289d850606872015350dbb13e2178e841",
+    "bytes": 10732,
+    "source_run": "convnext_tiny_pmam_wtconv_wavelet_guided_trihead_fg01__realwaste__seed42"
+  },
+  {
+    "path": "results/wavetrinext/realwaste/seed_42/history.csv",
+    "sha256": "8d6bfcffc76e29eb06ce147ed10b005e043526c134fbafb5e88acc7313dcb25a",
+    "bytes": 39950,
+    "source_run": "convnext_tiny_pmam_wtconv_wavelet_guided_trihead_fg01__realwaste__seed42"
+  },
+  {
+    "path": "results/wavetrinext/realwaste/seed_42/test_metrics.json",
+    "sha256": "813786f4f2d594565ee59e1d23808c267e2c8c9266247b9bc3e6ae577cc06fa5",
+    "bytes": 1828,
+    "source_run": "convnext_tiny_pmam_wtconv_wavelet_guided_trihead_fg01__realwaste__seed42"
+  },
+  {
+    "path": "results/wavetrinext/realwaste/seed_42/test_predictions.csv",
+    "sha256": "b856d0a2641fa1117ea05c576a4e8e56c8fd06ef90577bcd8ed557fa0d7271ab",
+    "bytes": 327719,
+    "source_run": "convnext_tiny_pmam_wtconv_wavelet_guided_trihead_fg01__realwaste__seed42"
+  },
+  {
+    "path": "results/wavetrinext/realwaste/seed_42/class_report.csv",
+    "sha256": "e97ed81f6ed17bed68befa26b6c6c7c8c4ec1ef7433e6b32e41fb84bf29b0007",
+    "bytes": 553,
+    "source_run": "convnext_tiny_pmam_wtconv_wavelet_guided_trihead_fg01__realwaste__seed42"
+  },
+  {
+    "path": "results/wavetrinext/realwaste/seed_42/initialization.json",
+    "sha256": "16632d254a24191b9db037ef879ca791558c249dc02f4c136ef1ada0864462fe",
+    "bytes": 440,
+    "source_run": "convnext_tiny_pmam_wtconv_wavelet_guided_trihead_fg01__realwaste__seed42"
+  },
+  {
+    "path": "results/wavetrinext/realwaste/seed_70/config.json",
+    "sha256": "60542a965992b6fb6241b82e7678a39232683bbc8646a76bc4509d6fb0ff0f26",
+    "bytes": 6473,
+    "source_run": "convnext_tiny_pmam_wtconv_wavelet_guided_trihead_fg01__realwaste__seed70"
+  },
+  {
+    "path": "results/wavetrinext/realwaste/seed_70/complete.json",
+    "sha256": "6351d8fcf51150df2139a19e7167ee1f0c01b513a91450408f08617437777ae4",
+    "bytes": 10730,
+    "source_run": "convnext_tiny_pmam_wtconv_wavelet_guided_trihead_fg01__realwaste__seed70"
+  },
+  {
+    "path": "results/wavetrinext/realwaste/seed_70/history.csv",
+    "sha256": "6f5f650a48ecad22cf117fa6fb0ac60f78354534c2c97128bce6a3d4ba472502",
+    "bytes": 40075,
+    "source_run": "convnext_tiny_pmam_wtconv_wavelet_guided_trihead_fg01__realwaste__seed70"
+  },
+  {
+    "path": "results/wavetrinext/realwaste/seed_70/test_metrics.json",
+    "sha256": "28360c7e4a70c958445c37633146b674e340f1a6eef0c506da02c0fcf94ee12d",
+    "bytes": 1893,
+    "source_run": "convnext_tiny_pmam_wtconv_wavelet_guided_trihead_fg01__realwaste__seed70"
+  },
+  {
+    "path": "results/wavetrinext/realwaste/seed_70/test_predictions.csv",
+    "sha256": "c23f18654bf87afce46c5194a95f85d047bec3c90be5c25b7fec806126eaa296",
+    "bytes": 324807,
+    "source_run": "convnext_tiny_pmam_wtconv_wavelet_guided_trihead_fg01__realwaste__seed70"
+  },
+  {
+    "path": "results/wavetrinext/realwaste/seed_70/class_report.csv",
+    "sha256": "2d8d4eae672fa65d2acc096e6cf628a35ba76581b72c09c64bdcb260baf5c2e5",
+    "bytes": 616,
+    "source_run": "convnext_tiny_pmam_wtconv_wavelet_guided_trihead_fg01__realwaste__seed70"
+  },
+  {
+    "path": "results/wavetrinext/realwaste/seed_70/initialization.json",
+    "sha256": "a4cd211bfc40d9c229aab51786e6b273fa57041f91779b810f2b004a2aae29a8",
+    "bytes": 440,
+    "source_run": "convnext_tiny_pmam_wtconv_wavelet_guided_trihead_fg01__realwaste__seed70"
+  },
+  {
+    "path": "results/wavetrinext/trashnet/seed_14/config.json",
+    "sha256": "c7bc91e4f5a5bd71831317b0f44324fd2aa652f08c285baa226a64d178e39112",
+    "bytes": 6398,
+    "source_run": "convnext_tiny_pmam_wtconv_wavelet_guided_trihead_fg01__trashnet__seed14"
+  },
+  {
+    "path": "results/wavetrinext/trashnet/seed_14/complete.json",
+    "sha256": "bb4c373cf6a5bce939d693e2ca1f6e3c4d3c2d0fd0ccccd686b7c8c2616c3dec",
+    "bytes": 9926,
+    "source_run": "convnext_tiny_pmam_wtconv_wavelet_guided_trihead_fg01__trashnet__seed14"
+  },
+  {
+    "path": "results/wavetrinext/trashnet/seed_14/history.csv",
+    "sha256": "6247a2f641c33d607d8f8b373cb059584e2c08edd5d7edd48ea0be477fc5ba1d",
+    "bytes": 40072,
+    "source_run": "convnext_tiny_pmam_wtconv_wavelet_guided_trihead_fg01__trashnet__seed14"
+  },
+  {
+    "path": "results/wavetrinext/trashnet/seed_14/test_metrics.json",
+    "sha256": "9b70a7ba9af401e8d2592daf1d8a534ee5182289a713f07e8a8e598d9b2cc82e",
+    "bytes": 1284,
+    "source_run": "convnext_tiny_pmam_wtconv_wavelet_guided_trihead_fg01__trashnet__seed14"
+  },
+  {
+    "path": "results/wavetrinext/trashnet/seed_14/test_predictions.csv",
+    "sha256": "2e129aeb6ed2efc804f3802dec6f75e6f97b9746cd831bce6af40115c1597a21",
+    "bytes": 119308,
+    "source_run": "convnext_tiny_pmam_wtconv_wavelet_guided_trihead_fg01__trashnet__seed14"
+  },
+  {
+    "path": "results/wavetrinext/trashnet/seed_14/class_report.csv",
+    "sha256": "2536d166a6fb709db02cbb7f0da9c837910f86f9d865b509eb57affa53ba8035",
+    "bytes": 387,
+    "source_run": "convnext_tiny_pmam_wtconv_wavelet_guided_trihead_fg01__trashnet__seed14"
+  },
+  {
+    "path": "results/wavetrinext/trashnet/seed_14/initialization.json",
+    "sha256": "747478294dd79339e39335862e6c642b266ea602f95cf7d45a2d52d702c45fb5",
+    "bytes": 440,
+    "source_run": "convnext_tiny_pmam_wtconv_wavelet_guided_trihead_fg01__trashnet__seed14"
+  },
+  {
+    "path": "results/wavetrinext/trashnet/seed_42/config.json",
+    "sha256": "87d033d144e1df916d6ed8e292dd1e72de798fa787b38a24b13f4a331de112b9",
+    "bytes": 6398,
+    "source_run": "convnext_tiny_pmam_wtconv_wavelet_guided_trihead_fg01__trashnet__seed42"
+  },
+  {
+    "path": "results/wavetrinext/trashnet/seed_42/complete.json",
+    "sha256": "a85761f5eb0e131e8bef409322bd6ee4470b4d687b929941349be5f8b5f41faa",
+    "bytes": 9948,
+    "source_run": "convnext_tiny_pmam_wtconv_wavelet_guided_trihead_fg01__trashnet__seed42"
+  },
+  {
+    "path": "results/wavetrinext/trashnet/seed_42/history.csv",
+    "sha256": "afbea30d6b751a13f728f1b722822b12afa0a6dd89c854da045703e08d4f5eab",
+    "bytes": 39899,
+    "source_run": "convnext_tiny_pmam_wtconv_wavelet_guided_trihead_fg01__trashnet__seed42"
+  },
+  {
+    "path": "results/wavetrinext/trashnet/seed_42/test_metrics.json",
+    "sha256": "72d93c6bc4732cb70b38572b3c08ca4a1a7ac08d32de1dfaee07d6fe266a1ef8",
+    "bytes": 1284,
+    "source_run": "convnext_tiny_pmam_wtconv_wavelet_guided_trihead_fg01__trashnet__seed42"
+  },
+  {
+    "path": "results/wavetrinext/trashnet/seed_42/test_predictions.csv",
+    "sha256": "2dea8140b5030984e1cbf726c8b4c445703237252a07892fe122e6a0c1741c42",
+    "bytes": 119778,
+    "source_run": "convnext_tiny_pmam_wtconv_wavelet_guided_trihead_fg01__trashnet__seed42"
+  },
+  {
+    "path": "results/wavetrinext/trashnet/seed_42/class_report.csv",
+    "sha256": "910807b653348da4145690c735c330e9e23619415aa4653ca55d36b1618140c3",
+    "bytes": 388,
+    "source_run": "convnext_tiny_pmam_wtconv_wavelet_guided_trihead_fg01__trashnet__seed42"
+  },
+  {
+    "path": "results/wavetrinext/trashnet/seed_42/initialization.json",
+    "sha256": "737c324ca0bfaa73dcc7131f1960a7a265b8f55e071e0724c094368561028b18",
+    "bytes": 440,
+    "source_run": "convnext_tiny_pmam_wtconv_wavelet_guided_trihead_fg01__trashnet__seed42"
+  },
+  {
+    "path": "results/wavetrinext/trashnet/seed_70/config.json",
+    "sha256": "d52945bde562bd0c254157b10d723287b74642bc0e579d5321f89c7f121007c8",
+    "bytes": 6398,
+    "source_run": "convnext_tiny_pmam_wtconv_wavelet_guided_trihead_fg01__trashnet__seed70"
+  },
+  {
+    "path": "results/wavetrinext/trashnet/seed_70/complete.json",
+    "sha256": "253682e1c8c35d6042847b7b3aca666176b28c5d9b658ffcf56d1caabeb99967",
+    "bytes": 9913,
+    "source_run": "convnext_tiny_pmam_wtconv_wavelet_guided_trihead_fg01__trashnet__seed70"
+  },
+  {
+    "path": "results/wavetrinext/trashnet/seed_70/history.csv",
+    "sha256": "d295b48315ba23244fa4e279c3af9dd09a2d7e4551902de90b7b2a098c6f96f0",
+    "bytes": 39961,
+    "source_run": "convnext_tiny_pmam_wtconv_wavelet_guided_trihead_fg01__trashnet__seed70"
+  },
+  {
+    "path": "results/wavetrinext/trashnet/seed_70/test_metrics.json",
+    "sha256": "259d487f0d454b0ff40a94aaed1f099258adc6ce6215e5e766f7193c38efca8e",
+    "bytes": 1300,
+    "source_run": "convnext_tiny_pmam_wtconv_wavelet_guided_trihead_fg01__trashnet__seed70"
+  },
+  {
+    "path": "results/wavetrinext/trashnet/seed_70/test_predictions.csv",
+    "sha256": "fc1a879c0d6f065a922f6cc1baee18a249793039b2440f235f41dcd08b58b132",
+    "bytes": 119669,
+    "source_run": "convnext_tiny_pmam_wtconv_wavelet_guided_trihead_fg01__trashnet__seed70"
+  },
+  {
+    "path": "results/wavetrinext/trashnet/seed_70/class_report.csv",
+    "sha256": "c6f1122cd6b79f2bcfa20ced9bfc197b07dc237b9ea4b0aa5ce7d6a08d8f79f5",
+    "bytes": 403,
+    "source_run": "convnext_tiny_pmam_wtconv_wavelet_guided_trihead_fg01__trashnet__seed70"
+  },
+  {
+    "path": "results/wavetrinext/trashnet/seed_70/initialization.json",
+    "sha256": "440d031d54967494c07c48ba4649d1525f4c247a66bf28f69fa2d8061e605f5f",
+    "bytes": 440,
+    "source_run": "convnext_tiny_pmam_wtconv_wavelet_guided_trihead_fg01__trashnet__seed70"
+  },
+  {
+    "path": "results/wavetrinext/realwaste/seed_14/test_diagnostics.json",
+    "sha256": "307e1c85ce27eb0f93782da440c3711816b23af7bd2aa76290be4ec5a214b5f8",
+    "bytes": 333,
+    "source_run": "convnext_tiny_pmam_wtconv_wavelet_guided_trihead_fg01__realwaste__seed14"
+  },
+  {
+    "path": "results/wavetrinext/realwaste/seed_42/test_diagnostics.json",
+    "sha256": "4e8f1ad99c49abe9fa359eb3d858ce4186017f8a2f8116ca01090517a69ca58b",
+    "bytes": 338,
+    "source_run": "convnext_tiny_pmam_wtconv_wavelet_guided_trihead_fg01__realwaste__seed42"
+  },
+  {
+    "path": "results/wavetrinext/realwaste/seed_70/test_diagnostics.json",
+    "sha256": "3d511ef4fff077d8a4b62ed1da386a17d2b7f588baa1c92619c196efaf0f55b7",
+    "bytes": 335,
+    "source_run": "convnext_tiny_pmam_wtconv_wavelet_guided_trihead_fg01__realwaste__seed70"
+  },
+  {
+    "path": "results/wavetrinext/trashnet/seed_14/test_diagnostics.json",
+    "sha256": "a657ee865c8c221a02626c7af480944b91e0d513adb0b5cd2bd0fcb60c6031f2",
+    "bytes": 334,
+    "source_run": "convnext_tiny_pmam_wtconv_wavelet_guided_trihead_fg01__trashnet__seed14"
+  },
+  {
+    "path": "results/wavetrinext/trashnet/seed_42/test_diagnostics.json",
+    "sha256": "4d25a75cbfb4597ada24341949ae92007bfd59277913f4c0b7a7860a4da18b68",
+    "bytes": 333,
+    "source_run": "convnext_tiny_pmam_wtconv_wavelet_guided_trihead_fg01__trashnet__seed42"
+  },
+  {
+    "path": "results/wavetrinext/trashnet/seed_70/test_diagnostics.json",
+    "sha256": "c705e3df3e0192f2373a1b6c7d5b87095a0ce9534204a38491af6c33790792a3",
+    "bytes": 336,
+    "source_run": "convnext_tiny_pmam_wtconv_wavelet_guided_trihead_fg01__trashnet__seed70"
+  }
+]

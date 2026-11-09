@@ -1,0 +1,10 @@
+true_class,cardboard,food organics,glass,metal,miscellaneous trash,paper,plastic,textile trash,vegetation
+cardboard,68,0,0,0,0,1,0,0,0
+food organics,0,62,0,0,0,0,0,0,0
+glass,0,0,63,0,0,0,0,0,0
+metal,0,0,1,116,1,0,0,0,0
+miscellaneous trash,2,0,0,3,61,4,2,2,0
+paper,1,0,0,0,0,74,0,0,0
+plastic,1,0,2,7,2,0,126,0,0
+textile trash,0,0,0,0,6,0,0,42,0
+vegetation,0,2,0,0,0,0,0,0,63

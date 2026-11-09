@@ -1,0 +1,93 @@
+{
+  "date": "2026-11-08",
+  "status": "passed",
+  "training_performed": false,
+  "weights_downloaded": false,
+  "python": "3.10.19",
+  "packages": {
+    "torch": "2.8.0+xpu",
+    "torchvision": "0.23.0+xpu",
+    "numpy": "2.2.6",
+    "pandas": "2.3.3",
+    "Pillow": "12.1.0",
+    "scipy": "1.15.3"
+  },
+  "checks": [
+    {
+      "model": "baseline",
+      "dataset": "trashnet",
+      "parameters": 27824742,
+      "cpu_224_forward": "passed",
+      "optimizer_parameter_coverage": "passed"
+    },
+    {
+      "model": "baseline",
+      "dataset": "realwaste",
+      "parameters": 27827049,
+      "cpu_224_forward": "passed",
+      "optimizer_parameter_coverage": "passed"
+    },
+    {
+      "model": "pmam",
+      "dataset": "trashnet",
+      "parameters": 30038922,
+      "cpu_224_forward": "passed",
+      "optimizer_parameter_coverage": "passed"
+    },
+    {
+      "model": "pmam",
+      "dataset": "realwaste",
+      "parameters": 30041229,
+      "cpu_224_forward": "passed",
+      "optimizer_parameter_coverage": "passed"
+    },
+    {
+      "model": "wtconv",
+      "dataset": "trashnet",
+      "parameters": 28171206,
+      "cpu_224_forward": "passed",
+      "optimizer_parameter_coverage": "passed"
+    },
+    {
+      "model": "wtconv",
+      "dataset": "realwaste",
+      "parameters": 28173513,
+      "cpu_224_forward": "passed",
+      "optimizer_parameter_coverage": "passed"
+    },
+    {
+      "model": "wtconv_pmam",
+      "dataset": "trashnet",
+      "parameters": 30385386,
+      "cpu_224_forward": "passed",
+      "optimizer_parameter_coverage": "passed"
+    },
+    {
+      "model": "wtconv_pmam",
+      "dataset": "realwaste",
+      "parameters": 30387693,
+      "cpu_224_forward": "passed",
+      "optimizer_parameter_coverage": "passed"
+    },
+    {
+      "model": "wavetrinext",
+      "dataset": "trashnet",
+      "parameters": 30595446,
+      "cpu_224_forward": "passed",
+      "optimizer_parameter_coverage": "passed"
+    },
+    {
+      "model": "wavetrinext",
+      "dataset": "realwaste",
+      "parameters": 30598908,
+      "cpu_224_forward": "passed",
+      "optimizer_parameter_coverage": "passed"
+    }
+  ],
+  "wavetrinext_auxiliary_logits": "finite 6-/9-class logits_cls, logits_fg, logits_bg",
+  "help": "passed",
+  "portable_data_loading": "both datasets and all retained image SHA256 passed",
+  "unmodified_frozen_source_files": 10,
+  "locked_reference_configs": 5,
+  "limitations": "CPU inference and data-loading validation only; no end-to-end training reproduction was performed. The release orchestration is new; core models/losses are the historical frozen versions."
+}

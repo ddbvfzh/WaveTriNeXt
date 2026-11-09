@@ -1,0 +1,205 @@
+{
+  "status": "completed",
+  "dataset": "trashnet",
+  "seed": 14,
+  "epochs_completed": 50,
+  "requested_epochs": 50,
+  "best_epoch": 39,
+  "best_validation_metrics": {
+    "classes": [
+      "cardboard",
+      "glass",
+      "metal",
+      "paper",
+      "plastic",
+      "trash"
+    ],
+    "n_samples": 379,
+    "accuracy": 0.9656992084432717,
+    "macro_f1": 0.9598146652385672,
+    "macro_precision": 0.9692555752227524,
+    "macro_recall": 0.9526025771844523,
+    "per_class": [
+      {
+        "class_name": "cardboard",
+        "precision": 0.9833333333333333,
+        "recall": 0.9672131147540983,
+        "f1": 0.9752066115702478,
+        "support": 61
+      },
+      {
+        "class_name": "glass",
+        "precision": 0.9726027397260274,
+        "recall": 0.9466666666666667,
+        "f1": 0.9594594594594594,
+        "support": 75
+      },
+      {
+        "class_name": "metal",
+        "precision": 0.9375,
+        "recall": 0.9836065573770492,
+        "f1": 0.96,
+        "support": 61
+      },
+      {
+        "class_name": "paper",
+        "precision": 0.9887640449438202,
+        "recall": 0.9887640449438202,
+        "f1": 0.9887640449438202,
+        "support": 89
+      },
+      {
+        "class_name": "plastic",
+        "precision": 0.9333333333333333,
+        "recall": 0.9722222222222222,
+        "f1": 0.9523809523809524,
+        "support": 72
+      },
+      {
+        "class_name": "trash",
+        "precision": 1.0,
+        "recall": 0.8571428571428571,
+        "f1": 0.923076923076923,
+        "support": 21
+      }
+    ],
+    "loss": 0.1948824279541076
+  },
+  "total_training_seconds": 865.9537330679595,
+  "classes": [
+    "cardboard",
+    "glass",
+    "metal",
+    "paper",
+    "plastic",
+    "trash"
+  ],
+  "config": {
+    "version": 1,
+    "model": "convnext_tiny_improved_pmam_parallel_s34_wtconv_s12",
+    "dataset": "trashnet",
+    "seed": 14,
+    "classes": [
+      "cardboard",
+      "glass",
+      "metal",
+      "paper",
+      "plastic",
+      "trash"
+    ],
+    "epochs": 50,
+    "micro_batch_size": 8,
+    "effective_batch_size": 32,
+    "dtype": "float32",
+    "device": "cuda",
+    "manifest_sha256": "9d32697c1727100b8ea6fda61261ff2ab2fe71d078c196f5dd1b5cda05cf804e",
+    "weights_sha256": "983f1562536e84ff750a1576fb08e54de751dbf2e17c0d8a4a13704341fdcd3d",
+    "weights_enum": "ConvNeXt_Tiny_Weights.IMAGENET1K_V1",
+    "code_sha256": {
+      "closed_set_baseline.py": "189c8998b382964630ef69652e129ad934c140ad32dbcd96eb0f51eec2556847",
+      "closed_set_data.py": "729889c835960139fb46def97b1defc2de94fed379bce75c5440e3181e559d01",
+      "closed_set_metrics.py": "787c2536fcf2696623c2a4abf56fffafaf61bc8b75fb4cff8e69b807829be4fc",
+      "data.py": "8c38f6790552361441c7ba8ef1b67293c109caa00a1cd1d36c8d2d442ded02fc",
+      "convnext_pmam.py": "b2f6f03c32ca6db79a39450c1a262011c48dcb6c88a271eeee5d0b39758c1757",
+      "pmam_reports.py": "c75e828dd98912ee8e3b01236f2d066def88144f82f87d0bf861ccbd9ba592c4",
+      "convnext_pmam_wtconv.py": "66b6be27883ed19b5b6cb8cea6426c39e4f5290e0aa5c358937c9975cbe57ab4",
+      "pmam_wtconv_reports.py": "e2885ed522fba7dc0bf2ce6700533827c15ee9846857d52133d882bf2a8b16db",
+      "pmam_wtconv_checks.py": "c9cda70d073f7c2b4082a19bdb8a5cafacda74e43875ead18d23e910fbeade45",
+      "pmam_wtconv_experiment.py": "7f167a937b775061a46e0ca3425462a43a96a6f09921bf9da6259482e5364f91",
+      "run_convnext_pmam_wtconv.py": "e4e0ae7c0e82f28440daee06410a834a536a815a4a1fce69bb4c94ddac2b4f31",
+      "audit_convnext_pmam_wtconv.py": "d48f7b245c043876b8dd632132f906a0e0a25d5a381d75fd4ebc68777bce3f3a",
+      "audit_convnext_pmam.py": "f36d1589b63775ce4a959cc92246caa084b97bd7ee23c40d200de702753d2e07"
+    },
+    "torch": "2.8.0+cu128",
+    "torchvision": "0.23.0+cu128",
+    "packages": {
+      "numpy": "2.2.6",
+      "pandas": "2.3.3",
+      "Pillow": "12.1.0",
+      "scipy": "1.15.3"
+    },
+    "optimizer": "AdamW",
+    "backbone_lr": 0.0001,
+    "head_lr": 0.001,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "weight_decay": 0.05,
+    "no_decay": "bias, normalization, LayerScale, WT Scale",
+    "warmup_epochs": 5,
+    "scheduler": "update-wise linear warmup + cosine",
+    "minimum_lr_ratio": 0.01,
+    "label_smoothing": 0.1,
+    "clip_grad_norm": 1.0,
+    "drop_path": 0.1,
+    "input_size": 224,
+    "eval_resize": 236,
+    "augmentation": {
+      "random_resized_crop_scale": [
+        0.8,
+        1.0
+      ],
+      "ratio": [
+        0.75,
+        1.3333333333333333
+      ],
+      "horizontal_flip": 0.5
+    },
+    "selection": "max validation macro_f1; ties min ordinary cross_entropy; ties earliest epoch",
+    "determinism": "seeded all RNGs; deterministic_algorithms warn_only; no bitwise cross-device guarantee",
+    "attention_mode": "parallel",
+    "attention_fusion": "multiply",
+    "attention_positions": [
+      5,
+      7
+    ],
+    "attention_channels": [
+      384,
+      768
+    ],
+    "attention_lr": 0.001,
+    "added_parameters": 2560644,
+    "parameter_count": 30385386,
+    "wt_added_parameters": 346464,
+    "wt_positions": [
+      1,
+      3
+    ],
+    "wt_type": "db1",
+    "wt_levels": 2,
+    "wt_kernel_size": 7,
+    "wt_base_scale_init": 1.0,
+    "wt_wavelet_scale_init": 0.1,
+    "wt_lr": 0.001,
+    "wt_source_commit": "4a84da2218924b3973de2235d641f2ecf969c346",
+    "wt_filters": "persistent buffers, fixed Haar",
+    "wt_initialization": "copy pretrained DW7 weight/bias; default wavelet Conv2d; isolated CPU RNG",
+    "attention_initialization": "PyTorch Conv2d default; BN gamma=1 beta=0; isolated CPU RNG",
+    "attention_bn_eps": 1e-05,
+    "attention_bn_momentum": 0.1,
+    "amp": false,
+    "matmul_tf32": false,
+    "cudnn_tf32": false,
+    "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+    "export_curves": false,
+    "export_confusion": false
+  },
+  "parameter_count": 30385386,
+  "added_parameters": 2560644,
+  "wt_added_parameters": 346464,
+  "training_samples": 1765,
+  "validation_samples": 379,
+  "test_samples": 377,
+  "artifacts_sha256": {
+    "best.pt": "14713e286eb1df736237b713ed4feb7e6c05ed8d01d1be468ffc22bb4061b9cb",
+    "last.pt": "0c86f17132ba5020158037f86593277b1836e1458f2f07b6198f0e60e4aa2d79",
+    "history.csv": "94ef323f80ab1f444ca387e2b902c93076c52c0bc3164e97fe1fefe016b0e068",
+    "test_predictions.csv": "3eb0a9d49a96979b084d3647afe3f70c49348cfcaa7ed13e024a038f48606733",
+    "test_metrics.json": "1a1700b6ee379dd5d0f270a9a0ecccb8ec636ae2d88c1245771bb0ad7a37c66f",
+    "class_report.csv": "49af59368662b1a6cd9a2eb819ac9bf449283f6bfe1d7db47f2a3d48c9c4fde0",
+    "initialization.json": "9c3271df5c8bede0832e1b11d1dfa6cce42cd8f4863fe45aa9d2a9e3348cd0df"
+  },
+  "test_metrics_sha256": "1a1700b6ee379dd5d0f270a9a0ecccb8ec636ae2d88c1245771bb0ad7a37c66f"
+}

@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "runs": 30,
+  "epochs_total": 1500,
+  "prediction_rows": 16335,
+  "archived_files_checked": 240,
+  "checks": [
+    "archived SHA256",
+    "original artifact hashes where included",
+    "30 run identities and completion",
+    "50 contiguous epochs per run",
+    "prediction IDs and labels identical across models/seeds",
+    "prediction IDs and labels match packaged fixed test splits",
+    "accuracy and macro-F1 recomputed from predictions",
+    "all screenshot metrics match"
+  ],
+  "weights_in_result_directories": false,
+  "checkpoint_availability": "pretrained/manifest.json; verify separately using scripts/verify_pretrained.py"
+}

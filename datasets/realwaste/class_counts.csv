@@ -1,0 +1,28 @@
+dataset,class_name,label,split,count,group_count
+realwaste,cardboard,0,train,323,323
+realwaste,cardboard,0,val,69,69
+realwaste,cardboard,0,test,69,69
+realwaste,food organics,1,train,287,285
+realwaste,food organics,1,val,62,62
+realwaste,food organics,1,test,62,62
+realwaste,glass,2,train,294,294
+realwaste,glass,2,val,63,63
+realwaste,glass,2,test,63,63
+realwaste,metal,3,train,553,553
+realwaste,metal,3,val,119,118
+realwaste,metal,3,test,118,118
+realwaste,miscellaneous trash,4,train,347,346
+realwaste,miscellaneous trash,4,val,74,74
+realwaste,miscellaneous trash,4,test,74,74
+realwaste,paper,5,train,350,350
+realwaste,paper,5,val,75,75
+realwaste,paper,5,test,75,75
+realwaste,plastic,6,train,645,642
+realwaste,plastic,6,val,138,137
+realwaste,plastic,6,test,138,138
+realwaste,textile trash,7,train,222,222
+realwaste,textile trash,7,val,48,48
+realwaste,textile trash,7,test,48,48
+realwaste,vegetation,8,train,306,306
+realwaste,vegetation,8,val,65,65
+realwaste,vegetation,8,test,65,65

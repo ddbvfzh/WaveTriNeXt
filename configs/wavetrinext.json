@@ -1,0 +1,149 @@
+{
+  "version": 1,
+  "model": "convnext_tiny_pmam_wtconv_wavelet_guided_trihead_fg01",
+  "epochs": 50,
+  "micro_batch_size": 8,
+  "effective_batch_size": 32,
+  "dtype": "float32",
+  "device": "cuda",
+  "weights_enum": "ConvNeXt_Tiny_Weights.IMAGENET1K_V1",
+  "optimizer": "AdamW",
+  "backbone_lr": 0.0001,
+  "head_lr": 0.001,
+  "betas": [
+    0.9,
+    0.999
+  ],
+  "eps": 1e-08,
+  "weight_decay": 0.05,
+  "no_decay": "bias, normalization, LayerScale, WT Scale",
+  "warmup_epochs": 5,
+  "scheduler": "update-wise linear warmup + cosine",
+  "minimum_lr_ratio": 0.01,
+  "label_smoothing": 0.1,
+  "clip_grad_norm": 1.0,
+  "drop_path": 0.1,
+  "input_size": 224,
+  "eval_resize": 236,
+  "augmentation": {
+    "random_resized_crop_scale": [
+      0.8,
+      1.0
+    ],
+    "ratio": [
+      0.75,
+      1.3333333333333333
+    ],
+    "horizontal_flip": 0.5
+  },
+  "selection": "max validation macro_f1; ties min ordinary cross_entropy; ties earliest epoch",
+  "determinism": "seeded all RNGs; deterministic_algorithms warn_only; no bitwise cross-device guarantee",
+  "tri_region": {
+    "mode": "wavelet_guided_parallel_auxiliary",
+    "taps": [
+      [
+        1,
+        2,
+        1
+      ],
+      [
+        3,
+        2,
+        0
+      ]
+    ],
+    "tap_semantics": "processed_scale_output_before_reconstruction; C_band_flatten",
+    "inputs": [
+      384,
+      768,
+      384
+    ],
+    "projection_channels": 128,
+    "projection_groups": 16,
+    "projection_activation": null,
+    "mask_kernel": 3,
+    "mask_bias": false,
+    "mask_order": [
+      "foreground",
+      "background",
+      "ambiguous"
+    ],
+    "mask_activation": "softmax_dim1",
+    "normalization": {
+      "eps": 1e-05,
+      "weight_init": 1.0,
+      "bias_init": 0.0,
+      "bn_momentum": 0.1
+    },
+    "pool_source": "post_a3_F3",
+    "pool_epsilon": 1e-06,
+    "region_classifier": "shared_linear_384_K_bias_true_no_norm",
+    "detach": false,
+    "final_prediction": "logits_cls_only",
+    "ambiguous_classifier": false
+  },
+  "tri_region_loss": {
+    "global_ce_weight": 1.0,
+    "foreground_ce_weight": 0.1,
+    "background_weight": 0.1,
+    "label_smoothing": 0.1,
+    "background": "logsumexp_all_minus_logsumexp_non_target",
+    "extra_regularization": null
+  },
+  "fusion": "main_logits_only",
+  "loss_weights": {
+    "global": 1.0,
+    "foreground": 0.1,
+    "background": 0.1
+  },
+  "attention_mode": "parallel",
+  "attention_fusion": "multiply",
+  "attention_positions": [
+    5,
+    7
+  ],
+  "attention_channels": [
+    384,
+    768
+  ],
+  "attention_lr": 0.001,
+  "attention_added_parameters": 2214180,
+  "region_lr": 0.001,
+  "triregion_lr": 0.001,
+  "wt_added_parameters": 346464,
+  "wt_positions": [
+    1,
+    3
+  ],
+  "wt_type": "db1",
+  "wt_levels": 2,
+  "wt_kernel_size": 7,
+  "wt_base_scale_init": 1.0,
+  "wt_wavelet_scale_init": 0.1,
+  "wt_lr": 0.001,
+  "wt_source_commit": "4a84da2218924b3973de2235d641f2ecf969c346",
+  "wt_filters": "persistent buffers, fixed Haar",
+  "num_workers": 0,
+  "drop_last": false,
+  "optimizer_foreach": false,
+  "amp": false,
+  "matmul_tf32": false,
+  "cudnn_tf32": false,
+  "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+  "export_curves": false,
+  "export_confusion": false,
+  "alias": "wavetrinext",
+  "datasets": [
+    "trashnet",
+    "realwaste"
+  ],
+  "seeds": [
+    14,
+    42,
+    70
+  ],
+  "parameter_counts": {
+    "trashnet": 30595446,
+    "realwaste": 30598908
+  }
+}

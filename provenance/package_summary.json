@@ -1,0 +1,50 @@
+{
+  "prepared_date": "2026-11-08",
+  "project": "WaveTriNeXt",
+  "status": "prepared_and_checked",
+  "file_count_excluding_this_receipt": 7635,
+  "total_bytes_excluding_this_receipt": 4276048531,
+  "image_count": 7279,
+  "experiment_runs": 30,
+  "trained_weights_included": true,
+  "full_training_rerun": false,
+  "github_published": false,
+  "verification": {
+    "datasets": {
+      "status": "passed",
+      "report": "datasets/verification_report.json"
+    },
+    "results": {
+      "status": "passed",
+      "report": "provenance/results_validation.json"
+    },
+    "code": {
+      "status": "passed",
+      "report": "provenance/code_validation.json"
+    },
+    "checkpoints": {
+      "status": "passed; all 30 original checkpoints verified",
+      "report": "provenance/checkpoint_validation.json"
+    },
+    "training_engineering_audit": {
+      "status": "passed; five-model backward checks and minimal WaveTriNeXt checkpoint/resume transaction",
+      "report": "provenance/training_audit.json",
+      "formal_paper_training_rerun": false
+    },
+    "independent_evaluation": {
+      "status": "passed; 10 full CPU evaluations (five models x two datasets, seed 14), all predictions match",
+      "report": "provenance/evaluation_validation.json",
+      "full_test_runs": 10,
+      "partial_test_runs": 6,
+      "full_30_checkpoint_reevaluation": false
+    }
+  },
+  "checkpoint_import": {
+    "expected": 30,
+    "verified": 30,
+    "verified_bytes": 3532874238,
+    "status": "complete",
+    "manifest": "pretrained/manifest.json"
+  },
+  "updated_date": "2026-11-09"
+}

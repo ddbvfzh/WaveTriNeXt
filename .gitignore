@@ -1,0 +1,36 @@
+# Generated Python and environment files
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+build/
+dist/
+
+# New training outputs and model weights
+outputs/
+checkpoints/
+cache/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+!pretrained/**/best.pt
+*.part
+
+# Local credentials, machine configuration, and temporary files
+.env
+.env.*
+!.env.example
+.ssh/
+*known_hosts*
+*.pem
+*.key
+*_PRIVATE.*
+tmp/
+.DS_Store
+Thumbs.db
+.ipynb_checkpoints/
+
+# datasets/, results/, and verified pretrained/**/best.pt imports are included.

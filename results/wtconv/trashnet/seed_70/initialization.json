@@ -1,0 +1,12 @@
+{
+  "shared_tensors": 182,
+  "shared_initialization_sha256": "21364f1e62b08ed2476ddde6525358e4ce4fce364befd2773cbf1fac9f7740e8",
+  "head_initialization_sha256": "e4f5ce995d2fbd3572e839e25cb290276d16dba786af44208f1bbdbfcd6780c5",
+  "copied_depthwise_convolutions": 6,
+  "matches_seeded_baseline": true,
+  "wt_initialization_sha256": "7faca8ceb51ceed093bc12b4729d3daf6c49d5894b56bfd0aa3ef14586cc5711",
+  "wt_tensors": 54,
+  "matches_seeded_aab_wavelet": true,
+  "cpu_rng_matches_baseline": true,
+  "cpu_rng_matches_aab": true
+}

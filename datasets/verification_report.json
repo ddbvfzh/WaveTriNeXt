@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "image_hashes_checked": true,
+  "datasets": {
+    "trashnet": {
+      "images": 2527,
+      "retained_images": 2521,
+      "image_bytes": 43282402,
+      "split_counts": {
+        "test": 377,
+        "train": 1765,
+        "val": 379
+      }
+    },
+    "realwaste": {
+      "images": 4752,
+      "retained_images": 4752,
+      "image_bytes": 688308374,
+      "split_counts": {
+        "test": 712,
+        "train": 3327,
+        "val": 713
+      }
+    }
+  }
+}

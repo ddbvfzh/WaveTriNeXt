@@ -1,0 +1,15 @@
+dataset,sample_id_a,sample_id_b,path_a,path_b,class_name_a,class_name_b,match_type,hamming_distance,cross_class,excluded_a,excluded_b
+realwaste,fe7f9d7101f8bf460031,7e64e939aa2782e359c2,datasets/realwaste/images/food_organics/Food Organics_199.jpg,datasets/realwaste/images/food_organics/Food Organics_73.jpg,food organics,food organics,phash,4,False,False,False
+realwaste,cbfead0bd9f6a83b84e5,c3241e7335a3ad1d2c13,datasets/realwaste/images/food_organics/Food Organics_81.jpg,datasets/realwaste/images/food_organics/Food Organics_82.jpg,food organics,food organics,phash,4,False,False,False
+realwaste,63dfe311f69faa7def59,eb86eeb1cd0c3e0a3611,datasets/realwaste/images/food_organics/Food Organics_150.jpg,datasets/realwaste/images/metal/Metal_326.jpg,food organics,metal,phash,4,True,False,False
+realwaste,f8bd9ca68fbfc020e386,1ca99519cbf7d512794d,datasets/realwaste/images/cardboard/Cardboard_132.jpg,datasets/realwaste/images/metal/Metal_559.jpg,cardboard,metal,phash,4,True,False,False
+realwaste,a26141c9f3345b3e9ebd,7f56a58d41cb4cfe5704,datasets/realwaste/images/metal/Metal_655.jpg,datasets/realwaste/images/metal/Metal_658.jpg,metal,metal,phash,2,False,False,False
+realwaste,6e6ec299e392ecc3dc72,3012261ec432def32faf,datasets/realwaste/images/metal/Metal_546.jpg,datasets/realwaste/images/miscellaneous_trash/Miscellaneous Trash_401.jpg,metal,miscellaneous trash,phash,4,True,False,False
+realwaste,3012261ec432def32faf,629e08720777613ed73a,datasets/realwaste/images/miscellaneous_trash/Miscellaneous Trash_401.jpg,datasets/realwaste/images/miscellaneous_trash/Miscellaneous Trash_70.jpg,miscellaneous trash,miscellaneous trash,phash,4,False,False,False
+realwaste,9104b0789c24824c115c,34561637e7019ce24981,datasets/realwaste/images/metal/Metal_738.jpg,datasets/realwaste/images/plastic/Plastic_204.jpg,metal,plastic,phash,4,True,False,False
+realwaste,624478a57244cc65e204,5241eb1087f37aa55340,datasets/realwaste/images/plastic/Plastic_216.jpg,datasets/realwaste/images/plastic/Plastic_218.jpg,plastic,plastic,phash,2,False,False,False
+realwaste,5241eb1087f37aa55340,873723a7865855e87680,datasets/realwaste/images/plastic/Plastic_218.jpg,datasets/realwaste/images/plastic/Plastic_230.jpg,plastic,plastic,phash,4,False,False,False
+realwaste,9104b0789c24824c115c,0f4858eafad06bc5b5d1,datasets/realwaste/images/metal/Metal_738.jpg,datasets/realwaste/images/plastic/Plastic_763.jpg,metal,plastic,phash,4,True,False,False
+realwaste,34561637e7019ce24981,0f4858eafad06bc5b5d1,datasets/realwaste/images/plastic/Plastic_204.jpg,datasets/realwaste/images/plastic/Plastic_763.jpg,plastic,plastic,phash,2,False,False,False
+realwaste,c7032a89e77e7ede086f,e13d3f1a921227083e1c,datasets/realwaste/images/plastic/Plastic_199.jpg,datasets/realwaste/images/plastic/Plastic_774.jpg,plastic,plastic,phash,4,False,False,False
+realwaste,29ef682d7df0a43553ed,477ce764f9a9ae303368,datasets/realwaste/images/metal/Metal_127.jpg,datasets/realwaste/images/textile_trash/Textile Trash_219.jpg,metal,textile trash,phash,4,True,False,False

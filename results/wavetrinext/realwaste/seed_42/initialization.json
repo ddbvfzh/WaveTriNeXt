@@ -1,0 +1,8 @@
+{
+  "matches_seeded_a_plus_a_plus_b": true,
+  "shared_initialization_sha256": "7f514e89e930054c6dd6c3a292a6bb662e66dc00765c4935a42485dd2087beb6",
+  "head_initialization_sha256": "d5122d2cf04c6de1376d9e0183705e15fefb798b7367cac1dd6e19a3960f0484",
+  "trihead_initialization_sha256": "a378aa1f0620d01d82164e1e7dcdfa71aeb8d2785974fd3793653c17f33d63a1",
+  "cpu_rng_matches_a_plus_a_plus_b": true,
+  "region_classifier_default_not_copied": true
+}

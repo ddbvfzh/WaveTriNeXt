@@ -1,0 +1,65 @@
+{
+  "description": "Unmodified model/training dependencies copied from historical frozen source snapshots. portable.py, _portable_loop.py, evaluation.py, scripts/train.py and scripts/evaluate.py are new release adapters outside this byte-preserved inventory.",
+  "files": [
+    {
+      "path": "src/waste_reliability/__init__.py",
+      "sha256": "e0016f85dae1bf71c7508e1d625e602f61fde98a66a0c3170bbdcac61a206f7b",
+      "source": "experiments/convnext_t_pmam_wtconv_wavelet_guided_trihead_fg01_v1/source_snapshot/src/waste_reliability/__init__.py",
+      "byte_identical": true
+    },
+    {
+      "path": "src/waste_reliability/closed_set_baseline.py",
+      "sha256": "189c8998b382964630ef69652e129ad934c140ad32dbcd96eb0f51eec2556847",
+      "source": "experiments/convnext_t_pmam_wtconv_wavelet_guided_trihead_fg01_v1/source_snapshot/src/waste_reliability/closed_set_baseline.py",
+      "byte_identical": true
+    },
+    {
+      "path": "src/waste_reliability/closed_set_data.py",
+      "sha256": "729889c835960139fb46def97b1defc2de94fed379bce75c5440e3181e559d01",
+      "source": "experiments/convnext_t_pmam_wtconv_wavelet_guided_trihead_fg01_v1/source_snapshot/src/waste_reliability/closed_set_data.py",
+      "byte_identical": true
+    },
+    {
+      "path": "src/waste_reliability/closed_set_metrics.py",
+      "sha256": "787c2536fcf2696623c2a4abf56fffafaf61bc8b75fb4cff8e69b807829be4fc",
+      "source": "experiments/convnext_t_pmam_wtconv_wavelet_guided_trihead_fg01_v1/source_snapshot/src/waste_reliability/closed_set_metrics.py",
+      "byte_identical": true
+    },
+    {
+      "path": "src/waste_reliability/data.py",
+      "sha256": "8c38f6790552361441c7ba8ef1b67293c109caa00a1cd1d36c8d2d442ded02fc",
+      "source": "experiments/convnext_t_pmam_wtconv_wavelet_guided_trihead_fg01_v1/source_snapshot/src/waste_reliability/data.py",
+      "byte_identical": true
+    },
+    {
+      "path": "src/waste_reliability/convnext_pmam.py",
+      "sha256": "b2f6f03c32ca6db79a39450c1a262011c48dcb6c88a271eeee5d0b39758c1757",
+      "source": "experiments/convnext_t_pmam_wtconv_wavelet_guided_trihead_fg01_v1/source_snapshot/src/waste_reliability/convnext_pmam.py",
+      "byte_identical": true
+    },
+    {
+      "path": "src/waste_reliability/convnext_pmam_wtconv.py",
+      "sha256": "66b6be27883ed19b5b6cb8cea6426c39e4f5290e0aa5c358937c9975cbe57ab4",
+      "source": "experiments/convnext_t_pmam_wtconv_wavelet_guided_trihead_fg01_v1/source_snapshot/src/waste_reliability/convnext_pmam_wtconv.py",
+      "byte_identical": true
+    },
+    {
+      "path": "src/waste_reliability/convnext_wavelet_guided_trihead_fg01.py",
+      "sha256": "b6b443dc844d621ee0d364810aea3a2d5d8ef141235eb0db7ea0a0aa5f7cab82",
+      "source": "experiments/convnext_t_pmam_wtconv_wavelet_guided_trihead_fg01_v1/source_snapshot/src/waste_reliability/convnext_wavelet_guided_trihead_fg01.py",
+      "byte_identical": true
+    },
+    {
+      "path": "src/waste_reliability/wavelet_guided_trihead_fg01_training.py",
+      "sha256": "079402a342a07492011252b4b85ce088f519cd544837c92eff47c5b575889665",
+      "source": "experiments/convnext_t_pmam_wtconv_wavelet_guided_trihead_fg01_v1/source_snapshot/src/waste_reliability/wavelet_guided_trihead_fg01_training.py",
+      "byte_identical": true
+    },
+    {
+      "path": "src/waste_reliability/convnext_wtconv.py",
+      "sha256": "c1395f442c74ce50b59ceec4dcafd2777a1ab515da4211ab790b939c5ca5772a",
+      "source": "experiments/convnext_t_wtconv_s12_v1/source_snapshot/src/waste_reliability/convnext_wtconv.py",
+      "byte_identical": true
+    }
+  ]
+}

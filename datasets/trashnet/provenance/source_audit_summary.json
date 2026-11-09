@@ -1,0 +1,205 @@
+{
+  "input_fingerprint": "576115435bc0f0ca97ae2e0f528bda9cc78ec0a1f4a960b718867124e43a3772",
+  "input_images": 2527,
+  "archive_metadata_count": 1,
+  "retained_images": 2521,
+  "excluded_count": 7,
+  "excluded_by_reason": {
+    "archive_metadata": 1,
+    "conflicting_exact_class_labels": 6
+  },
+  "conflicting_pixel_groups": 3,
+  "group_count": 2496,
+  "duplicate_pairs": 28,
+  "counts": [
+    {
+      "dataset": "trashnet",
+      "class_name": "cardboard",
+      "label": 0,
+      "split": "train",
+      "count": 282,
+      "group_count": 280
+    },
+    {
+      "dataset": "trashnet",
+      "class_name": "cardboard",
+      "label": 0,
+      "split": "val",
+      "count": 61,
+      "group_count": 61
+    },
+    {
+      "dataset": "trashnet",
+      "class_name": "cardboard",
+      "label": 0,
+      "split": "test",
+      "count": 60,
+      "group_count": 60
+    },
+    {
+      "dataset": "trashnet",
+      "class_name": "glass",
+      "label": 1,
+      "split": "train",
+      "count": 348,
+      "group_count": 348
+    },
+    {
+      "dataset": "trashnet",
+      "class_name": "glass",
+      "label": 1,
+      "split": "val",
+      "count": 75,
+      "group_count": 75
+    },
+    {
+      "dataset": "trashnet",
+      "class_name": "glass",
+      "label": 1,
+      "split": "test",
+      "count": 75,
+      "group_count": 75
+    },
+    {
+      "dataset": "trashnet",
+      "class_name": "metal",
+      "label": 2,
+      "split": "train",
+      "count": 287,
+      "group_count": 286
+    },
+    {
+      "dataset": "trashnet",
+      "class_name": "metal",
+      "label": 2,
+      "split": "val",
+      "count": 61,
+      "group_count": 60
+    },
+    {
+      "dataset": "trashnet",
+      "class_name": "metal",
+      "label": 2,
+      "split": "test",
+      "count": 61,
+      "group_count": 61
+    },
+    {
+      "dataset": "trashnet",
+      "class_name": "paper",
+      "label": 3,
+      "split": "train",
+      "count": 416,
+      "group_count": 403
+    },
+    {
+      "dataset": "trashnet",
+      "class_name": "paper",
+      "label": 3,
+      "split": "val",
+      "count": 89,
+      "group_count": 86
+    },
+    {
+      "dataset": "trashnet",
+      "class_name": "paper",
+      "label": 3,
+      "split": "test",
+      "count": 89,
+      "group_count": 86
+    },
+    {
+      "dataset": "trashnet",
+      "class_name": "plastic",
+      "label": 4,
+      "split": "train",
+      "count": 336,
+      "group_count": 336
+    },
+    {
+      "dataset": "trashnet",
+      "class_name": "plastic",
+      "label": 4,
+      "split": "val",
+      "count": 72,
+      "group_count": 72
+    },
+    {
+      "dataset": "trashnet",
+      "class_name": "plastic",
+      "label": 4,
+      "split": "test",
+      "count": 72,
+      "group_count": 72
+    },
+    {
+      "dataset": "trashnet",
+      "class_name": "trash",
+      "label": 5,
+      "split": "train",
+      "count": 96,
+      "group_count": 96
+    },
+    {
+      "dataset": "trashnet",
+      "class_name": "trash",
+      "label": 5,
+      "split": "val",
+      "count": 21,
+      "group_count": 21
+    },
+    {
+      "dataset": "trashnet",
+      "class_name": "trash",
+      "label": 5,
+      "split": "test",
+      "count": 20,
+      "group_count": 20
+    }
+  ],
+  "actual_split_counts": {
+    "train": 1765,
+    "val": 379,
+    "test": 377
+  },
+  "output_sha256": {
+    "manifest.csv": "9d32697c1727100b8ea6fda61261ff2ab2fe71d078c196f5dd1b5cda05cf804e",
+    "duplicates.csv": "94e91dd95c96d718f237b9bccbf306455f3140fa804ae405e8c3a33faf8c1939",
+    "excluded.csv": "71137cc81998ad53dc7e99109926e9dcc258a57ff1ba1818f648b65f530dece2",
+    "class_counts.csv": "71fce78fb1316e0bc408700804dc269f4c66657299c73b526fb97d6abd8e6608"
+  },
+  "source_code_sha256": "729889c835960139fb46def97b1defc2de94fed379bce75c5440e3181e559d01",
+  "notes": [
+    "Ratios are approximate because duplicate groups cannot be split.",
+    "Perceptual matches retain their labels; all copies of exact pixel label conflicts are excluded.",
+    "Source files are never modified; archive metadata is excluded before image decoding.",
+    "Duplicate checks do not prove absence of same-object or pretraining overlap."
+  ],
+  "config": {
+    "version": 1,
+    "dataset": "trashnet",
+    "classes": [
+      "cardboard",
+      "glass",
+      "metal",
+      "paper",
+      "plastic",
+      "trash"
+    ],
+    "split_seed": 42,
+    "near_distance": 4,
+    "split_names": [
+      "train",
+      "val",
+      "test"
+    ],
+    "split_ratios": [
+      0.7,
+      0.15,
+      0.15
+    ],
+    "exact_conflict_policy": "exclude_all_copies"
+  },
+  "note": "Historical source audit summary; raw_root removed. Historical source output hashes do not validate the portable CSV copies.",
+  "source_audit_file_sha256": "0c490999b8d81835123f2b5416d8b06cdad99d53d9fdb54dc04b422fad5529f4"
+}

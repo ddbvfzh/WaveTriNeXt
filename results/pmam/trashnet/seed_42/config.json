@@ -1,0 +1,94 @@
+{
+  "version": 1,
+  "model": "convnext_tiny_improved_pmam_parallel_s34",
+  "dataset": "trashnet",
+  "seed": 42,
+  "classes": [
+    "cardboard",
+    "glass",
+    "metal",
+    "paper",
+    "plastic",
+    "trash"
+  ],
+  "epochs": 50,
+  "micro_batch_size": 8,
+  "effective_batch_size": 32,
+  "dtype": "float32",
+  "device": "cuda",
+  "manifest_sha256": "9d32697c1727100b8ea6fda61261ff2ab2fe71d078c196f5dd1b5cda05cf804e",
+  "weights_sha256": "983f1562536e84ff750a1576fb08e54de751dbf2e17c0d8a4a13704341fdcd3d",
+  "weights_enum": "ConvNeXt_Tiny_Weights.IMAGENET1K_V1",
+  "code_sha256": {
+    "closed_set_baseline.py": "189c8998b382964630ef69652e129ad934c140ad32dbcd96eb0f51eec2556847",
+    "closed_set_data.py": "729889c835960139fb46def97b1defc2de94fed379bce75c5440e3181e559d01",
+    "closed_set_metrics.py": "787c2536fcf2696623c2a4abf56fffafaf61bc8b75fb4cff8e69b807829be4fc",
+    "data.py": "8c38f6790552361441c7ba8ef1b67293c109caa00a1cd1d36c8d2d442ded02fc",
+    "convnext_pmam.py": "b2f6f03c32ca6db79a39450c1a262011c48dcb6c88a271eeee5d0b39758c1757",
+    "pmam_reports.py": "c75e828dd98912ee8e3b01236f2d066def88144f82f87d0bf861ccbd9ba592c4",
+    "pmam_experiment.py": "321e04fdba9d15f21210f22e25d603673a859c4944967ac54ba7bbf9d17e7444",
+    "run_convnext_pmam.py": "f8c0465a8fc64308ec48a6893466c93c74e4a1a60b3745d835f1b38b4e1dfe8c",
+    "audit_convnext_pmam.py": "f36d1589b63775ce4a959cc92246caa084b97bd7ee23c40d200de702753d2e07"
+  },
+  "torch": "2.8.0+cu128",
+  "torchvision": "0.23.0+cu128",
+  "packages": {
+    "numpy": "2.2.6",
+    "pandas": "2.3.3",
+    "Pillow": "12.1.0",
+    "scipy": "1.15.3"
+  },
+  "optimizer": "AdamW",
+  "backbone_lr": 0.0001,
+  "head_lr": 0.001,
+  "betas": [
+    0.9,
+    0.999
+  ],
+  "eps": 1e-08,
+  "weight_decay": 0.05,
+  "no_decay": "bias, normalization, LayerScale",
+  "warmup_epochs": 5,
+  "scheduler": "update-wise linear warmup + cosine",
+  "minimum_lr_ratio": 0.01,
+  "label_smoothing": 0.1,
+  "clip_grad_norm": 1.0,
+  "drop_path": 0.1,
+  "input_size": 224,
+  "eval_resize": 236,
+  "augmentation": {
+    "random_resized_crop_scale": [
+      0.8,
+      1.0
+    ],
+    "ratio": [
+      0.75,
+      1.3333333333333333
+    ],
+    "horizontal_flip": 0.5
+  },
+  "selection": "max validation macro_f1; ties min ordinary cross_entropy; ties earliest epoch",
+  "determinism": "seeded all RNGs; deterministic_algorithms warn_only; no bitwise cross-device guarantee",
+  "attention_mode": "parallel",
+  "attention_fusion": "multiply",
+  "attention_positions": [
+    5,
+    7
+  ],
+  "attention_channels": [
+    384,
+    768
+  ],
+  "attention_lr": 0.001,
+  "added_parameters": 2214180,
+  "parameter_count": 30038922,
+  "attention_initialization": "PyTorch Conv2d default; BN gamma=1 beta=0; isolated CPU RNG",
+  "attention_bn_eps": 1e-05,
+  "attention_bn_momentum": 0.1,
+  "amp": false,
+  "matmul_tf32": false,
+  "cudnn_tf32": false,
+  "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+  "export_curves": false,
+  "export_confusion": false
+}

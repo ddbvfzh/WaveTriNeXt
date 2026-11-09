@@ -1,0 +1,94 @@
+{
+  "format_version": 1,
+  "prepared_date": "2026-11-08",
+  "path_convention": "POSIX paths relative to repository root",
+  "image_bytes_modified": false,
+  "datasets": {
+    "trashnet": {
+      "images": 2527,
+      "image_bytes": 43282402,
+      "class_order": [
+        "cardboard",
+        "glass",
+        "metal",
+        "paper",
+        "plastic",
+        "trash"
+      ],
+      "raw_class_counts": {
+        "cardboard": 403,
+        "glass": 501,
+        "metal": 410,
+        "paper": 594,
+        "plastic": 482,
+        "trash": 137
+      },
+      "retained_images": 2521,
+      "excluded_images": 6,
+      "split_counts": {
+        "test": 377,
+        "train": 1765,
+        "val": 379
+      },
+      "portable_assignment_sha256": "d7e6cda6abbddafe67bcc4d87b4f03c3f08af4217f14c19b829250582d2743d8",
+      "manifest_sha256": "c32aaa2940fa185e47f95d493f086ef1a4291d926738e034802f9672932d84fa",
+      "raw_image_inventory_sha256": "cbc68723bc680653bd614d8b8d247133251f74774594c3d95a2587e712a73467",
+      "manifest": "datasets/trashnet/manifest.csv",
+      "raw_image_inventory": "datasets/trashnet/raw_image_inventory.csv",
+      "split_equivalence_checked_models": [
+        "baseline",
+        "pmam",
+        "wtconv",
+        "wtconv_pmam",
+        "wavetrinext"
+      ]
+    },
+    "realwaste": {
+      "images": 4752,
+      "image_bytes": 688308374,
+      "class_order": [
+        "cardboard",
+        "food organics",
+        "glass",
+        "metal",
+        "miscellaneous trash",
+        "paper",
+        "plastic",
+        "textile trash",
+        "vegetation"
+      ],
+      "raw_class_counts": {
+        "cardboard": 461,
+        "food organics": 411,
+        "glass": 420,
+        "metal": 790,
+        "miscellaneous trash": 495,
+        "paper": 500,
+        "plastic": 921,
+        "textile trash": 318,
+        "vegetation": 436
+      },
+      "retained_images": 4752,
+      "excluded_images": 0,
+      "split_counts": {
+        "test": 712,
+        "train": 3327,
+        "val": 713
+      },
+      "portable_assignment_sha256": "c09f9f6f33df2424515e9f817032242ffd661874960a5bb3e1e9dd913a4fc1f3",
+      "manifest_sha256": "43145349c396668c8b718b77b8568abf44dfc9e77e58feed34e1082274678697",
+      "raw_image_inventory_sha256": "795ad873dc0b6faa845ca31e0355268cc77c80e46026573d54a6ea4cb84028b7",
+      "manifest": "datasets/realwaste/manifest.csv",
+      "raw_image_inventory": "datasets/realwaste/raw_image_inventory.csv",
+      "split_equivalence_checked_models": [
+        "baseline",
+        "pmam",
+        "wtconv",
+        "wtconv_pmam",
+        "wavetrinext"
+      ]
+    }
+  },
+  "total_images": 7279,
+  "total_image_bytes": 731590776
+}

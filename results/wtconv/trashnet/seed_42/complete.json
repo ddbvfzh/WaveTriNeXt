@@ -1,0 +1,207 @@
+{
+  "status": "completed",
+  "dataset": "trashnet",
+  "seed": 42,
+  "epochs_completed": 50,
+  "requested_epochs": 50,
+  "best_epoch": 21,
+  "best_validation_metrics": {
+    "classes": [
+      "cardboard",
+      "glass",
+      "metal",
+      "paper",
+      "plastic",
+      "trash"
+    ],
+    "n_samples": 379,
+    "accuracy": 0.9604221635883905,
+    "macro_f1": 0.9545808116732487,
+    "macro_precision": 0.9649562612143802,
+    "macro_recall": 0.9466528081116402,
+    "per_class": [
+      {
+        "class_name": "cardboard",
+        "precision": 0.9655172413793104,
+        "recall": 0.9180327868852459,
+        "f1": 0.9411764705882353,
+        "support": 61
+      },
+      {
+        "class_name": "glass",
+        "precision": 0.9863013698630136,
+        "recall": 0.96,
+        "f1": 0.9729729729729729,
+        "support": 75
+      },
+      {
+        "class_name": "metal",
+        "precision": 0.921875,
+        "recall": 0.9672131147540983,
+        "f1": 0.944,
+        "support": 61
+      },
+      {
+        "class_name": "paper",
+        "precision": 0.9560439560439561,
+        "recall": 0.9775280898876404,
+        "f1": 0.9666666666666667,
+        "support": 89
+      },
+      {
+        "class_name": "plastic",
+        "precision": 0.96,
+        "recall": 1.0,
+        "f1": 0.9795918367346939,
+        "support": 72
+      },
+      {
+        "class_name": "trash",
+        "precision": 1.0,
+        "recall": 0.8571428571428571,
+        "f1": 0.923076923076923,
+        "support": 21
+      }
+    ],
+    "loss": 0.20938312582730617
+  },
+  "total_training_seconds": 815.3885269202292,
+  "classes": [
+    "cardboard",
+    "glass",
+    "metal",
+    "paper",
+    "plastic",
+    "trash"
+  ],
+  "config": {
+    "version": 1,
+    "model": "convnext_tiny_wtconv_s12",
+    "dataset": "trashnet",
+    "seed": 42,
+    "classes": [
+      "cardboard",
+      "glass",
+      "metal",
+      "paper",
+      "plastic",
+      "trash"
+    ],
+    "epochs": 50,
+    "micro_batch_size": 8,
+    "effective_batch_size": 32,
+    "dtype": "float32",
+    "device": "cuda",
+    "manifest_sha256": "9d32697c1727100b8ea6fda61261ff2ab2fe71d078c196f5dd1b5cda05cf804e",
+    "weights_sha256": "983f1562536e84ff750a1576fb08e54de751dbf2e17c0d8a4a13704341fdcd3d",
+    "weights_enum": "ConvNeXt_Tiny_Weights.IMAGENET1K_V1",
+    "code_sha256": {
+      "src/waste_reliability/__init__.py": "e0016f85dae1bf71c7508e1d625e602f61fde98a66a0c3170bbdcac61a206f7b",
+      "src/waste_reliability/closed_set_baseline.py": "189c8998b382964630ef69652e129ad934c140ad32dbcd96eb0f51eec2556847",
+      "src/waste_reliability/closed_set_data.py": "729889c835960139fb46def97b1defc2de94fed379bce75c5440e3181e559d01",
+      "src/waste_reliability/closed_set_metrics.py": "787c2536fcf2696623c2a4abf56fffafaf61bc8b75fb4cff8e69b807829be4fc",
+      "src/waste_reliability/data.py": "8c38f6790552361441c7ba8ef1b67293c109caa00a1cd1d36c8d2d442ded02fc",
+      "src/waste_reliability/convnext_pmam.py": "b2f6f03c32ca6db79a39450c1a262011c48dcb6c88a271eeee5d0b39758c1757",
+      "src/waste_reliability/convnext_pmam_wtconv.py": "66b6be27883ed19b5b6cb8cea6426c39e4f5290e0aa5c358937c9975cbe57ab4",
+      "src/waste_reliability/pmam_reports.py": "c75e828dd98912ee8e3b01236f2d066def88144f82f87d0bf861ccbd9ba592c4",
+      "src/waste_reliability/pmam_wtconv_reports.py": "e2885ed522fba7dc0bf2ce6700533827c15ee9846857d52133d882bf2a8b16db",
+      "src/waste_reliability/pmam_wtconv_checks.py": "c9cda70d073f7c2b4082a19bdb8a5cafacda74e43875ead18d23e910fbeade45",
+      "src/waste_reliability/convnext_wtconv.py": "c1395f442c74ce50b59ceec4dcafd2777a1ab515da4211ab790b939c5ca5772a",
+      "src/waste_reliability/wtconv_checks.py": "9d7adf0b0b87835a0616be72b2b22ee5220b99afc172388fb9cab47419d36a9a",
+      "src/waste_reliability/wtconv_reports.py": "6347fff5f05aca861551f007f6f0e22f2d7bf93de4288ce8f024d8d50ddcbe16",
+      "src/waste_reliability/wtconv_experiment.py": "0aa8204a0511b2c7a7ad8c785b5c3bbc7bb24a881994387a2c50d1d1a4faecef",
+      "scripts/run_convnext_wtconv.py": "4971400df0dce7727ff8bc8b6e6632ea3fd1cb00310ed2ce4bf8b0687ecb2c21",
+      "scripts/audit_convnext_wtconv.py": "6c17c5e202ca94106ed924da25db2b008cc1fd2ccf5cedd48ca89adc87dde6db",
+      "scripts/audit_convnext_pmam.py": "f36d1589b63775ce4a959cc92246caa084b97bd7ee23c40d200de702753d2e07"
+    },
+    "torch": "2.8.0+cu128",
+    "torchvision": "0.23.0+cu128",
+    "packages": {
+      "numpy": "2.2.6",
+      "pandas": "2.3.3",
+      "Pillow": "12.1.0",
+      "scipy": "1.15.3"
+    },
+    "optimizer": "AdamW",
+    "backbone_lr": 0.0001,
+    "head_lr": 0.001,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "weight_decay": 0.05,
+    "no_decay": "bias, normalization, LayerScale, WT Scale",
+    "warmup_epochs": 5,
+    "scheduler": "update-wise linear warmup + cosine",
+    "minimum_lr_ratio": 0.01,
+    "label_smoothing": 0.1,
+    "clip_grad_norm": 1.0,
+    "drop_path": 0.1,
+    "input_size": 224,
+    "eval_resize": 236,
+    "augmentation": {
+      "random_resized_crop_scale": [
+        0.8,
+        1.0
+      ],
+      "ratio": [
+        0.75,
+        1.3333333333333333
+      ],
+      "horizontal_flip": 0.5
+    },
+    "selection": "max validation macro_f1; ties min ordinary cross_entropy; ties earliest epoch",
+    "determinism": "seeded all RNGs; deterministic_algorithms warn_only; no bitwise cross-device guarantee",
+    "protocol_sha256": "d2f4a27263fb3c8d178a79c14fb3a26ed5f49b4be9d663d7c926dc7a7ea35856",
+    "data_audit_sha256": "0c490999b8d81835123f2b5416d8b06cdad99d53d9fdb54dc04b422fad5529f4",
+    "reference_inputs_sha256": "d65e53d3b1411b47f302a276bf9ca08780bbfc70277c01a5be2175be6203bed6",
+    "technical_check_policy": {
+      "mode": "skipped_by_user",
+      "user_requested_skip": true,
+      "reason": "用户在50项测试已完成后要求不用测试了"
+    },
+    "added_parameters": 346464,
+    "parameter_count": 28171206,
+    "wt_added_parameters": 346464,
+    "wt_positions": [
+      1,
+      3
+    ],
+    "wt_type": "db1",
+    "wt_levels": 2,
+    "wt_kernel_size": 7,
+    "wt_base_scale_init": 1.0,
+    "wt_wavelet_scale_init": 0.1,
+    "wt_lr": 0.001,
+    "wt_source_commit": "4a84da2218924b3973de2235d641f2ecf969c346",
+    "wt_filters": "persistent buffers, fixed Haar",
+    "wt_initialization": "copy pretrained DW7 weight/bias; default wavelet Conv2d; isolated CPU RNG",
+    "num_workers": 0,
+    "drop_last": false,
+    "optimizer_foreach": false,
+    "amp": false,
+    "matmul_tf32": false,
+    "cudnn_tf32": false,
+    "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+    "export_curves": false,
+    "export_confusion": false
+  },
+  "parameter_count": 28171206,
+  "added_parameters": 346464,
+  "wt_added_parameters": 346464,
+  "training_samples": 1765,
+  "validation_samples": 379,
+  "test_samples": 377,
+  "artifacts_sha256": {
+    "best.pt": "035c3ee40957392912a67d1936b5137895e792fd533ac7a0699ba600f0c10607",
+    "last.pt": "88b73888825d0272d936142564db2d48dccdc63598d80a2ef5ed0a3885fa47e8",
+    "history.csv": "b444de7be0e9df0395a9d63680bd6a59c0b670c6ef3bc1506d2104cc7088ff92",
+    "test_predictions.csv": "51bbe503b1684ad891e191317df3a16e7ff50dee81fa7ae9fe573e1c79f5f166",
+    "test_metrics.json": "709c6dc20dbe5dfadbc67ad9a891271cee2d54da8254c26623b5826e231e906c",
+    "class_report.csv": "08693bfde00cd47b184e0a4391852542d0ba72b4acfd201d889117bcbd824ba6",
+    "initialization.json": "56e6cb17b50c109bc06f1f0282a18d387cb40205294a4322dd4f0cc00d8172c7",
+    "run.log": "f3004aa1c828dd28708201c81550f540657217b457800fb39e39b3d3395351b8"
+  },
+  "test_metrics_sha256": "709c6dc20dbe5dfadbc67ad9a891271cee2d54da8254c26623b5826e231e906c"
+}

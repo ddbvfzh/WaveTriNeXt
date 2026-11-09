@@ -1,0 +1,7 @@
+{
+  "shared_tensors": 182,
+  "shared_initialization_sha256": "d46174d27913d7362f80a98ce518bfa9b15dc75c285f0994b587eba0b0a670aa",
+  "head_initialization_sha256": "632d6f5a93f214edf75a21ea9f1272d8ec833b01e3921d25649c192b2c6e7e9e",
+  "matches_seeded_baseline": true,
+  "cpu_rng_matches_baseline": true
+}

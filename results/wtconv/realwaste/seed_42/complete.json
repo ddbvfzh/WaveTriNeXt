@@ -1,0 +1,237 @@
+{
+  "status": "completed",
+  "dataset": "realwaste",
+  "seed": 42,
+  "epochs_completed": 50,
+  "requested_epochs": 50,
+  "best_epoch": 18,
+  "best_validation_metrics": {
+    "classes": [
+      "cardboard",
+      "food organics",
+      "glass",
+      "metal",
+      "miscellaneous trash",
+      "paper",
+      "plastic",
+      "textile trash",
+      "vegetation"
+    ],
+    "n_samples": 713,
+    "accuracy": 0.9453015427769986,
+    "macro_f1": 0.9465346633357216,
+    "macro_precision": 0.9468343517011549,
+    "macro_recall": 0.9474348149407964,
+    "per_class": [
+      {
+        "class_name": "cardboard",
+        "precision": 0.9545454545454546,
+        "recall": 0.9130434782608695,
+        "f1": 0.9333333333333332,
+        "support": 69
+      },
+      {
+        "class_name": "food organics",
+        "precision": 0.953125,
+        "recall": 0.9838709677419355,
+        "f1": 0.9682539682539683,
+        "support": 62
+      },
+      {
+        "class_name": "glass",
+        "precision": 0.9375,
+        "recall": 0.9523809523809523,
+        "f1": 0.9448818897637795,
+        "support": 63
+      },
+      {
+        "class_name": "metal",
+        "precision": 0.9590163934426229,
+        "recall": 0.9831932773109243,
+        "f1": 0.9709543568464729,
+        "support": 119
+      },
+      {
+        "class_name": "miscellaneous trash",
+        "precision": 0.9242424242424242,
+        "recall": 0.8243243243243243,
+        "f1": 0.8714285714285714,
+        "support": 74
+      },
+      {
+        "class_name": "paper",
+        "precision": 0.9864864864864865,
+        "recall": 0.9733333333333334,
+        "f1": 0.9798657718120806,
+        "support": 75
+      },
+      {
+        "class_name": "plastic",
+        "precision": 0.9142857142857143,
+        "recall": 0.927536231884058,
+        "f1": 0.920863309352518,
+        "support": 138
+      },
+      {
+        "class_name": "textile trash",
+        "precision": 0.9230769230769231,
+        "recall": 1.0,
+        "f1": 0.9600000000000001,
+        "support": 48
+      },
+      {
+        "class_name": "vegetation",
+        "precision": 0.9692307692307692,
+        "recall": 0.9692307692307692,
+        "f1": 0.9692307692307692,
+        "support": 65
+      }
+    ],
+    "loss": 0.2766299944627001
+  },
+  "total_training_seconds": 1645.5804953984916,
+  "classes": [
+    "cardboard",
+    "food organics",
+    "glass",
+    "metal",
+    "miscellaneous trash",
+    "paper",
+    "plastic",
+    "textile trash",
+    "vegetation"
+  ],
+  "config": {
+    "version": 1,
+    "model": "convnext_tiny_wtconv_s12",
+    "dataset": "realwaste",
+    "seed": 42,
+    "classes": [
+      "cardboard",
+      "food organics",
+      "glass",
+      "metal",
+      "miscellaneous trash",
+      "paper",
+      "plastic",
+      "textile trash",
+      "vegetation"
+    ],
+    "epochs": 50,
+    "micro_batch_size": 8,
+    "effective_batch_size": 32,
+    "dtype": "float32",
+    "device": "cuda",
+    "manifest_sha256": "f0b289a9517e7bf7eb9485e8635ab097de8b8ecbdcb49d8ef4b79938514c68d0",
+    "weights_sha256": "983f1562536e84ff750a1576fb08e54de751dbf2e17c0d8a4a13704341fdcd3d",
+    "weights_enum": "ConvNeXt_Tiny_Weights.IMAGENET1K_V1",
+    "code_sha256": {
+      "src/waste_reliability/__init__.py": "e0016f85dae1bf71c7508e1d625e602f61fde98a66a0c3170bbdcac61a206f7b",
+      "src/waste_reliability/closed_set_baseline.py": "189c8998b382964630ef69652e129ad934c140ad32dbcd96eb0f51eec2556847",
+      "src/waste_reliability/closed_set_data.py": "729889c835960139fb46def97b1defc2de94fed379bce75c5440e3181e559d01",
+      "src/waste_reliability/closed_set_metrics.py": "787c2536fcf2696623c2a4abf56fffafaf61bc8b75fb4cff8e69b807829be4fc",
+      "src/waste_reliability/data.py": "8c38f6790552361441c7ba8ef1b67293c109caa00a1cd1d36c8d2d442ded02fc",
+      "src/waste_reliability/convnext_pmam.py": "b2f6f03c32ca6db79a39450c1a262011c48dcb6c88a271eeee5d0b39758c1757",
+      "src/waste_reliability/convnext_pmam_wtconv.py": "66b6be27883ed19b5b6cb8cea6426c39e4f5290e0aa5c358937c9975cbe57ab4",
+      "src/waste_reliability/pmam_reports.py": "c75e828dd98912ee8e3b01236f2d066def88144f82f87d0bf861ccbd9ba592c4",
+      "src/waste_reliability/pmam_wtconv_reports.py": "e2885ed522fba7dc0bf2ce6700533827c15ee9846857d52133d882bf2a8b16db",
+      "src/waste_reliability/pmam_wtconv_checks.py": "c9cda70d073f7c2b4082a19bdb8a5cafacda74e43875ead18d23e910fbeade45",
+      "src/waste_reliability/convnext_wtconv.py": "c1395f442c74ce50b59ceec4dcafd2777a1ab515da4211ab790b939c5ca5772a",
+      "src/waste_reliability/wtconv_checks.py": "9d7adf0b0b87835a0616be72b2b22ee5220b99afc172388fb9cab47419d36a9a",
+      "src/waste_reliability/wtconv_reports.py": "6347fff5f05aca861551f007f6f0e22f2d7bf93de4288ce8f024d8d50ddcbe16",
+      "src/waste_reliability/wtconv_experiment.py": "0aa8204a0511b2c7a7ad8c785b5c3bbc7bb24a881994387a2c50d1d1a4faecef",
+      "scripts/run_convnext_wtconv.py": "4971400df0dce7727ff8bc8b6e6632ea3fd1cb00310ed2ce4bf8b0687ecb2c21",
+      "scripts/audit_convnext_wtconv.py": "6c17c5e202ca94106ed924da25db2b008cc1fd2ccf5cedd48ca89adc87dde6db",
+      "scripts/audit_convnext_pmam.py": "f36d1589b63775ce4a959cc92246caa084b97bd7ee23c40d200de702753d2e07"
+    },
+    "torch": "2.8.0+cu128",
+    "torchvision": "0.23.0+cu128",
+    "packages": {
+      "numpy": "2.2.6",
+      "pandas": "2.3.3",
+      "Pillow": "12.1.0",
+      "scipy": "1.15.3"
+    },
+    "optimizer": "AdamW",
+    "backbone_lr": 0.0001,
+    "head_lr": 0.001,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "weight_decay": 0.05,
+    "no_decay": "bias, normalization, LayerScale, WT Scale",
+    "warmup_epochs": 5,
+    "scheduler": "update-wise linear warmup + cosine",
+    "minimum_lr_ratio": 0.01,
+    "label_smoothing": 0.1,
+    "clip_grad_norm": 1.0,
+    "drop_path": 0.1,
+    "input_size": 224,
+    "eval_resize": 236,
+    "augmentation": {
+      "random_resized_crop_scale": [
+        0.8,
+        1.0
+      ],
+      "ratio": [
+        0.75,
+        1.3333333333333333
+      ],
+      "horizontal_flip": 0.5
+    },
+    "selection": "max validation macro_f1; ties min ordinary cross_entropy; ties earliest epoch",
+    "determinism": "seeded all RNGs; deterministic_algorithms warn_only; no bitwise cross-device guarantee",
+    "protocol_sha256": "d2f4a27263fb3c8d178a79c14fb3a26ed5f49b4be9d663d7c926dc7a7ea35856",
+    "data_audit_sha256": "69443e7ef3dc1c3c661994d85206a96a145bb9053d6337e83e488d30cb4f47c2",
+    "reference_inputs_sha256": "d65e53d3b1411b47f302a276bf9ca08780bbfc70277c01a5be2175be6203bed6",
+    "technical_check_policy": {
+      "mode": "skipped_by_user",
+      "user_requested_skip": true,
+      "reason": "用户在50项测试已完成后要求不用测试了"
+    },
+    "added_parameters": 346464,
+    "parameter_count": 28173513,
+    "wt_added_parameters": 346464,
+    "wt_positions": [
+      1,
+      3
+    ],
+    "wt_type": "db1",
+    "wt_levels": 2,
+    "wt_kernel_size": 7,
+    "wt_base_scale_init": 1.0,
+    "wt_wavelet_scale_init": 0.1,
+    "wt_lr": 0.001,
+    "wt_source_commit": "4a84da2218924b3973de2235d641f2ecf969c346",
+    "wt_filters": "persistent buffers, fixed Haar",
+    "wt_initialization": "copy pretrained DW7 weight/bias; default wavelet Conv2d; isolated CPU RNG",
+    "num_workers": 0,
+    "drop_last": false,
+    "optimizer_foreach": false,
+    "amp": false,
+    "matmul_tf32": false,
+    "cudnn_tf32": false,
+    "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+    "export_curves": false,
+    "export_confusion": false
+  },
+  "parameter_count": 28173513,
+  "added_parameters": 346464,
+  "wt_added_parameters": 346464,
+  "training_samples": 3327,
+  "validation_samples": 713,
+  "test_samples": 712,
+  "artifacts_sha256": {
+    "best.pt": "ce695775c7e289484a346ea9b00f96cead2fd18750854895f6c0f23a88f4047d",
+    "last.pt": "4ef4d81d8edb68c848bea99a1167ae3018a5bdbb20d81ceda65555f0a0e6a0b2",
+    "history.csv": "3cb2bd8990d512d04935fd13dc7a1fca6a709c2a158642c3bd1335cde16d09a0",
+    "test_predictions.csv": "ad992c84e7fd6aaec8e9f3d876a256e67c7ee36fa0e6511066517a0d534a0ed5",
+    "test_metrics.json": "da5dfdc61182219b9f542f2c5431a95491c209e8150b6dad6a2c08c66784d655",
+    "class_report.csv": "937e4a3e5a1336b82c34ff2aef6006730e30a9e58aa62d6ef0ddfa6a983cf5dc",
+    "initialization.json": "22735f05ca9a332f1228f805af2d05dbda3420dba5a46d66e45a76b953918674",
+    "run.log": "b146b0a8c24e491b672a8564025ce1c6ed002550f9bf299b7916d28e2a42eaa4"
+  },
+  "test_metrics_sha256": "da5dfdc61182219b9f542f2c5431a95491c209e8150b6dad6a2c08c66784d655"
+}

@@ -1,0 +1,286 @@
+{
+  "status": "completed",
+  "dataset": "trashnet",
+  "seed": 42,
+  "epochs_completed": 50,
+  "requested_epochs": 50,
+  "best_epoch": 21,
+  "best_validation_metrics": {
+    "classes": [
+      "cardboard",
+      "glass",
+      "metal",
+      "paper",
+      "plastic",
+      "trash"
+    ],
+    "n_samples": 379,
+    "accuracy": 0.9762532981530343,
+    "macro_f1": 0.9689675601169894,
+    "macro_precision": 0.9780075204992317,
+    "macro_recall": 0.96209407688087,
+    "per_class": [
+      {
+        "class_name": "cardboard",
+        "precision": 0.9836065573770492,
+        "recall": 0.9836065573770492,
+        "f1": 0.9836065573770492,
+        "support": 61
+      },
+      {
+        "class_name": "glass",
+        "precision": 0.9864864864864865,
+        "recall": 0.9733333333333334,
+        "f1": 0.9798657718120806,
+        "support": 75
+      },
+      {
+        "class_name": "metal",
+        "precision": 0.9230769230769231,
+        "recall": 0.9836065573770492,
+        "f1": 0.9523809523809524,
+        "support": 61
+      },
+      {
+        "class_name": "paper",
+        "precision": 0.9887640449438202,
+        "recall": 0.9887640449438202,
+        "f1": 0.9887640449438202,
+        "support": 89
+      },
+      {
+        "class_name": "plastic",
+        "precision": 0.9861111111111112,
+        "recall": 0.9861111111111112,
+        "f1": 0.9861111111111112,
+        "support": 72
+      },
+      {
+        "class_name": "trash",
+        "precision": 1.0,
+        "recall": 0.8571428571428571,
+        "f1": 0.923076923076923,
+        "support": 21
+      }
+    ],
+    "global_ce": 0.17203642148770254,
+    "foreground_ce": 0.2074078639138657,
+    "background_loss": 0.02781647428044543,
+    "main_ce": 0.17203642148770254,
+    "fg_mass": 0.31698168991109,
+    "bg_mass": 0.27944520328164413,
+    "am_mass": 0.4035730805434778,
+    "pbg_true": 0.013543091333498269,
+    "loss": 0.17203642148770254,
+    "auxiliary_objective": 0.1955588555902164
+  },
+  "total_training_seconds": 1148.2658463045955,
+  "classes": [
+    "cardboard",
+    "glass",
+    "metal",
+    "paper",
+    "plastic",
+    "trash"
+  ],
+  "config": {
+    "version": 1,
+    "model": "convnext_tiny_pmam_wtconv_wavelet_guided_trihead_fg01",
+    "dataset": "trashnet",
+    "seed": 42,
+    "classes": [
+      "cardboard",
+      "glass",
+      "metal",
+      "paper",
+      "plastic",
+      "trash"
+    ],
+    "epochs": 50,
+    "micro_batch_size": 8,
+    "effective_batch_size": 32,
+    "dtype": "float32",
+    "device": "cuda",
+    "manifest_sha256": "9d32697c1727100b8ea6fda61261ff2ab2fe71d078c196f5dd1b5cda05cf804e",
+    "weights_sha256": "983f1562536e84ff750a1576fb08e54de751dbf2e17c0d8a4a13704341fdcd3d",
+    "weights_enum": "ConvNeXt_Tiny_Weights.IMAGENET1K_V1",
+    "code_sha256": {
+      "src/waste_reliability/__init__.py": "e0016f85dae1bf71c7508e1d625e602f61fde98a66a0c3170bbdcac61a206f7b",
+      "src/waste_reliability/closed_set_baseline.py": "189c8998b382964630ef69652e129ad934c140ad32dbcd96eb0f51eec2556847",
+      "src/waste_reliability/closed_set_data.py": "729889c835960139fb46def97b1defc2de94fed379bce75c5440e3181e559d01",
+      "src/waste_reliability/closed_set_metrics.py": "787c2536fcf2696623c2a4abf56fffafaf61bc8b75fb4cff8e69b807829be4fc",
+      "src/waste_reliability/data.py": "8c38f6790552361441c7ba8ef1b67293c109caa00a1cd1d36c8d2d442ded02fc",
+      "src/waste_reliability/convnext_pmam.py": "b2f6f03c32ca6db79a39450c1a262011c48dcb6c88a271eeee5d0b39758c1757",
+      "src/waste_reliability/convnext_pmam_wtconv.py": "66b6be27883ed19b5b6cb8cea6426c39e4f5290e0aa5c358937c9975cbe57ab4",
+      "src/waste_reliability/pmam_reports.py": "c75e828dd98912ee8e3b01236f2d066def88144f82f87d0bf861ccbd9ba592c4",
+      "src/waste_reliability/pmam_wtconv_reports.py": "e2885ed522fba7dc0bf2ce6700533827c15ee9846857d52133d882bf2a8b16db",
+      "src/waste_reliability/wtconv_reports.py": "6347fff5f05aca861551f007f6f0e22f2d7bf93de4288ce8f024d8d50ddcbe16",
+      "src/waste_reliability/pmam_wtconv_prime_reports.py": "a5762b3a5a27ddcd39d9c02aae9350d137e457dea438db86b00cf24012776f39",
+      "src/waste_reliability/triregion_reports.py": "6d4d8ae82b6696dcc2d32614d018e2ed3c5e4355502db8edd117afbb8331c61b",
+      "src/waste_reliability/convnext_wavelet_guided_trihead_fg01.py": "b6b443dc844d621ee0d364810aea3a2d5d8ef141235eb0db7ea0a0aa5f7cab82",
+      "src/waste_reliability/wavelet_guided_trihead_fg01_training.py": "079402a342a07492011252b4b85ce088f519cd544837c92eff47c5b575889665",
+      "src/waste_reliability/wavelet_guided_trihead_fg01_checks.py": "76e27efc40140f8af13d0adf4d9c8df660512533ae1f18a8346f4562a04f03a0",
+      "src/waste_reliability/wavelet_guided_trihead_fg01_reports.py": "ee562890a3ac1770eda3a56e4ede3c64dfc54937a83b80e19d46c08f95b52a91",
+      "src/waste_reliability/wavelet_guided_trihead_fg01_experiment.py": "6f9bb17a29b3a1e9b4ad242189a38559e94f433d4cb6658a908d06df92139c8a",
+      "scripts/run_convnext_wavelet_guided_trihead_fg01.py": "379b2d0f4c3d066c76576939309a1fceff4dfe29c4242488ad25c6e00274ba92"
+    },
+    "torch": "2.8.0+cu128",
+    "torchvision": "0.23.0+cu128",
+    "packages": {
+      "numpy": "2.2.6",
+      "pandas": "2.3.3",
+      "Pillow": "12.1.0",
+      "scipy": "1.15.3"
+    },
+    "optimizer": "AdamW",
+    "backbone_lr": 0.0001,
+    "head_lr": 0.001,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "weight_decay": 0.05,
+    "no_decay": "bias, normalization, LayerScale, WT Scale",
+    "warmup_epochs": 5,
+    "scheduler": "update-wise linear warmup + cosine",
+    "minimum_lr_ratio": 0.01,
+    "label_smoothing": 0.1,
+    "clip_grad_norm": 1.0,
+    "drop_path": 0.1,
+    "input_size": 224,
+    "eval_resize": 236,
+    "augmentation": {
+      "random_resized_crop_scale": [
+        0.8,
+        1.0
+      ],
+      "ratio": [
+        0.75,
+        1.3333333333333333
+      ],
+      "horizontal_flip": 0.5
+    },
+    "selection": "max validation macro_f1; ties min ordinary cross_entropy; ties earliest epoch",
+    "determinism": "seeded all RNGs; deterministic_algorithms warn_only; no bitwise cross-device guarantee",
+    "parameter_count": 30595446,
+    "added_parameters": 2770704,
+    "triregion_added_parameters": 210060,
+    "tri_region": {
+      "mode": "wavelet_guided_parallel_auxiliary",
+      "taps": [
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          3,
+          2,
+          0
+        ]
+      ],
+      "tap_semantics": "processed_scale_output_before_reconstruction; C_band_flatten",
+      "inputs": [
+        384,
+        768,
+        384
+      ],
+      "projection_channels": 128,
+      "projection_groups": 16,
+      "projection_activation": null,
+      "mask_kernel": 3,
+      "mask_bias": false,
+      "mask_order": [
+        "foreground",
+        "background",
+        "ambiguous"
+      ],
+      "mask_activation": "softmax_dim1",
+      "normalization": {
+        "eps": 1e-05,
+        "weight_init": 1.0,
+        "bias_init": 0.0,
+        "bn_momentum": 0.1
+      },
+      "pool_source": "post_a3_F3",
+      "pool_epsilon": 1e-06,
+      "region_classifier": "shared_linear_384_K_bias_true_no_norm",
+      "detach": false,
+      "final_prediction": "logits_cls_only",
+      "ambiguous_classifier": false
+    },
+    "tri_region_loss": {
+      "global_ce_weight": 1.0,
+      "foreground_ce_weight": 0.1,
+      "background_weight": 0.1,
+      "label_smoothing": 0.1,
+      "background": "logsumexp_all_minus_logsumexp_non_target",
+      "extra_regularization": null
+    },
+    "fusion": "main_logits_only",
+    "loss_weights": {
+      "global": 1.0,
+      "foreground": 0.1,
+      "background": 0.1
+    },
+    "attention_mode": "parallel",
+    "attention_fusion": "multiply",
+    "attention_positions": [
+      5,
+      7
+    ],
+    "attention_channels": [
+      384,
+      768
+    ],
+    "attention_lr": 0.001,
+    "attention_added_parameters": 2214180,
+    "region_lr": 0.001,
+    "triregion_lr": 0.001,
+    "wt_added_parameters": 346464,
+    "wt_positions": [
+      1,
+      3
+    ],
+    "wt_type": "db1",
+    "wt_levels": 2,
+    "wt_kernel_size": 7,
+    "wt_base_scale_init": 1.0,
+    "wt_wavelet_scale_init": 0.1,
+    "wt_lr": 0.001,
+    "wt_source_commit": "4a84da2218924b3973de2235d641f2ecf969c346",
+    "wt_filters": "persistent buffers, fixed Haar",
+    "num_workers": 0,
+    "drop_last": false,
+    "optimizer_foreach": false,
+    "amp": false,
+    "matmul_tf32": false,
+    "cudnn_tf32": false,
+    "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+    "export_curves": false,
+    "export_confusion": false,
+    "protocol_sha256": "1848e9beccd6008b9c29920cfd4b173b630f266640c2ebd5576e990112d6d5bd",
+    "data_audit_sha256": "0c490999b8d81835123f2b5416d8b06cdad99d53d9fdb54dc04b422fad5529f4",
+    "reference_inputs_sha256": "604b0b5ea1e45c5cc2630dbedf3cdac2d7fbdb64ce8ebbbf78e6f22002c10a20",
+    "source_execution": "independent_hash_verified_deployment; checked_against_frozen_snapshot_each_epoch"
+  },
+  "parameter_count": 30595446,
+  "added_parameters": 2770704,
+  "wt_added_parameters": 346464,
+  "triregion_added_parameters": 210060,
+  "training_samples": 1765,
+  "validation_samples": 379,
+  "test_samples": 377,
+  "artifacts_sha256": {
+    "best.pt": "2a48baea8e646bf53d28b4c9a3839700fd062f8a4446a00633b196b01d011956",
+    "last.pt": "548bb0c4b7beefd27e93f2ae3b3f9a772a4b33cc8c0430da2f38bbd6300fedf7",
+    "history.csv": "afbea30d6b751a13f728f1b722822b12afa0a6dd89c854da045703e08d4f5eab",
+    "test_predictions.csv": "2dea8140b5030984e1cbf726c8b4c445703237252a07892fe122e6a0c1741c42",
+    "test_metrics.json": "72d93c6bc4732cb70b38572b3c08ca4a1a7ac08d32de1dfaee07d6fe266a1ef8",
+    "class_report.csv": "910807b653348da4145690c735c330e9e23619415aa4653ca55d36b1618140c3",
+    "initialization.json": "737c324ca0bfaa73dcc7131f1960a7a265b8f55e071e0724c094368561028b18",
+    "test_diagnostics.json": "4d25a75cbfb4597ada24341949ae92007bfd59277913f4c0b7a7860a4da18b68"
+  },
+  "test_metrics_sha256": "72d93c6bc4732cb70b38572b3c08ca4a1a7ac08d32de1dfaee07d6fe266a1ef8"
+}
