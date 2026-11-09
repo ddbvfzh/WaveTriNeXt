@@ -20,15 +20,15 @@ WaveTriNeXt corresponds to the historical `wavelet_guided_trihead_fg01` experime
 
 ## Results
 
-All values below are means over seeds **14, 42, 70**, using the fixed validation-selected checkpoint for each run. Scores are percentages.
+Classification scores are **mean ± sample standard deviation** (ddof = 1) over seeds **14, 42, 70**, using the validation-selected checkpoint for each run. Scores are percentages; parameter counts are in millions (M). The best mean for each metric is bold.
 
-| Method | Params, 6 classes (M) | Params, 9 classes (M) | TrashNet Acc. | TrashNet Macro-F1 | RealWaste Acc. | RealWaste Macro-F1 |
+| Method | Params, 6 classes (M) | Params, 9 classes (M) | TrashNet Accuracy ↑ | TrashNet Macro-F1 ↑ | RealWaste Accuracy ↑ | RealWaste Macro-F1 ↑ |
 |---|---:|---:|---:|---:|---:|---:|
-| ConvNeXt-T | 27.82 | 27.83 | 95.84 | 95.36 | 94.71 | 94.75 |
-| ConvNeXt-T + PMAM | 30.04 | 30.04 | 96.20 | 95.81 | 94.52 | 94.61 |
-| ConvNeXt-T + WTConv | 28.17 | 28.17 | 95.93 | 95.51 | 94.99 | 94.97 |
-| ConvNeXt-T + WTConv + PMAM | 30.39 | 30.39 | 96.55 | 96.26 | 95.18 | **95.26** |
-| WaveTriNeXt | 30.60 | 30.60 | **97.08** | **96.57** | **95.22** | 95.17 |
+| ConvNeXt-T | 27.82 | 27.83 | 95.84 ± 0.55 | 95.36 ± 0.59 | 94.71 ± 0.08 | 94.75 ± 0.15 |
+| ConvNeXt-T + PMAM | 30.04 | 30.04 | 96.20 ± 0.41 | 95.81 ± 0.53 | 94.52 ± 0.37 | 94.61 ± 0.49 |
+| ConvNeXt-T + WTConv | 28.17 | 28.17 | 95.93 ± 0.41 | 95.51 ± 0.58 | 94.99 ± 0.45 | 94.97 ± 0.39 |
+| ConvNeXt-T + WTConv + PMAM | 30.39 | 30.39 | 96.55 ± 0.96 | 96.26 ± 1.28 | 95.18 ± 0.21 | **95.26** ± 0.20 |
+| WaveTriNeXt | 30.60 | 30.60 | **97.08** ± 0.46 | **96.57** ± 0.80 | **95.22** ± 0.74 | 95.17 ± 0.78 |
 
 [Per-seed results](results/per_seed.csv), [means and sample standard deviations](results/summary.csv), and the [machine-readable paper table](results/paper_table.csv) are included. The result audit recomputes accuracy and Macro-F1 from all **16,335 prediction rows** and checks the original records' hashes.
 
@@ -52,6 +52,13 @@ WaveTriNeXt/
 
 ## Data
 
+**We use two existing datasets and credit their original creators.** This repository packages copies of their images together with the fixed splits used in our experiments.
+
+- **TrashNet — Gary Thung and Mindy Yang.** Our copy is the `dataset-resized` release (512 × 384 pixels) from the [original TrashNet repository](https://github.com/garythung/trashnet). The authors collected waste-object photographs against a white background for their Stanford CS229 project. Please cite their repository and the report by Mindy Yang and Gary Thung, [*Classification of Trash for Recyclability Status* (2016)](https://cs229.stanford.edu/proj2016/report/ThungYang-ClassificationOfTrashForRecyclabilityStatus-report.pdf).
+- **RealWaste — Sam Single, Saeid Iranmanesh, and Raad Raad (2023).** Our copy was downloaded from the [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/908/realwaste), with dataset DOI [10.24432/C5SS4G](https://doi.org/10.24432/C5SS4G). The images were collected at the Whyte's Gully Waste and Resource Recovery facility in Wollongong, Australia, as described in the [authors' repository](https://github.com/sam-single/realwaste). Please cite both the UCI dataset record and their [original paper in *Information*, 14(12), 633](https://doi.org/10.3390/info14120633).
+
+The train/validation/test assignments below are **our fixed experimental splits**. Download URLs, dates, archive sizes, and SHA256 values are recorded in the [TrashNet download provenance](datasets/trashnet/provenance/source_download.json) and [RealWaste download provenance](datasets/realwaste/provenance/source_download.json).
+
 | Dataset | Classes | Included images | Train | Validation | Test |
 |---|---:|---:|---:|---:|---:|
 | TrashNet | 6 | 2,527 | 1,765 | 379 | 377 |
@@ -60,6 +67,52 @@ WaveTriNeXt/
 Six TrashNet images were excluded from the historical experimental manifest because of conflicting labels in duplicate groups; their original image files are retained. The fixed TrashNet manifest therefore contains 2,521 images. The two datasets are trained and evaluated independently, using their full six/nine classes.
 
 Images total approximately **698 MiB**. The local package contains actual image files; `.gitattributes` routes them through Git LFS when committed. For a GitHub clone, run `git lfs pull` before verification. See the [dataset documentation](datasets/README.md) for source attribution, license records, exclusions and checksums.
+
+<details>
+<summary>Dataset references (BibTeX)</summary>
+
+```bibtex
+@misc{thung2016trashnet,
+  author       = {Thung, Gary and Yang, Mindy},
+  title        = {{TrashNet}: Dataset of Images of Trash},
+  year         = {2016},
+  howpublished = {GitHub repository},
+  url          = {https://github.com/garythung/trashnet}
+}
+
+@techreport{yang2016recyclability,
+  author      = {Yang, Mindy and Thung, Gary},
+  title       = {Classification of Trash for Recyclability Status},
+  institution = {Stanford University},
+  type        = {CS229 Project Report},
+  year        = {2016},
+  url         = {https://cs229.stanford.edu/proj2016/report/ThungYang-ClassificationOfTrashForRecyclabilityStatus-report.pdf}
+}
+
+@misc{single2023realwasteDataset,
+  author       = {Single, Sam and Iranmanesh, Saeid and Raad, Raad},
+  title        = {{RealWaste}},
+  year         = {2023},
+  howpublished = {UCI Machine Learning Repository},
+  note         = {Dataset},
+  doi          = {10.24432/C5SS4G},
+  url          = {https://doi.org/10.24432/C5SS4G}
+}
+
+@article{single2023realwaste,
+  author  = {Single, Sam and Iranmanesh, Saeid and Raad, Raad},
+  title   = {{RealWaste}: A Novel Real-Life Data Set for Landfill Waste Classification Using Deep Learning},
+  journal = {Information},
+  year    = {2023},
+  volume  = {14},
+  number  = {12},
+  pages   = {633},
+  doi     = {10.3390/info14120633},
+  url     = {https://doi.org/10.3390/info14120633}
+}
+```
+
+</details>
 
 ## Quick start
 
