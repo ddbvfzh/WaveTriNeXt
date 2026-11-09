@@ -64,4 +64,4 @@ python scripts/evaluate.py --model wavetrinext --datasets trashnet --seeds 14 --
 
 五组模型的 **30 份最佳权重已全部归档**，每组包含两个数据集 × 三个种子，总计约 **3.53 GB**，无缺失项。文件大小、对应实验和 SHA256 记录于 `pretrained/manifest.json`，全部与原始 `complete.json` 中 `artifacts_sha256.best.pt` 一致。运行 `python scripts/verify_pretrained.py --require-all` 可重新核验；用于接续训练的 `last.pt` 不在本次归档范围内。
 
-导入的 `best.pt` 是训练完成的论文模型；训练命令的 `--weights` 参数用于官方 ImageNet 初始化文件，两者用途不同。私有的云端下载位置单独保存在父目录的 `云端权重位置_仅本地.md`，无需上传。数据来源及许可原文保留在数据说明和第三方声明中；论文题目、作者和项目代码许可证留待你正式发布时填写。目前没有上传或推送 GitHub。
+导入的 `best.pt` 是训练完成的论文模型；训练命令的 `--weights` 参数用于官方 ImageNet 初始化文件，两者用途不同。私有的云端下载位置单独保存在父目录的 `云端权重位置_仅本地.md`，无需上传。数据来源及许可原文保留在数据说明和第三方声明中；论文题目、作者和项目代码许可证留待你正式发布时填写。GitHub 仓库为 [ddbvfzh/WaveTriNeXt](https://github.com/ddbvfzh/WaveTriNeXt)，当前设为**私有**，仅授权账号可访问。

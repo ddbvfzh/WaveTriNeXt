@@ -1,14 +1,14 @@
 {
   "prepared_date": "2026-11-08",
   "project": "WaveTriNeXt",
-  "status": "prepared_and_checked",
-  "file_count_excluding_this_receipt": 7635,
-  "total_bytes_excluding_this_receipt": 4276048531,
+  "status": "uploaded_private_and_checked",
+  "file_count_excluding_this_receipt": 7636,
+  "total_bytes_excluding_this_receipt": 4276050770,
   "image_count": 7279,
   "experiment_runs": 30,
   "trained_weights_included": true,
   "full_training_rerun": false,
-  "github_published": false,
+  "github_published": true,
   "verification": {
     "datasets": {
       "status": "passed",
@@ -37,6 +37,10 @@
       "full_test_runs": 10,
       "partial_test_runs": 6,
       "full_30_checkpoint_reevaluation": false
+    },
+    "github_publication": {
+      "status": "passed; private repository, payload commit and all 7306 unique LFS objects verified",
+      "report": "provenance/github_publication.json"
     }
   },
   "checkpoint_import": {
@@ -46,5 +50,7 @@
     "status": "complete",
     "manifest": "pretrained/manifest.json"
   },
-  "updated_date": "2026-11-09"
+  "updated_date": "2026-11-09",
+  "github_visibility": "private",
+  "github_repository": "https://github.com/ddbvfzh/WaveTriNeXt"
 }

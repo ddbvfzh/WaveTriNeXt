@@ -101,4 +101,4 @@ All **30 validation-selected paper checkpoints** are included under `pretrained/
 
 The imported `best.pt` files are trained paper models. The training CLI's `--weights` argument instead expects the official ImageNet initialization listed above. The checkpoints in `pretrained/` use Git LFS when committed; private cloud retrieval locations are kept separately by the repository owner.
 
-See [LICENSE_POLICY.md](LICENSE_POLICY.md) for the project license status and `third_party/` for upstream notices. This package does not invent a manuscript title, author list or DOI. Follow [GITHUB_UPLOAD.md](docs/GITHUB_UPLOAD.md) to publish the prepared folder; no remote repository has been created or pushed during packaging.
+See [LICENSE_POLICY.md](LICENSE_POLICY.md) for the project license status and `third_party/` for upstream notices. This package does not invent a manuscript title, author list or DOI. The GitHub repository is [ddbvfzh/WaveTriNeXt](https://github.com/ddbvfzh/WaveTriNeXt), currently **private**. See [GITHUB_UPLOAD.md](docs/GITHUB_UPLOAD.md) for cloning with Git LFS and future updates.

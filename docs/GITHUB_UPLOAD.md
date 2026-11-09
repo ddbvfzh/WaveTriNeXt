@@ -1,6 +1,8 @@
-# 上传 GitHub
+# GitHub 私有仓库与大文件
 
-本文件夹是待发布的独立仓库内容。两个数据集的真实图片已放入 `datasets/`，不是下载链接或占位文件。模型权重的实际导入情况以 `pretrained/manifest.json` 为准；可用的最佳权重统一位于 `pretrained/模型名/数据集/seed_N/best.pt`，缺失项保留在清单中。
+仓库为 [ddbvfzh/WaveTriNeXt](https://github.com/ddbvfzh/WaveTriNeXt)，默认分支 `main`，当前设为**私有**。访问和克隆需要获得授权的 GitHub 账号。上传范围为本文件夹，父目录的私有云端位置说明不在仓库中。
+
+代码、配置、固定数据划分、30 次实验结果及验证记录存储在普通 Git 中；两套数据的 **7,279 张图片和 30 份 best.pt** 使用 Git LFS。模型位置为 `pretrained/模型名/数据集/seed_N/best.pt`，清单见 `pretrained/manifest.json`。
 
 ## 1. 检查整理内容
 
@@ -14,22 +16,20 @@ python scripts/verify_pretrained.py
 
 数据来源与许可说明在 [datasets/README.md](../datasets/README.md)，项目代码许可说明在 [LICENSE_POLICY.md](../LICENSE_POLICY.md)。论文题目、作者、正式 DOI 尚未提供，本整理包没有编造这些信息。
 
-## 2. 初始化并提交
+## 2. 后续更新
 
-先安装 Git 和 Git LFS，在 GitHub 建立自己的空仓库，再在本文件夹执行以下命令。命令中的仓库地址需要换成自己的地址。
+本地独立仓库已初始化并配置 Git LFS。后续修改、检查文件后执行：
 
 ```bash
-git init -b main
-git lfs install --local
-git add .
-git lfs ls-files
 git status --short
-git commit -m "Add WaveTriNeXt code, datasets, results and available checkpoints"
-git remote add origin https://github.com/YOUR_ACCOUNT/YOUR_REPOSITORY.git
-git push -u origin main
+git add .
+git commit -m "Update WaveTriNeXt research code"
+git push origin main
 ```
 
-`.gitattributes` 已将两套数据图片及 `pretrained/**/*.pt` 指定为 LFS 文件。`git lfs ls-files` 应列出 **7,279 张图片，加上清单中实际导入的 best.pt 数量**。数据图片约 698 MiB，权重占用另计，需要账户有相应的 LFS 存储和传输额度。Git LFS 在 Git 仓库中记录指针，实际内容存入 LFS 存储；详细规则见 [GitHub 官方 Git LFS 说明](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-git-large-file-storage)。
+`.gitattributes` 已将两套数据图片及 `pretrained/**/*.pt` 指定为 LFS 文件。共有 **7,309 个 LFS 文件路径、7,306 个唯一内容对象**；TrashNet 中 3 对图片内容相同，LFS 去重存储，所以默认 `git lfs ls-files` 显示 7,306 项，不代表文件缺失。数据图片约 698 MiB，权重约 3.53 GB，LFS 实际内容总计约 4.26 GB。Git LFS 在 Git 仓库中记录指针，实际内容存入 LFS 存储，克隆后需要执行 `git lfs pull`。详细规则见 [GitHub 官方 Git LFS 说明](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-git-large-file-storage)。
+
+每次更新大文件都会产生新的 LFS 内容版本。存储与下载流量按仓库所有者的额度计算，规则见 [GitHub LFS 计量说明](https://docs.github.com/en/billing/concepts/product-billing/git-lfs)。本次上传不修改账户的预算或付费设置。
 
 `.gitignore` 允许提交 `pretrained/**/best.pt`，仍忽略其他位置的模型权重、`outputs/`、缓存和下载中间文件。只有核验完成的文件才应以 `best.pt` 名称进入该目录；下载和 SHA256 核验尚未完成时，不要把临时文件当作最终权重提交。
 
@@ -38,13 +38,13 @@ git push -u origin main
 ## 3. 下载已发布仓库
 
 ```bash
-git clone https://github.com/YOUR_ACCOUNT/YOUR_REPOSITORY.git
-cd YOUR_REPOSITORY
+git clone https://github.com/ddbvfzh/WaveTriNeXt.git
+cd WaveTriNeXt
 git lfs install --local
 git lfs pull
 python scripts/verify_datasets.py
 python scripts/summarize_results.py
-python scripts/verify_pretrained.py
+python scripts/verify_pretrained.py --require-all
 ```
 
-整理过程中没有创建 GitHub 仓库、提交或推送。仅上传 `WaveTriNeXt/` 内部的内容；其父目录中的私有云端位置说明留在本地。
+训练说明见 [REPRODUCIBILITY.md](REPRODUCIBILITY.md)，独立评估见 [EVALUATION.md](EVALUATION.md)。仓库当前用于私有整理；向读者提供论文代码链接前，需要由所有者决定公开发布或授予访问权限。

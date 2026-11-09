@@ -1,0 +1,38 @@
+{
+  "date": "2026-11-09",
+  "status": "uploaded_private_and_verified",
+  "repository": "https://github.com/ddbvfzh/WaveTriNeXt",
+  "repository_id": 1450815058,
+  "visibility": "private",
+  "default_branch": "main",
+  "payload_commit": "4d865b09237c1f3ad1b9e403d8bdcfb4860a0f7a",
+  "payload_commit_matches_local": true,
+  "contents": {
+    "images": 7279,
+    "trained_checkpoints": 30,
+    "experiment_runs": 30,
+    "lfs_file_paths": 7309,
+    "lfs_unique_objects": 7306,
+    "lfs_unique_bytes": 4264424730
+  },
+  "verification": {
+    "index_paths_and_local_content_sha256": "passed",
+    "frozen_source_files_preserved": 10,
+    "original_result_files_preserved": 240,
+    "remote_lfs_availability": {
+      "status": "passed",
+      "unique_objects_expected": 7306,
+      "unique_objects_checked": 7306,
+      "missing_or_error_count": 0,
+      "downloaded_payload_bytes": 0,
+      "method": "Authenticated Git LFS download-batch metadata query; download actions checked without fetching signed URLs"
+    }
+  },
+  "notes": [
+    "The payload commit contains the complete code, datasets, experiment records and LFS pointers. Publication documentation/receipts are committed afterward.",
+    "Three pairs of identical TrashNet image files share LFS content objects; all 7279 image paths are present.",
+    "Repository visibility remains private; this is not a public paper-code release.",
+    "No budget, billing, collaborator access or public-visibility settings were changed.",
+    "The parent project and its private cloud retrieval locations are outside this repository."
+  ]
+}
